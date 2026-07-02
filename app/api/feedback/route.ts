@@ -1,5 +1,6 @@
 import { NextRequest, NextResponse } from "next/server";
 import { createClient } from "@supabase/supabase-js";
+import { notifyFeedback } from "@/lib/notifyFeedback";
 
 const FEEDBACK_TYPES = new Set([
   "helpful",
@@ -76,6 +77,13 @@ export async function POST(req: NextRequest) {
       pageSlug,
       feedbackType,
     });
+    await notifyFeedback({
+      pageType,
+      pageSlug,
+      feedbackType,
+      comment: sanitizedComment,
+      stored: false,
+    });
     return NextResponse.json({ ok: true, stored: false });
   }
 
@@ -94,6 +102,14 @@ export async function POST(req: NextRequest) {
     console.error("Failed to store feedback", error.message);
     return NextResponse.json({ error: "Storage failed" }, { status: 500 });
   }
+
+  await notifyFeedback({
+    pageType,
+    pageSlug,
+    feedbackType,
+    comment: sanitizedComment,
+    stored: true,
+  });
 
   return NextResponse.json({ ok: true, stored: true });
 }
