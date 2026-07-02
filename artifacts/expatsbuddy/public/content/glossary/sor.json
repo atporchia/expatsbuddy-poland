@@ -1,0 +1,18 @@
+{
+  "id": "term-sor",
+  "slug": "sor",
+  "term": "SOR",
+  "language": "pl",
+  "plainMeaning": "Szpitalny Oddział Ratunkowy — the hospital emergency department, for sudden threats to life or health. Official pages stress it is not a substitute for a GP or specialist visit. In emergencies call 112.",
+  "institutionIds": [
+    "inst-sor",
+    "inst-hospital"
+  ],
+  "relatedPathIds": [
+    "path-hospital-discharge-document"
+  ],
+  "officialSourceIds": [
+    "src-pacjent-sor"
+  ],
+  "warning": "If you think a life or health is in danger, call 112 or go to the nearest SOR immediately."
+}

@@ -1,0 +1,18 @@
+{
+  "id": "term-urzad-pracy",
+  "slug": "urzad-pracy",
+  "term": "urząd pracy",
+  "language": "pl",
+  "plainMeaning": "The labour office. In practice usually the poviat labour office (powiatowy urząd pracy) — the local office where people register as unemployed and access job-placement services.",
+  "institutionIds": [
+    "inst-labour-office",
+    "inst-psz"
+  ],
+  "relatedPathIds": [
+    "path-registering-as-unemployed",
+    "path-unemployment-benefit"
+  ],
+  "officialSourceIds": [
+    "src-psz-register-docs"
+  ]
+}

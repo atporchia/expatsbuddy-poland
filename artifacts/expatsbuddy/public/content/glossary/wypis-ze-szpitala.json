@@ -1,0 +1,16 @@
+{
+  "id": "term-wypis-ze-szpitala",
+  "slug": "wypis-ze-szpitala",
+  "term": "wypis ze szpitala",
+  "language": "pl",
+  "plainMeaning": "Informal term for hospital discharge — both the moment of leaving the hospital and the discharge paperwork (see karta informacyjna leczenia szpitalnego).",
+  "institutionIds": [
+    "inst-hospital"
+  ],
+  "relatedPathIds": [
+    "path-hospital-discharge-document"
+  ],
+  "officialSourceIds": [
+    "src-pacjent-hospital-stay"
+  ]
+}

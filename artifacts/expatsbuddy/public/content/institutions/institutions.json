@@ -1,0 +1,126 @@
+[
+  {
+    "id": "inst-mos",
+    "name": "MOS / Office for Foreigners (Urząd do Spraw Cudzoziemców)",
+    "shortName": "MOS / Office for Foreigners",
+    "description": "The national portal and office handling residence legalization for foreigners in Poland.",
+    "website": "https://www.mos.cudzoziemcy.gov.pl/en/"
+  },
+  {
+    "id": "inst-voivodeship",
+    "name": "Voivodeship office (urząd wojewódzki)",
+    "shortName": "Voivodeship office",
+    "description": "The regional office where residence applications are processed and decided by the voivode."
+  },
+  {
+    "id": "inst-zus",
+    "name": "ZUS — Social Insurance Institution (Zakład Ubezpieczeń Społecznych)",
+    "shortName": "ZUS",
+    "description": "The institution handling social insurance: sickness benefit, rehabilitation benefit, pensions, and related forms.",
+    "website": "https://lang.zus.pl/"
+  },
+  {
+    "id": "inst-ezus",
+    "name": "eZUS / PUE — ZUS electronic services platform",
+    "shortName": "eZUS / PUE",
+    "description": "ZUS's online platform where insured persons see e-ZLA sick notes and can submit applications electronically."
+  },
+  {
+    "id": "inst-labour-office",
+    "name": "Poviat Labour Office (powiatowy urząd pracy)",
+    "shortName": "Poviat Labour Office",
+    "description": "The local office where you register as unemployed or as a jobseeker."
+  },
+  {
+    "id": "inst-psz",
+    "name": "Public Employment Services (Publiczne Służby Zatrudnienia)",
+    "shortName": "Public Employment Services",
+    "description": "The national employment services network and portal.",
+    "website": "https://lang-psz.praca.gov.pl/en/"
+  },
+  {
+    "id": "inst-ministry-family",
+    "name": "Ministry of Family, Labour and Social Policy",
+    "shortName": "Ministry of Family & Labour",
+    "description": "The ministry responsible for labour-market and social policy, publishing on gov.pl."
+  },
+  {
+    "id": "inst-employer",
+    "name": "Employer",
+    "shortName": "Employer",
+    "description": "Your current or former employer, responsible for employment documents such as świadectwo pracy."
+  },
+  {
+    "id": "inst-labour-court",
+    "name": "Labour court (sąd pracy)",
+    "shortName": "Labour court",
+    "description": "The court handling employment disputes, for example about a certificate of employment."
+  },
+  {
+    "id": "inst-doctor",
+    "name": "Doctor / treating physician",
+    "shortName": "Doctor",
+    "description": "Issues e-ZLA sick notes and medical certificates such as OL-9."
+  },
+  {
+    "id": "inst-hospital",
+    "name": "Hospital",
+    "shortName": "Hospital",
+    "description": "Provides hospital treatment and issues discharge documentation."
+  },
+  {
+    "id": "inst-sor",
+    "name": "SOR — hospital emergency department (szpitalny oddział ratunkowy)",
+    "shortName": "SOR",
+    "description": "The hospital emergency department, for sudden threats to life or health."
+  },
+  {
+    "id": "inst-pacjent",
+    "name": "pacjent.gov.pl / IKP (Internetowe Konto Pacjenta)",
+    "shortName": "pacjent.gov.pl / IKP",
+    "description": "The official patient portal, with access to electronic medical documentation."
+  },
+  {
+    "id": "inst-nfz",
+    "name": "NFZ — National Health Fund (Narodowy Fundusz Zdrowia)",
+    "shortName": "NFZ",
+    "description": "The public health-insurance fund financing healthcare in Poland."
+  },
+  {
+    "id": "inst-insurer",
+    "name": "Private insurer",
+    "shortName": "Private insurer",
+    "description": "The insurance company behind an individual or employer-provided group policy."
+  },
+  {
+    "id": "inst-rf",
+    "name": "Rzecznik Finansowy (Financial Ombudsman)",
+    "shortName": "Financial Ombudsman",
+    "description": "Assists customers of financial institutions, including insurance complaints.",
+    "website": "https://rf.gov.pl/en/"
+  },
+  {
+    "id": "inst-ministry-finance",
+    "name": "Ministry of Finance",
+    "shortName": "Ministry of Finance",
+    "description": "Responsible for insurance-market regulation and policyholder-protection policy."
+  },
+  {
+    "id": "inst-knf",
+    "name": "KNF — Polish Financial Supervision Authority",
+    "shortName": "KNF",
+    "description": "Supervises the financial market, including insurance companies."
+  },
+  {
+    "id": "inst-university",
+    "name": "University or school",
+    "shortName": "University / school",
+    "description": "Issues admission and enrolment certificates used in study-related residence procedures."
+  },
+  {
+    "id": "inst-govpl",
+    "name": "gov.pl",
+    "shortName": "gov.pl",
+    "description": "The central Polish government portal, including the Your Europe in Poland section."
+  }
+]

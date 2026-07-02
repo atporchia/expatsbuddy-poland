@@ -1,0 +1,16 @@
+{
+  "id": "term-roszczenie",
+  "slug": "roszczenie",
+  "term": "roszczenie",
+  "language": "pl",
+  "plainMeaning": "A claim — the request to an insurer for a payment under a policy after an insured event, usually submitted on the insurer's claim form with supporting documentation.",
+  "institutionIds": [
+    "inst-insurer"
+  ],
+  "relatedPathIds": [
+    "path-private-insurance-claim-basics"
+  ],
+  "officialSourceIds": [
+    "src-gov-policyholders"
+  ]
+}
