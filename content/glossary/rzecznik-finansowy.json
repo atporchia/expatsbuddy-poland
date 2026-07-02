@@ -1,0 +1,17 @@
+{
+  "id": "term-rzecznik-finansowy",
+  "slug": "rzecznik-finansowy",
+  "term": "Rzecznik Finansowy",
+  "language": "pl",
+  "plainMeaning": "The Financial Ombudsman — the institution assisting customers of financial entities, including insurance disputes, typically after the insurer's own complaint procedure has been used.",
+  "institutionIds": [
+    "inst-rf"
+  ],
+  "relatedPathIds": [
+    "path-private-insurance-claim-basics"
+  ],
+  "officialSourceIds": [
+    "src-rf-intervention",
+    "src-rf-complaints"
+  ]
+}

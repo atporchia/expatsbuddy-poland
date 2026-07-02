@@ -1,0 +1,17 @@
+{
+  "id": "term-pobyt-czasowy-i-praca",
+  "slug": "pobyt-czasowy-i-praca",
+  "term": "pobyt czasowy i praca",
+  "language": "pl",
+  "plainMeaning": "Short for the temporary residence and work permit — the 'single permit' that combines the right to stay in Poland with work authorization for a specific employer.",
+  "institutionIds": [
+    "inst-mos",
+    "inst-voivodeship"
+  ],
+  "relatedPathIds": [
+    "path-work-based-trc"
+  ],
+  "officialSourceIds": [
+    "src-mos-single-permit"
+  ]
+}
