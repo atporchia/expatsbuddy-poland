@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import Link from "next/link";
 import { notFound } from "next/navigation";
 import { DisclaimerBox } from "@/components/DisclaimerBox";
 import { FeedbackWidget } from "@/components/FeedbackWidget";
@@ -12,7 +13,7 @@ import {
   getPathsForCategory,
   getSourcesByIds,
 } from "@/lib/content";
-import { LOCALES } from "@/lib/routes";
+import { LOCALES, routes } from "@/lib/routes";
 
 export function generateStaticParams() {
   return LOCALES.flatMap((locale) =>
@@ -44,6 +45,9 @@ export default async function CategoryPage({
   const { locale, categorySlug } = await params;
   const category = getCategoryBySlug(categorySlug);
   if (!category) notFound();
+
+  const allCategories = getCategories();
+  const otherCategories = allCategories.filter((c) => c.id !== category.id);
 
   const paths = getPathsForCategory(category.id);
   const sourceIds = [...new Set(paths.flatMap((p) => p.officialSourceIds))];
@@ -86,6 +90,29 @@ export default async function CategoryPage({
             ))}
           </ul>
         </section>
+      </div>
+
+      <div className="rounded-xl border border-slate-100 bg-slate-50 px-5 py-4">
+        <p className="text-sm font-medium text-slate-500">
+          Not what you need? Try another category:
+        </p>
+        <div className="mt-2 flex flex-wrap gap-2">
+          {otherCategories.map((c) => (
+            <Link
+              key={c.id}
+              href={routes.category(locale, c.slug)}
+              className="inline-flex items-center rounded-lg border border-slate-200 bg-white px-3 py-1.5 text-sm font-medium text-slate-700 shadow-sm transition hover:border-blue-300 hover:text-blue-800 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-blue-600"
+            >
+              {c.title}
+            </Link>
+          ))}
+          <Link
+            href={routes.start(locale)}
+            className="inline-flex items-center rounded-lg border border-blue-200 bg-blue-50 px-3 py-1.5 text-sm font-medium text-blue-700 shadow-sm transition hover:border-blue-400 hover:bg-blue-100 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-blue-600"
+          >
+            I don&rsquo;t know where to start →
+          </Link>
+        </div>
       </div>
 
       <section aria-labelledby="paths-heading">

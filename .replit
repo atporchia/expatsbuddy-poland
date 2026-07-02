@@ -9,6 +9,28 @@ args = ["pnpm", "store", "prune"]
 env = { "CI" = "true" }
 
 [workflows]
+runButton = "Project"
+
+[[workflows.workflow]]
+name = "Project"
+mode = "parallel"
+author = "agent"
+
+[[workflows.workflow.tasks]]
+task = "workflow.run"
+args = "ExpatsBuddy"
+
+[[workflows.workflow]]
+name = "ExpatsBuddy"
+author = "agent"
+
+[workflows.workflow.metadata]
+outputType = "webview"
+
+[[workflows.workflow.tasks]]
+task = "shell.exec"
+args = "cd .migration-backup && node node_modules/next/dist/bin/next dev --port 3000"
+waitForPort = 3000
 
 [agent]
 stack = "PNPM_WORKSPACE"
