@@ -1,0 +1,31 @@
+{
+  "id": "work-job-loss",
+  "slug": "work-job-loss",
+  "title": "Work & Job Loss",
+  "description": "This category explains what commonly happens around the end of employment in Poland: the certificate of employment (świadectwo pracy), registering at the labour office, and how unemployment benefit is described in official sources. It points you to the official pages that list conditions and documents.",
+  "owns": [
+    "contract ending and termination documents at a general level",
+    "the certificate of employment (świadectwo pracy)",
+    "registering as unemployed at the labour office (urząd pracy)",
+    "unemployment benefit basics as described by official sources"
+  ],
+  "doesNotOwn": [
+    "TRC or residence legal strategy",
+    "medical questions around sick leave",
+    "confirming whether you personally qualify for any benefit",
+    "calculating amounts or deadlines"
+  ],
+  "institutionIds": [
+    "inst-labour-office",
+    "inst-psz",
+    "inst-ministry-family",
+    "inst-employer",
+    "inst-labour-court"
+  ],
+  "pathIds": [
+    "path-certificate-of-employment",
+    "path-registering-as-unemployed",
+    "path-unemployment-benefit"
+  ],
+  "status": "published"
+}

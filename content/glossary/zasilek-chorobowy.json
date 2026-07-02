@@ -1,0 +1,18 @@
+{
+  "id": "term-zasilek-chorobowy",
+  "slug": "zasilek-chorobowy",
+  "term": "zasiłek chorobowy",
+  "language": "pl",
+  "plainMeaning": "Sickness benefit — the ZUS benefit for periods of incapacity for work covered by sickness insurance. Official sources also describe conditions under which it can apply after the insurance has ended.",
+  "institutionIds": [
+    "inst-zus"
+  ],
+  "relatedPathIds": [
+    "path-sick-leave-after-contract-ends",
+    "path-zas-53"
+  ],
+  "officialSourceIds": [
+    "src-gov-sickness-benefit",
+    "src-lang-zus-sick-pay"
+  ]
+}

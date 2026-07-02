@@ -1,0 +1,31 @@
+{
+  "id": "hospitalization-insurance",
+  "slug": "hospitalization-insurance",
+  "title": "Hospitalization & Insurance",
+  "description": "This category explains hospital-stay concepts in Poland — the discharge document (karta informacyjna leczenia szpitalnego), referrals, SOR, and electronic medical documentation — plus the general shape of a private insurance claim and where policyholder-protection information lives.",
+  "owns": [
+    "hospital stay and discharge document concepts",
+    "referrals and SOR at a general level",
+    "electronic medical documentation (IKP / EDM)",
+    "private insurance claim basics and complaint routes"
+  ],
+  "doesNotOwn": [
+    "interpreting diagnoses, results, or treatment",
+    "guaranteeing insurance coverage or claim outcomes",
+    "medical advice of any kind",
+    "reviewing your policy or personal documents"
+  ],
+  "institutionIds": [
+    "inst-hospital",
+    "inst-sor",
+    "inst-pacjent",
+    "inst-nfz",
+    "inst-insurer",
+    "inst-rf"
+  ],
+  "pathIds": [
+    "path-hospital-discharge-document",
+    "path-private-insurance-claim-basics"
+  ],
+  "status": "published"
+}

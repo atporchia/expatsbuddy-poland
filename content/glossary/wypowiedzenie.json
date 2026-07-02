@@ -1,0 +1,16 @@
+{
+  "id": "term-wypowiedzenie",
+  "slug": "wypowiedzenie",
+  "term": "wypowiedzenie",
+  "language": "pl",
+  "plainMeaning": "A termination notice — the declaration ending an employment contract after a notice period. Official sources describe the employer's and employee's obligations around it.",
+  "institutionIds": [
+    "inst-employer"
+  ],
+  "relatedPathIds": [
+    "path-certificate-of-employment"
+  ],
+  "officialSourceIds": [
+    "src-gov-terms-conditions"
+  ]
+}

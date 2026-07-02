@@ -1,0 +1,19 @@
+{
+  "id": "term-karta-pobytu",
+  "slug": "karta-pobytu",
+  "term": "karta pobytu",
+  "language": "pl",
+  "plainMeaning": "The residence card — the plastic card confirming a residence permit for a non-EU foreigner in Poland. It is the proof of a permit that was already granted, not the permit application itself.",
+  "institutionIds": [
+    "inst-mos",
+    "inst-voivodeship"
+  ],
+  "relatedPathIds": [
+    "path-work-based-trc",
+    "path-student-trc",
+    "path-family-based-trc"
+  ],
+  "officialSourceIds": [
+    "src-mos-permit-temporary"
+  ]
+}

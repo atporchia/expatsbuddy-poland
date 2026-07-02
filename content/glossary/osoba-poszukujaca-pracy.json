@@ -1,0 +1,16 @@
+{
+  "id": "term-osoba-poszukujaca-pracy",
+  "slug": "osoba-poszukujaca-pracy",
+  "term": "osoba poszukująca pracy",
+  "language": "pl",
+  "plainMeaning": "A jobseeker — a labour-office status for people looking for work who do not meet (or do not need) the conditions for unemployed status. It gives access to some services but differs from unemployed status.",
+  "institutionIds": [
+    "inst-labour-office"
+  ],
+  "relatedPathIds": [
+    "path-registering-as-unemployed"
+  ],
+  "officialSourceIds": [
+    "src-psz-register-docs"
+  ]
+}

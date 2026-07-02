@@ -4,9 +4,11 @@
   "private": true,
   "scripts": {
     "dev": "next dev",
-    "build": "next build",
+    "build": "npm run validate-content && next build",
     "start": "next start",
-    "lint": "eslint"
+    "lint": "eslint",
+    "validate-content": "tsx scripts/validate-content.ts",
+    "check-links": "tsx scripts/check-links.ts"
   },
   "dependencies": {
     "@supabase/supabase-js": "^2.110.0",

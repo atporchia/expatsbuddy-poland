@@ -1,0 +1,450 @@
+[
+  {
+    "id": "src-mos-single-permit",
+    "title": "Temporary residence and work permit (single permit)",
+    "institution": "MOS / Office for Foreigners",
+    "url": "https://www.mos.cudzoziemcy.gov.pl/en/categories-information/possibilities-legalization/non-eu-continued-stay/permit-temporary/work/permit-uniform/",
+    "language": "en",
+    "sourceType": "explainer",
+    "relatedPathIds": ["path-work-based-trc"],
+    "lastCheckedAt": "2026-07-02"
+  },
+  {
+    "id": "src-mos-work-general",
+    "title": "General rules for the performance of work by foreigners in Poland",
+    "institution": "MOS / Office for Foreigners",
+    "url": "https://www.mos.cudzoziemcy.gov.pl/en/categories-information/doing-the-job/principles-general/",
+    "language": "en",
+    "sourceType": "explainer",
+    "relatedPathIds": ["path-work-based-trc", "path-eu-citizen-registration"],
+    "lastCheckedAt": "2026-07-02"
+  },
+  {
+    "id": "src-psz-work-in-poland-guide",
+    "title": "Work in Poland — guide for foreigners from third countries (PDF)",
+    "institution": "Public Employment Services",
+    "url": "https://psz.praca.gov.pl/documents/10240/42353333/WORK+IN+POLAND_GUIDE+FOR+FOREIGNERS+FROM+THIRD+COUNTRIES_EN.pdf/18ebf27d-615c-2a18-2c5c-91218071464a?t=1756293815182",
+    "language": "en",
+    "sourceType": "pdf",
+    "relatedPathIds": ["path-work-based-trc", "path-eu-citizen-registration"],
+    "lastCheckedAt": "2026-07-02"
+  },
+  {
+    "id": "src-mos-permit-temporary",
+    "title": "Temporary residence permits — categories and checklists",
+    "institution": "MOS / Office for Foreigners",
+    "url": "https://www.mos.cudzoziemcy.gov.pl/en/categories-information/possibilities-legalization/non-eu-continued-stay/permit-temporary/",
+    "language": "en",
+    "sourceType": "checklist",
+    "relatedPathIds": [
+      "path-work-based-trc",
+      "path-student-trc",
+      "path-family-based-trc"
+    ],
+    "lastCheckedAt": "2026-07-02"
+  },
+  {
+    "id": "src-mos-studies",
+    "title": "Temporary residence permit for the purpose of studies",
+    "institution": "MOS / Office for Foreigners",
+    "url": "https://www.mos.cudzoziemcy.gov.pl/en/categories-information/possibilities-legalization/non-eu-continued-stay/permit-temporary/study/permit-studies/",
+    "language": "en",
+    "sourceType": "explainer",
+    "relatedPathIds": ["path-student-trc"],
+    "lastCheckedAt": "2026-07-02"
+  },
+  {
+    "id": "src-mos-study-section",
+    "title": "Study in Poland — residence paths connected with education",
+    "institution": "MOS / Office for Foreigners",
+    "url": "https://www.mos.cudzoziemcy.gov.pl/en/categories-information/possibilities-legalization/non-eu-continued-stay/permit-temporary/study/",
+    "language": "en",
+    "sourceType": "portal",
+    "relatedPathIds": ["path-student-trc"],
+    "lastCheckedAt": "2026-07-02"
+  },
+  {
+    "id": "src-mos-spouse-polish-citizen",
+    "title": "Temporary residence permit for a spouse of a Polish citizen",
+    "institution": "MOS / Office for Foreigners",
+    "url": "https://www.mos.cudzoziemcy.gov.pl/en/categories-information/possibilities-legalization/non-eu-continued-stay/permit-temporary/staying-with-family/spouse-ob-rp/",
+    "language": "en",
+    "sourceType": "explainer",
+    "relatedPathIds": ["path-family-based-trc"],
+    "lastCheckedAt": "2026-07-02"
+  },
+  {
+    "id": "src-mos-family-reunification",
+    "title": "Temporary residence permit for the non-EU spouse (family reunification)",
+    "institution": "MOS / Office for Foreigners",
+    "url": "https://www.mos.cudzoziemcy.gov.pl/en/categories-information/possibilities-legalization/non-eu-continued-stay/permit-temporary/staying-with-family/non-eu-spouse/",
+    "language": "en",
+    "sourceType": "explainer",
+    "relatedPathIds": ["path-family-based-trc"],
+    "lastCheckedAt": "2026-07-02"
+  },
+  {
+    "id": "src-mos-family-section",
+    "title": "Staying with family — overview of family residence paths",
+    "institution": "MOS / Office for Foreigners",
+    "url": "https://www.mos.cudzoziemcy.gov.pl/en/categories-information/possibilities-legalization/non-eu-continued-stay/permit-temporary/staying-with-family/",
+    "language": "en",
+    "sourceType": "portal",
+    "relatedPathIds": ["path-family-based-trc"],
+    "lastCheckedAt": "2026-07-02"
+  },
+  {
+    "id": "src-mos-eu-registration",
+    "title": "Registration of residence of an EU citizen",
+    "institution": "MOS / Office for Foreigners",
+    "url": "https://www.mos.cudzoziemcy.gov.pl/en/categories-information/possibilities-legalization/i-hold-the-citizenship-of-the-eu-no-li-is-ch-and-their-family-members/temporary-stay-90-days/registration-of-residence-of-an-eu-citizen/",
+    "language": "en",
+    "sourceType": "explainer",
+    "relatedPathIds": ["path-eu-citizen-registration"],
+    "lastCheckedAt": "2026-07-02"
+  },
+  {
+    "id": "src-mos-eu-certificate",
+    "title": "Certificate of registration of residence of an EU citizen",
+    "institution": "MOS / Office for Foreigners",
+    "url": "https://www.mos.cudzoziemcy.gov.pl/en/categories-information/documents/documents-eu/certificate-of-registration-of-residence-of-an-eu-citizen/",
+    "language": "en",
+    "sourceType": "explainer",
+    "relatedPathIds": ["path-eu-citizen-registration"],
+    "lastCheckedAt": "2026-07-02"
+  },
+  {
+    "id": "src-gov-registration-of-residence",
+    "title": "Registration of residence (Your Europe in Poland)",
+    "institution": "gov.pl",
+    "url": "https://www.gov.pl/web/your-europe/registration-of-residence2",
+    "language": "en",
+    "sourceType": "explainer",
+    "relatedPathIds": ["path-eu-citizen-registration"],
+    "lastCheckedAt": "2026-07-02"
+  },
+  {
+    "id": "src-mos-formal-deficiencies",
+    "title": "Formal deficiencies in an application (braki formalne)",
+    "institution": "MOS / Office for Foreigners",
+    "url": "https://www.mos.cudzoziemcy.gov.pl/en/categories-information/procedures/formal-deficiencies/",
+    "language": "en",
+    "sourceType": "explainer",
+    "relatedPathIds": [
+      "path-work-based-trc",
+      "path-student-trc",
+      "path-family-based-trc"
+    ],
+    "lastCheckedAt": "2026-07-02"
+  },
+  {
+    "id": "src-gov-certificate-of-employment",
+    "title": "Certificate of employment (Your Europe in Poland)",
+    "institution": "gov.pl",
+    "url": "https://www.gov.pl/web/your-europe/certificate-of-employment",
+    "language": "en",
+    "sourceType": "explainer",
+    "relatedPathIds": ["path-certificate-of-employment"],
+    "lastCheckedAt": "2026-07-02"
+  },
+  {
+    "id": "src-gov-terms-conditions",
+    "title": "Terms and conditions of employment (Your Europe in Poland)",
+    "institution": "gov.pl",
+    "url": "https://www.gov.pl/web/your-europe/terms-and-conditions-of-employment2",
+    "language": "en",
+    "sourceType": "explainer",
+    "relatedPathIds": ["path-certificate-of-employment"],
+    "lastCheckedAt": "2026-07-02"
+  },
+  {
+    "id": "src-psz-register-docs",
+    "title": "Documents required to register as unemployed",
+    "institution": "Public Employment Services",
+    "url": "https://lang-psz.praca.gov.pl/en/dla-bezrobotnych-i-poszukujacych-pracy/abc-bezrobotnego-i-poszukujacego-pracy/dokumenty-potrzebne-do-rejestracji-osoby-bezrobotnej",
+    "language": "en",
+    "sourceType": "checklist",
+    "relatedPathIds": [
+      "path-certificate-of-employment",
+      "path-registering-as-unemployed",
+      "path-unemployment-benefit"
+    ],
+    "lastCheckedAt": "2026-07-02"
+  },
+  {
+    "id": "src-gov-seeking-employment",
+    "title": "Seeking employment (Your Europe in Poland)",
+    "institution": "gov.pl",
+    "url": "https://www.gov.pl/web/your-europe/seeking-employment",
+    "language": "en",
+    "sourceType": "explainer",
+    "relatedPathIds": [
+      "path-registering-as-unemployed",
+      "path-unemployment-benefit"
+    ],
+    "lastCheckedAt": "2026-07-02"
+  },
+  {
+    "id": "src-gov-unemployment-benefit",
+    "title": "Unemployment benefit (Your Europe in Poland)",
+    "institution": "gov.pl",
+    "url": "https://www.gov.pl/web/your-europe/unemployment-benefit",
+    "language": "en",
+    "sourceType": "explainer",
+    "relatedPathIds": [
+      "path-certificate-of-employment",
+      "path-registering-as-unemployed",
+      "path-unemployment-benefit"
+    ],
+    "lastCheckedAt": "2026-07-02"
+  },
+  {
+    "id": "src-gov-foreigners-labour-market",
+    "title": "Foreigners in the labour market in Poland — what can they expect?",
+    "institution": "gov.pl / Ministry of Family, Labour and Social Policy",
+    "url": "https://www.gov.pl/web/family/foreigners-in-the-labour-market-in-poland-what-can-they-expect",
+    "language": "en",
+    "sourceType": "explainer",
+    "relatedPathIds": [
+      "path-registering-as-unemployed",
+      "path-unemployment-benefit"
+    ],
+    "lastCheckedAt": "2026-07-02"
+  },
+  {
+    "id": "src-psz-unemployment-benefit",
+    "title": "Unemployment benefit (Public Employment Services)",
+    "institution": "Public Employment Services",
+    "url": "https://lang-psz.praca.gov.pl/en/-/unemployment-benefit",
+    "language": "en",
+    "sourceType": "explainer",
+    "relatedPathIds": ["path-unemployment-benefit"],
+    "lastCheckedAt": "2026-07-02"
+  },
+  {
+    "id": "src-gov-sickness-benefit",
+    "title": "Get a sickness benefit when your insurance has ended (Your Europe in Poland)",
+    "institution": "gov.pl",
+    "url": "https://www.gov.pl/web/your-europe/sickness-benefit",
+    "language": "en",
+    "sourceType": "explainer",
+    "relatedPathIds": ["path-sick-leave-after-contract-ends", "path-zas-53"],
+    "lastCheckedAt": "2026-07-02"
+  },
+  {
+    "id": "src-zus-after-insurance-ended",
+    "title": "How to obtain sickness benefit after sickness or accident insurance has ended",
+    "institution": "ZUS",
+    "url": "https://www.zus.pl/en/-/jak-uzyskac-zasilek-chorobowy-z-tytulu-niezdolnosci-po-ustaniu-tytulu-ubezpieczenia-chorobowego-lub-ubezpieczenia-wypadkowego",
+    "language": "mixed",
+    "sourceType": "explainer",
+    "relatedPathIds": ["path-sick-leave-after-contract-ends", "path-zas-53"],
+    "lastCheckedAt": "2026-07-02"
+  },
+  {
+    "id": "src-zus-ezla-employee",
+    "title": "You received an e-ZLA — which documents to submit for sickness benefit",
+    "institution": "ZUS",
+    "url": "https://www.zus.pl/en/elektroniczne-zwolnienia-lekarskie-e-zla-/e-zla-informacje-dla-ubezpieczonych/otrzymales-e-zla-jakie-dokumenty-powinienes-zlozyc-aby-otrzymac-zasilek-chorobowy/jestes-pracownikiem-i-ubiegasz-sie-o-zasilek-chorobowy",
+    "language": "mixed",
+    "sourceType": "explainer",
+    "relatedPathIds": ["path-sick-leave-after-contract-ends"],
+    "lastCheckedAt": "2026-07-02"
+  },
+  {
+    "id": "src-zus-sickness-forms",
+    "title": "ZUS forms for sickness benefit (zasiłek chorobowy), including ZAS-53, Z-3, Z-10",
+    "institution": "ZUS",
+    "url": "https://www.zus.pl/en/wzory-formularzy/zasilki/zasilek-chorobowy",
+    "language": "mixed",
+    "sourceType": "form",
+    "relatedPathIds": [
+      "path-sick-leave-after-contract-ends",
+      "path-zas-53"
+    ],
+    "lastCheckedAt": "2026-07-02"
+  },
+  {
+    "id": "src-zus-zas53",
+    "title": "ZAS-53 — application for sickness benefit (wniosek o zasiłek chorobowy)",
+    "institution": "ZUS",
+    "url": "https://www.zus.pl/en/-/za%C5%9Bwiadczenie-zas-53",
+    "language": "mixed",
+    "sourceType": "form",
+    "relatedPathIds": ["path-zas-53"],
+    "lastCheckedAt": "2026-07-02"
+  },
+  {
+    "id": "src-lang-zus-sick-pay",
+    "title": "Sick pay and sickness allowance",
+    "institution": "ZUS",
+    "url": "https://lang.zus.pl/benefits/sick-pay-and-sickness-allowance",
+    "language": "en",
+    "sourceType": "explainer",
+    "relatedPathIds": ["path-sick-leave-after-contract-ends"],
+    "lastCheckedAt": "2026-07-02"
+  },
+  {
+    "id": "src-zus-rehab-docs",
+    "title": "Necessary documents for rehabilitation benefit (including ZNp-7 and OL-9)",
+    "institution": "ZUS",
+    "url": "https://www.zus.pl/en/swiadczenia/zasilki/swiadczenie-rehabilitacyjne/z-ubezpieczenia-chorobowego/niezbedne-dokumenty",
+    "language": "mixed",
+    "sourceType": "checklist",
+    "relatedPathIds": ["path-rehabilitation-benefit"],
+    "lastCheckedAt": "2026-07-02"
+  },
+  {
+    "id": "src-zus-rehab-forms",
+    "title": "ZUS forms for rehabilitation benefit (świadczenie rehabilitacyjne)",
+    "institution": "ZUS",
+    "url": "https://www.zus.pl/en/wzory-formularzy/zasilki/swiadczenie-rehabilitacyjne",
+    "language": "mixed",
+    "sourceType": "form",
+    "relatedPathIds": ["path-rehabilitation-benefit"],
+    "lastCheckedAt": "2026-07-02"
+  },
+  {
+    "id": "src-gov-rehab-benefit",
+    "title": "Get a rehabilitation benefit under sickness insurance (Your Europe in Poland)",
+    "institution": "gov.pl",
+    "url": "https://www.gov.pl/web/your-europe/get-a-rehabilitation-benefit-under-sickness-insurance",
+    "language": "en",
+    "sourceType": "explainer",
+    "relatedPathIds": ["path-rehabilitation-benefit"],
+    "lastCheckedAt": "2026-07-02"
+  },
+  {
+    "id": "src-lang-zus-rehab",
+    "title": "Rehabilitation benefits",
+    "institution": "ZUS",
+    "url": "https://lang.zus.pl/en/benefits/rehabilitation-benefits",
+    "language": "en",
+    "sourceType": "explainer",
+    "relatedPathIds": ["path-rehabilitation-benefit"],
+    "lastCheckedAt": "2026-07-02"
+  },
+  {
+    "id": "src-zus-z3",
+    "title": "ZUS Z-3 — certificate of the contribution payer (zaświadczenie płatnika składek)",
+    "institution": "ZUS",
+    "url": "https://www.zus.pl/en/-/za%C5%9Bwiadczenie-zus-z-3",
+    "language": "mixed",
+    "sourceType": "form",
+    "relatedPathIds": ["path-sick-leave-after-contract-ends"],
+    "lastCheckedAt": "2026-07-02"
+  },
+  {
+    "id": "src-zus-z10",
+    "title": "ZUS Z-10 — statement submitted with benefit claims after insurance has ended",
+    "institution": "ZUS",
+    "url": "https://www.zus.pl/en/wzory-formularzy/zasilki/zasilek-chorobowy/-/asset_publisher/TS3WYPoYHIaG/content/oswiadczenie-zus-z-10",
+    "language": "mixed",
+    "sourceType": "form",
+    "relatedPathIds": ["path-sick-leave-after-contract-ends", "path-zas-53"],
+    "lastCheckedAt": "2026-07-02"
+  },
+  {
+    "id": "src-gov-pue",
+    "title": "Electronic Services Platform of ZUS (PUE / eZUS)",
+    "institution": "gov.pl",
+    "url": "https://www.gov.pl/web/your-europe/electronic-services-platform-social-insurance-institution",
+    "language": "en",
+    "sourceType": "explainer",
+    "relatedPathIds": ["path-zas-53", "path-rehabilitation-benefit"],
+    "lastCheckedAt": "2026-07-02"
+  },
+  {
+    "id": "src-pacjent-ikp",
+    "title": "Internetowe Konto Pacjenta (IKP) — your online patient account",
+    "institution": "pacjent.gov.pl",
+    "url": "https://pacjent.gov.pl/internetowe-konto-pacjenta",
+    "language": "pl",
+    "sourceType": "portal",
+    "relatedPathIds": ["path-hospital-discharge-document"],
+    "lastCheckedAt": "2026-07-02"
+  },
+  {
+    "id": "src-pacjent-edm",
+    "title": "Electronic medical documentation (elektroniczna dokumentacja medyczna)",
+    "institution": "pacjent.gov.pl",
+    "url": "https://pacjent.gov.pl/elektroniczna-dokumentacja-medyczna",
+    "language": "pl",
+    "sourceType": "explainer",
+    "relatedPathIds": [
+      "path-hospital-discharge-document",
+      "path-private-insurance-claim-basics"
+    ],
+    "lastCheckedAt": "2026-07-02"
+  },
+  {
+    "id": "src-pacjent-hospital-stay",
+    "title": "Hospital stay (pobyt w szpitalu)",
+    "institution": "pacjent.gov.pl",
+    "url": "https://pacjent.gov.pl/artykul/pobyt-w-szpitalu",
+    "language": "pl",
+    "sourceType": "explainer",
+    "relatedPathIds": ["path-hospital-discharge-document"],
+    "lastCheckedAt": "2026-07-02"
+  },
+  {
+    "id": "src-pacjent-hospital-treatment",
+    "title": "Hospital treatment (leczenie szpitalne)",
+    "institution": "pacjent.gov.pl",
+    "url": "https://pacjent.gov.pl/leczenie-szpitalne",
+    "language": "pl",
+    "sourceType": "portal",
+    "relatedPathIds": ["path-hospital-discharge-document"],
+    "lastCheckedAt": "2026-07-02"
+  },
+  {
+    "id": "src-pacjent-sor",
+    "title": "Hospital emergency department (Szpitalny Oddział Ratunkowy — SOR)",
+    "institution": "pacjent.gov.pl",
+    "url": "https://pacjent.gov.pl/szpitalny-oddzial-ratunkowy-sor",
+    "language": "pl",
+    "sourceType": "explainer",
+    "relatedPathIds": ["path-hospital-discharge-document"],
+    "lastCheckedAt": "2026-07-02"
+  },
+  {
+    "id": "src-pacjent-eskierowanie",
+    "title": "E-referral (e-skierowanie)",
+    "institution": "pacjent.gov.pl",
+    "url": "https://pacjent.gov.pl/internetowe-konto-pacjenta/eskierowanie",
+    "language": "pl",
+    "sourceType": "explainer",
+    "relatedPathIds": ["path-hospital-discharge-document"],
+    "lastCheckedAt": "2026-07-02"
+  },
+  {
+    "id": "src-gov-policyholders",
+    "title": "The protection of policyholders",
+    "institution": "gov.pl / Ministry of Finance",
+    "url": "https://www.gov.pl/web/finance/the-protection-of-policyholders",
+    "language": "en",
+    "sourceType": "explainer",
+    "relatedPathIds": ["path-private-insurance-claim-basics"],
+    "lastCheckedAt": "2026-07-02"
+  },
+  {
+    "id": "src-rf-complaints",
+    "title": "Rules for admitting complaints (Financial Ombudsman archive)",
+    "institution": "Rzecznik Finansowy (Financial Ombudsman)",
+    "url": "https://archiwum.rf.gov.pl/en/rules-for-admitting-the-complaints/",
+    "language": "en",
+    "sourceType": "explainer",
+    "relatedPathIds": ["path-private-insurance-claim-basics"],
+    "lastCheckedAt": "2026-07-02"
+  },
+  {
+    "id": "src-rf-intervention",
+    "title": "Intervention procedure — complaints against financial institutions",
+    "institution": "Rzecznik Finansowy (Financial Ombudsman)",
+    "url": "https://rf.gov.pl/en/for-customers/intervention-procedure/",
+    "language": "en",
+    "sourceType": "explainer",
+    "relatedPathIds": ["path-private-insurance-claim-basics"],
+    "lastCheckedAt": "2026-07-02"
+  }
+]

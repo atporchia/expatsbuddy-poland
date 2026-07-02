@@ -1,0 +1,19 @@
+{
+  "id": "term-karta-informacyjna",
+  "slug": "karta-informacyjna-leczenia-szpitalnego",
+  "term": "karta informacyjna leczenia szpitalnego",
+  "language": "pl",
+  "plainMeaning": "The hospital discharge document — issued when a hospital stay ends, generally summarizing the stay, diagnosis, treatment, and recommendations. Often requested later by insurers and doctors.",
+  "institutionIds": [
+    "inst-hospital",
+    "inst-pacjent"
+  ],
+  "relatedPathIds": [
+    "path-hospital-discharge-document",
+    "path-private-insurance-claim-basics"
+  ],
+  "officialSourceIds": [
+    "src-pacjent-edm",
+    "src-pacjent-hospital-stay"
+  ]
+}

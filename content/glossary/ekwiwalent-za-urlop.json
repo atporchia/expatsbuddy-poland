@@ -1,0 +1,16 @@
+{
+  "id": "term-ekwiwalent-za-urlop",
+  "slug": "ekwiwalent-za-urlop",
+  "term": "ekwiwalent za urlop",
+  "language": "pl",
+  "plainMeaning": "Cash equivalent for unused holiday — a payment for holiday days not used before employment ended. Mentioned in official descriptions of end-of-employment settlements.",
+  "institutionIds": [
+    "inst-employer"
+  ],
+  "relatedPathIds": [
+    "path-certificate-of-employment"
+  ],
+  "officialSourceIds": [
+    "src-gov-terms-conditions"
+  ]
+}

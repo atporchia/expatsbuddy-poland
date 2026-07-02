@@ -1,0 +1,16 @@
+{
+  "id": "term-polisa",
+  "slug": "polisa",
+  "term": "polisa",
+  "language": "pl",
+  "plainMeaning": "An insurance policy — the contract document confirming insurance cover. Together with the general terms and conditions (OWU), it defines what the insurer pays for; coverage always depends on the specific policy.",
+  "institutionIds": [
+    "inst-insurer"
+  ],
+  "relatedPathIds": [
+    "path-private-insurance-claim-basics"
+  ],
+  "officialSourceIds": [
+    "src-gov-policyholders"
+  ]
+}
