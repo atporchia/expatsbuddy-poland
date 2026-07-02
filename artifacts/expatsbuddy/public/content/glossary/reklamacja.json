@@ -1,0 +1,18 @@
+{
+  "id": "term-reklamacja",
+  "slug": "reklamacja",
+  "term": "reklamacja",
+  "language": "pl",
+  "plainMeaning": "A complaint to a financial institution, including insurers — a regulated procedure with legally defined response timelines. If the complaint route is exhausted, the Financial Ombudsman can assist.",
+  "institutionIds": [
+    "inst-insurer",
+    "inst-rf"
+  ],
+  "relatedPathIds": [
+    "path-private-insurance-claim-basics"
+  ],
+  "officialSourceIds": [
+    "src-rf-complaints",
+    "src-rf-intervention"
+  ]
+}

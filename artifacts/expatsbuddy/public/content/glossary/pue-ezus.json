@@ -1,0 +1,18 @@
+{
+  "id": "term-pue-ezus",
+  "slug": "pue-ezus",
+  "term": "PUE / eZUS",
+  "language": "pl",
+  "plainMeaning": "ZUS's electronic services platform (formerly PUE ZUS, now eZUS) — the online account where insured people see their e-ZLA sick notes and can submit applications like ZAS-53 or ZNp-7 electronically.",
+  "institutionIds": [
+    "inst-ezus",
+    "inst-zus"
+  ],
+  "relatedPathIds": [
+    "path-zas-53",
+    "path-sick-leave-after-contract-ends"
+  ],
+  "officialSourceIds": [
+    "src-gov-pue"
+  ]
+}

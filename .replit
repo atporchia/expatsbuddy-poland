@@ -24,13 +24,13 @@ args = "ExpatsBuddy"
 name = "ExpatsBuddy"
 author = "agent"
 
-[workflows.workflow.metadata]
-outputType = "webview"
-
 [[workflows.workflow.tasks]]
 task = "shell.exec"
-args = "cd .migration-backup && node node_modules/next/dist/bin/next dev --port 3000"
-waitForPort = 3000
+args = "cd .migration-backup && node node_modules/next/dist/bin/next dev --port $PORT"
+waitForPort = 21334
+
+[workflows.workflow.metadata]
+outputType = "webview"
 
 [agent]
 stack = "PNPM_WORKSPACE"

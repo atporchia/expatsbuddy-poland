@@ -1,0 +1,18 @@
+{
+  "id": "term-zus",
+  "slug": "zus",
+  "term": "ZUS",
+  "language": "pl",
+  "plainMeaning": "Zakład Ubezpieczeń Społecznych — the Social Insurance Institution. It handles social insurance: sickness benefit, rehabilitation benefit, maternity benefit, pensions, and the related forms and decisions.",
+  "institutionIds": [
+    "inst-zus"
+  ],
+  "relatedPathIds": [
+    "path-sick-leave-after-contract-ends",
+    "path-zas-53",
+    "path-rehabilitation-benefit"
+  ],
+  "officialSourceIds": [
+    "src-lang-zus-sick-pay"
+  ]
+}

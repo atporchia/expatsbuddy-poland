@@ -1,0 +1,59 @@
+{
+  "id": "path-private-insurance-claim-basics",
+  "slug": "private-insurance-claim-basics",
+  "categoryId": "hospitalization-insurance",
+  "title": "Private insurance claim basics",
+  "userSituation": "I have private insurance from work and want to understand the general claim process.",
+  "summary": "How a private insurance claim generally works, which documents are commonly mentioned, why everything depends on the policy, and where complaint routes and policyholder protection are described.",
+  "whoThisIsFor": [
+    "Employees with employer-provided (group) private insurance",
+    "People who had a hospital stay or surgery and are looking at their policy",
+    "People whose claim was rejected and who want to know what complaint routes exist"
+  ],
+  "institutions": [
+    "inst-insurer",
+    "inst-employer",
+    "inst-rf",
+    "inst-ministry-finance",
+    "inst-knf"
+  ],
+  "commonTerms": [
+    "roszczenie",
+    "polisa",
+    "group insurance",
+    "benefit table",
+    "reklamacja",
+    "Rzecznik Finansowy"
+  ],
+  "commonDocuments": [
+    "Claim form from the insurer",
+    "Medical documentation, such as a hospital discharge document",
+    "The policy and its terms (OWU — general terms and conditions)",
+    "Insurer decision and complaint response"
+  ],
+  "whatThisExplains": [
+    "That what a private policy pays for depends entirely on the policy itself",
+    "Which documents insurers commonly mention in claims",
+    "The general shape of the complaint (reklamacja) route",
+    "Where official policyholder-protection information lives"
+  ],
+  "whatThisDoesNotDo": [
+    "It does not decide whether your policy covers anything",
+    "It does not interpret your policy, OWU, or insurer decision",
+    "It does not estimate payouts or the outcome of complaints",
+    "It does not replace the insurer's documents or the Financial Ombudsman's guidance"
+  ],
+  "officialSourceIds": [
+    "src-gov-policyholders",
+    "src-rf-complaints",
+    "src-rf-intervention",
+    "src-pacjent-edm"
+  ],
+  "relatedPathIds": [
+    "path-hospital-discharge-document"
+  ],
+  "riskLevel": "medium",
+  "lastReviewedAt": "2026-07-02",
+  "status": "published",
+  "body": "Private insurance in Poland — including the group insurance many employers\noffer — is a **contract**. What it pays for, how much, and under which\nconditions is defined by the policy and its general terms (*OWU — ogólne\nwarunki ubezpieczenia*). That is why no general page, including this one, can\nsay whether something is covered: the same event can be covered under one\npolicy and excluded under another.\n\nThe general shape of a claim (*roszczenie*) that insurers describe:\n\n1. an insured event happens (for example a hospital stay or surgery);\n2. the insured person notifies the insurer, usually on a **claim form**;\n3. the insurer asks for **documentation** — medical documents such as the\n   hospital discharge document are commonly mentioned;\n4. the insurer issues a **decision**.\n\nIf you disagree with a decision, official sources describe a **complaint**\n(*reklamacja*) route: complaints to financial institutions are regulated by\nlaw, with defined response timelines, and the **Rzecznik Finansowy (Financial\nOmbudsman)** can assist customers after the insurer's complaint procedure is\nexhausted. The Ministry of Finance page below describes the broader\npolicyholder-protection framework, and the Ombudsman's pages describe how\ncomplaints and interventions work.\n\nFor employer-provided group insurance, your employer's HR is usually the\npractical first contact for policy documents and claim forms."
+}

@@ -1,0 +1,19 @@
+{
+  "id": "term-e-zla",
+  "slug": "e-zla",
+  "term": "e-ZLA",
+  "language": "pl",
+  "plainMeaning": "The electronic sick note — a certificate of temporary incapacity for work issued by a doctor and transmitted electronically to ZUS and the employer. Since December 2018 sick notes are issued electronically.",
+  "institutionIds": [
+    "inst-doctor",
+    "inst-zus",
+    "inst-ezus"
+  ],
+  "relatedPathIds": [
+    "path-sick-leave-after-contract-ends",
+    "path-zas-53"
+  ],
+  "officialSourceIds": [
+    "src-zus-ezla-employee"
+  ]
+}
