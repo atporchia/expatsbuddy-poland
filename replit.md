@@ -1,68 +1,45 @@
-# ExpatsBuddy Poland — rules for AI agents working on this repo
+# [Project name]
 
-This is a **production site with live users** deployed on **Vercel** (not
-Replit Deployments). The current task scope for agents is **visual redesign
-only**. Read these rules before writing any code. If a requested change would
-violate them, stop and ask instead of proceeding.
+_Replace the heading above with the project's name, and this line with one sentence describing what this app does for users._
 
-## Hard constraints — never do these
+## Run & Operate
 
-1. **Do not change the stack.** This is Next.js 16 (App Router) + TypeScript +
-   Tailwind CSS v4 + MDX/JSON content files. Do NOT migrate to Vite, Remix,
-   plain React SPA, Pages Router, styled-components, CSS modules, Bootstrap,
-   Chakra, MUI, shadcn scaffolding, or anything else. Styling is Tailwind
-   utility classes only.
-2. **Do not rewrite files wholesale.** Make targeted edits to existing
-   components. Never regenerate a file from scratch when editing works.
-3. **Do not touch these directories/files at all:**
-   - `/content/**` — the editorial content (legally sensitive; human-reviewed)
-   - `/lib/**` — content loaders, types, triage rules, freshness logic
-   - `/scripts/**` — build-time validation (the build fails without it)
-   - `/app/api/**` — feedback + search endpoints (wired to Supabase/Resend)
-   - `supabase/**`, `.env*`, `next.config.ts`, `.github/**`
-4. **Do not change URLs/routes.** The route structure
-   (`/[locale]`, `/categories/[slug]`, `/paths/[slug]`, `/glossary/[slug]`,
-   `/start`) is load-bearing for SEO and the sitemap. No renames, no new
-   routes, no locale changes.
-5. **Do not add dependencies** without explicit approval in chat. No UI kits,
-   no icon packs, no animation libraries. Inline SVG is fine.
-6. **Do not add features.** No document upload, no AI chat/answers, no auth,
-   no payments, no cookies/trackers. This product is deliberately
-   informational-only for legal-risk reasons.
-7. **Do not remove or reword compliance UI.** These must remain on every page
-   where they currently appear, with their text unchanged:
-   - the disclaimer boxes (`DisclaimerBox`)
-   - the "What this page does not do" section
-   - official source cards: the "Official source" label, institution,
-     language, source type, "last checked" date, and `target="_blank"`
-   - the feedback widget and its privacy warning
-   - the "Last reviewed" date on explainer pages
-8. **Do not configure Replit hosting/databases.** No Replit Postgres, no
-   Replit Auth, no Replit object storage, no changes to deployment settings.
-   Adding a `.replit` run config for the dev server is acceptable.
+- `pnpm --filter @workspace/api-server run dev` — run the API server (port 5000)
+- `pnpm run typecheck` — full typecheck across all packages
+- `pnpm run build` — typecheck + build all packages
+- `pnpm --filter @workspace/api-spec run codegen` — regenerate API hooks and Zod schemas from the OpenAPI spec
+- `pnpm --filter @workspace/db run push` — push DB schema changes (dev only)
+- Required env: `DATABASE_URL` — Postgres connection string
 
-## What you MAY change (the actual task)
+## Stack
 
-- Tailwind classes, layout, spacing, typography, and colors in
-  `/components/**` and in the page/layout files under `/app/[locale]/**`
-- `app/globals.css` design tokens
-- Visual structure of cards, header, footer, hero, and navigation — as long
-  as all existing content and compliance elements stay present and the
-  existing props/data flow are unchanged
+- pnpm workspaces, Node.js 24, TypeScript 5.9
+- API: Express 5
+- DB: PostgreSQL + Drizzle ORM
+- Validation: Zod (`zod/v4`), `drizzle-zod`
+- API codegen: Orval (from OpenAPI spec)
+- Build: esbuild (CJS bundle)
 
-## Requirements for any change
+## Where things live
 
-- Keep accessibility: semantic HTML, visible focus states, WCAG AA contrast,
-  keyboard navigability, mobile-first responsive layout.
-- `npm run build` must pass — it runs content validation and fails the build
-  on violations. Never edit or skip the validation to make a build pass.
-- `npm run lint` must pass.
-- Work in a branch (e.g. `redesign/ui`), commit in small steps, and never
-  push to `main` — the owner reviews and merges. Production deploys from
-  `main` via Vercel automatically.
+_Populate as you build — short repo map plus pointers to the source-of-truth file for DB schema, API contracts, theme files, etc._
 
-## Definition of done for the redesign
+## Architecture decisions
 
-Same pages, same words, same links, same data — better looking. If a diff
-touches anything under `/content`, `/lib`, `/scripts`, `/app/api`, or
-`package.json` dependencies, the task was done wrong.
+_Populate as you build — non-obvious choices a reader couldn't infer from the code (3-5 bullets)._
+
+## Product
+
+_Describe the high-level user-facing capabilities of this app once they exist._
+
+## User preferences
+
+_Populate as you build — explicit user instructions worth remembering across sessions._
+
+## Gotchas
+
+_Populate as you build — sharp edges, "always run X before Y" rules._
+
+## Pointers
+
+- See the `pnpm-workspace` skill for workspace structure, TypeScript setup, and package details
