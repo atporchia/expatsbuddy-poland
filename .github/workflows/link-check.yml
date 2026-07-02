@@ -1,0 +1,38 @@
+name: Monthly official-source link check
+
+on:
+  schedule:
+    # 06:00 UTC on the 1st of every month
+    - cron: "0 6 1 * *"
+  workflow_dispatch:
+
+permissions:
+  contents: read
+  issues: write
+
+jobs:
+  check-links:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+          cache: npm
+      - run: npm ci
+      - id: check
+        run: npm run check-links 2>&1 | tee link-check.log
+      - name: Open issue on broken links
+        if: failure()
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          title="Broken official source links — $(date +%Y-%m-%d)"
+          body="The monthly link check found unreachable official-source URLs.
+
+          \`\`\`
+          $(grep '✗' link-check.log || tail -20 link-check.log)
+          \`\`\`
+
+          Fix: update the affected URLs in \`content/sources/sources.json\` (and \`lastCheckedAt\`), then re-run the workflow manually to confirm."
+          gh issue create --repo "$GITHUB_REPOSITORY" --title "$title" --body "$body"
