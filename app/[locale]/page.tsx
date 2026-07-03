@@ -23,11 +23,16 @@ function PolishFlagHero({ locale }: { locale: string }) {
       </div>
 
       <div className="bg-white px-4 pb-8 pt-7 text-center">
-        <div className="mb-2 flex items-center justify-center gap-2 text-sm font-medium uppercase tracking-widest text-slate-400">
-          <span role="img" aria-label="Polish flag">
-            🇵🇱
-          </span>
-          <span>Poland</span>
+        <div className="mb-4 flex justify-center">
+          <svg
+            viewBox="0 0 40 25"
+            className="h-6 w-10 rounded shadow-sm ring-1 ring-slate-200"
+            role="img"
+            aria-label="Flag of Poland"
+          >
+            <rect width="40" height="12.5" fill="#ffffff" />
+            <rect y="12.5" width="40" height="12.5" fill="#DC143C" />
+          </svg>
         </div>
         <h1 className="text-3xl font-extrabold tracking-tight text-slate-900 sm:text-4xl md:text-5xl">
           Polish bureaucracy,
