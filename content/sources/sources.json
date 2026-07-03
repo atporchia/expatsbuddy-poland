@@ -1,5 +1,155 @@
 [
   {
+    "id": "src-biznes-setting-up-business",
+    "title": "Setting up and registering a business",
+    "institution": "biznes.gov.pl",
+    "url": "https://www.biznes.gov.pl/en/portal/0621",
+    "language": "en",
+    "sourceType": "portal",
+    "relatedPathIds": ["path-jdg-basics", "path-b2b-basics"],
+    "lastCheckedAt": "2026-07-03"
+  },
+  {
+    "id": "src-biznes-register-ceidg",
+    "title": "Register your business with CEIDG",
+    "institution": "biznes.gov.pl / CEIDG",
+    "url": "https://www.biznes.gov.pl/en/portal/ou736",
+    "language": "en",
+    "sourceType": "checklist",
+    "relatedPathIds": ["path-ceidg-registration", "path-jdg-basics"],
+    "lastCheckedAt": "2026-07-03"
+  },
+  {
+    "id": "src-biznes-before-registering",
+    "title": "What you need to know before registering your business",
+    "institution": "biznes.gov.pl",
+    "url": "https://biznes.gov.pl/en/portal/001823",
+    "language": "en",
+    "sourceType": "explainer",
+    "relatedPathIds": ["path-jdg-basics", "path-ceidg-registration", "path-b2b-basics"],
+    "lastCheckedAt": "2026-07-03"
+  },
+  {
+    "id": "src-biznes-foreign-nationals-types",
+    "title": "What types of business activities can foreign nationals conduct in Poland",
+    "institution": "biznes.gov.pl",
+    "url": "https://www.biznes.gov.pl/en/portal/004055",
+    "language": "en",
+    "sourceType": "explainer",
+    "relatedPathIds": ["path-jdg-basics", "path-ceidg-registration", "path-b2b-basics"],
+    "lastCheckedAt": "2026-07-03"
+  },
+  {
+    "id": "src-biznes-zus-contribution-types",
+    "title": "What types of social insurance contributions the entrepreneur pays",
+    "institution": "biznes.gov.pl",
+    "url": "https://www.biznes.gov.pl/en/portal/004113",
+    "language": "en",
+    "sourceType": "explainer",
+    "relatedPathIds": ["path-zus-entrepreneurs", "path-health-insurance-self-employed"],
+    "lastCheckedAt": "2026-07-03"
+  },
+  {
+    "id": "src-biznes-zus-registration",
+    "title": "How to register with the Social Insurance Institution (ZUS) and for insurance",
+    "institution": "biznes.gov.pl",
+    "url": "https://www.biznes.gov.pl/en/portal/004114",
+    "language": "en",
+    "sourceType": "checklist",
+    "relatedPathIds": ["path-zus-entrepreneurs", "path-health-insurance-self-employed"],
+    "lastCheckedAt": "2026-07-03"
+  },
+  {
+    "id": "src-zus-contributions",
+    "title": "Contributions",
+    "institution": "ZUS",
+    "url": "https://lang.zus.pl/finances/contributions",
+    "language": "en",
+    "sourceType": "explainer",
+    "relatedPathIds": ["path-zus-entrepreneurs", "path-health-insurance-self-employed"],
+    "lastCheckedAt": "2026-07-03"
+  },
+  {
+    "id": "src-biznes-taxation-overview",
+    "title": "Taxation",
+    "institution": "biznes.gov.pl",
+    "url": "https://www.biznes.gov.pl/en/portal/0622",
+    "language": "en",
+    "sourceType": "portal",
+    "relatedPathIds": ["path-taxes-vat-invoices"],
+    "lastCheckedAt": "2026-07-03"
+  },
+  {
+    "id": "src-biznes-who-must-pay-vat",
+    "title": "Who must pay VAT",
+    "institution": "biznes.gov.pl",
+    "url": "https://www.biznes.gov.pl/en/portal/004121",
+    "language": "en",
+    "sourceType": "explainer",
+    "relatedPathIds": ["path-taxes-vat-invoices"],
+    "lastCheckedAt": "2026-07-03"
+  },
+  {
+    "id": "src-biznes-vat-obligations",
+    "title": "Obligations of a VAT payer — registration and record-keeping",
+    "institution": "biznes.gov.pl",
+    "url": "https://www.biznes.gov.pl/en/portal/004160",
+    "language": "en",
+    "sourceType": "explainer",
+    "relatedPathIds": ["path-taxes-vat-invoices"],
+    "lastCheckedAt": "2026-07-03"
+  },
+  {
+    "id": "src-biznes-register-vat",
+    "title": "Register as a VAT payer",
+    "institution": "biznes.gov.pl",
+    "url": "https://www.biznes.gov.pl/en/portal/ou1609",
+    "language": "en",
+    "sourceType": "checklist",
+    "relatedPathIds": ["path-taxes-vat-invoices"],
+    "lastCheckedAt": "2026-07-03"
+  },
+  {
+    "id": "src-biznes-suspend-ceidg",
+    "title": "How to suspend a one-person business registered with CEIDG",
+    "institution": "biznes.gov.pl",
+    "url": "https://www.biznes.gov.pl/en/portal/004127",
+    "language": "en",
+    "sourceType": "explainer",
+    "relatedPathIds": ["path-suspending-closing-business"],
+    "lastCheckedAt": "2026-07-03"
+  },
+  {
+    "id": "src-biznes-restart-ceidg",
+    "title": "How to restart a business in CEIDG after a period of suspension",
+    "institution": "biznes.gov.pl",
+    "url": "https://www.biznes.gov.pl/en/portal/004054",
+    "language": "en",
+    "sourceType": "explainer",
+    "relatedPathIds": ["path-suspending-closing-business"],
+    "lastCheckedAt": "2026-07-03"
+  },
+  {
+    "id": "src-biznes-suspending-closing-overview",
+    "title": "Suspending or closing a business",
+    "institution": "biznes.gov.pl",
+    "url": "https://www.biznes.gov.pl/en/portal/0624",
+    "language": "en",
+    "sourceType": "portal",
+    "relatedPathIds": ["path-suspending-closing-business"],
+    "lastCheckedAt": "2026-07-03"
+  },
+  {
+    "id": "src-biznes-resume-procedure",
+    "title": "Notify CEIDG about resumption of business activity",
+    "institution": "biznes.gov.pl / CEIDG",
+    "url": "https://www.biznes.gov.pl/en/portal/ou884",
+    "language": "en",
+    "sourceType": "checklist",
+    "relatedPathIds": ["path-suspending-closing-business"],
+    "lastCheckedAt": "2026-07-03"
+  },
+  {
     "id": "src-nawa-kwalifikator",
     "title": "KWALIFIKATOR — check how a foreign diploma is recognized in Poland",
     "institution": "NAWA — National Agency for Academic Exchange",

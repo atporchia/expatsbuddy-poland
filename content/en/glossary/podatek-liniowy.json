@@ -1,0 +1,16 @@
+{
+  "id": "term-podatek-liniowy",
+  "slug": "podatek-liniowy",
+  "term": "podatek liniowy",
+  "language": "pl",
+  "plainMeaning": "Flat-rate tax — a form of personal income tax (PIT) on business income taxed at a single rate regardless of how much you earn. Official sources note that choosing it can remove access to certain tax reliefs available under the tax scale.",
+  "institutionIds": [
+    "inst-tax-office"
+  ],
+  "relatedPathIds": [
+    "path-taxes-vat-invoices"
+  ],
+  "officialSourceIds": [
+    "src-biznes-taxation-overview"
+  ]
+}

@@ -1,0 +1,16 @@
+{
+  "id": "term-skala-podatkowa",
+  "slug": "skala-podatkowa",
+  "term": "skala podatkowa",
+  "language": "pl",
+  "plainMeaning": "Податкова шкала — базова форма податку на доходи фізичних осіб (PIT) для доходу від бізнесу, якщо ви не обрали іншу форму. Вона прогресивна — ставка залежить від розміру доходу — і зберігає доступ до більшості податкових пільг.",
+  "institutionIds": [
+    "inst-tax-office"
+  ],
+  "relatedPathIds": [
+    "path-taxes-vat-invoices"
+  ],
+  "officialSourceIds": [
+    "src-biznes-taxation-overview"
+  ]
+}

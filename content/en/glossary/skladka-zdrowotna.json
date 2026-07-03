@@ -1,0 +1,19 @@
+{
+  "id": "term-skladka-zdrowotna",
+  "slug": "skladka-zdrowotna",
+  "term": "składka zdrowotna",
+  "language": "pl",
+  "plainMeaning": "The health insurance contribution, paid monthly to ZUS by entrepreneurs registered in CEIDG. Paying it keeps you covered by the National Health Fund (NFZ). Official sources describe the amount as depending on the taxation form chosen and current thresholds, which change over time.",
+  "institutionIds": [
+    "inst-zus",
+    "inst-nfz"
+  ],
+  "relatedPathIds": [
+    "path-health-insurance-self-employed",
+    "path-zus-entrepreneurs"
+  ],
+  "officialSourceIds": [
+    "src-biznes-zus-contribution-types",
+    "src-zus-contributions"
+  ]
+}

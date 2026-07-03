@@ -1,0 +1,16 @@
+{
+  "id": "term-ryczalt",
+  "slug": "ryczalt",
+  "term": "ryczałt",
+  "language": "pl",
+  "plainMeaning": "Short for ryczałt od przychodów ewidencjonowanych — lump-sum tax on registered revenue, one of the taxation forms available to a JDG. Tax is calculated on revenue rather than profit, at rates that vary by type of activity. Not every activity is eligible for this form.",
+  "institutionIds": [
+    "inst-tax-office"
+  ],
+  "relatedPathIds": [
+    "path-taxes-vat-invoices"
+  ],
+  "officialSourceIds": [
+    "src-biznes-taxation-overview"
+  ]
+}

@@ -1,0 +1,18 @@
+{
+  "id": "term-faktura",
+  "slug": "faktura",
+  "term": "faktura",
+  "language": "pl",
+  "plainMeaning": "Рахунок-фактура. Самозайняті особи з JDG зазвичай виставляють рахунки-фактури за свої послуги чи товари, зокрема за договорами B2B. Платники ПДВ мають окремі вимоги до змісту рахунків; офіційні джерела зазначають, що рахунок можна виставити іноземною мовою для іноземного клієнта, хоча облік ПДВ ведеться в польських злотих.",
+  "institutionIds": [
+    "inst-tax-office"
+  ],
+  "relatedPathIds": [
+    "path-taxes-vat-invoices",
+    "path-b2b-basics"
+  ],
+  "officialSourceIds": [
+    "src-biznes-vat-obligations",
+    "src-biznes-who-must-pay-vat"
+  ]
+}

@@ -1,0 +1,20 @@
+{
+  "id": "term-jdg",
+  "slug": "jdg",
+  "term": "JDG",
+  "language": "pl",
+  "plainMeaning": "Одноосібне підприємство — найпоширеніший спосіб самозайнятості в Польщі. Власник веде бізнес під власним ім'ям і несе за нього особисту відповідальність. Реєстрація JDG також запускає реєстрацію в податковій інспекції (NIP) та статистичному управлінні (REGON), а ZUS стає страховиком підприємця.",
+  "institutionIds": [
+    "inst-ceidg",
+    "inst-biznes-gov"
+  ],
+  "relatedPathIds": [
+    "path-jdg-basics",
+    "path-ceidg-registration",
+    "path-b2b-basics"
+  ],
+  "officialSourceIds": [
+    "src-biznes-setting-up-business",
+    "src-biznes-before-registering"
+  ]
+}

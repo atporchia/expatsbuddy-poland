@@ -1,0 +1,17 @@
+{
+  "id": "term-regon",
+  "slug": "regon",
+  "term": "REGON",
+  "language": "pl",
+  "plainMeaning": "The statistical number assigned by the Central Statistical Office (GUS) when a business registers. Registering a JDG through CEIDG automatically requests a REGON number as part of the same process; you do not apply for it separately.",
+  "institutionIds": [
+    "inst-ceidg"
+  ],
+  "relatedPathIds": [
+    "path-ceidg-registration"
+  ],
+  "officialSourceIds": [
+    "src-biznes-register-ceidg",
+    "src-biznes-before-registering"
+  ]
+}

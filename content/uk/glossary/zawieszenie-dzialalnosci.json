@@ -1,0 +1,17 @@
+{
+  "id": "term-zawieszenie-dzialalnosci",
+  "slug": "zawieszenie-dzialalnosci",
+  "term": "zawieszenie działalności gospodarczej",
+  "language": "pl",
+  "plainMeaning": "Призупинення підприємницької діяльності — статус у CEIDG, що дозволяє власнику JDG призупинити бізнес з будь-якої причини щонайменше на 30 днів (або безстроково). Під час призупинення ви не провадите діяльність і не отримуєте від неї дохід, і зазвичай не повинні сплачувати внески ZUS чи подавати декларації з ПДВ за цей період.",
+  "institutionIds": [
+    "inst-ceidg"
+  ],
+  "relatedPathIds": [
+    "path-suspending-closing-business"
+  ],
+  "officialSourceIds": [
+    "src-biznes-suspend-ceidg",
+    "src-biznes-suspending-closing-overview"
+  ]
+}

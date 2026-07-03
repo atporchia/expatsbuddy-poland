@@ -1,0 +1,17 @@
+{
+  "id": "term-zawieszenie-dzialalnosci",
+  "slug": "zawieszenie-dzialalnosci",
+  "term": "zawieszenie działalności gospodarczej",
+  "language": "pl",
+  "plainMeaning": "Suspending business activity — a CEIDG status allowing a JDG owner to pause the business, for any reason, for a minimum of 30 days (or indefinitely). While suspended, you do not perform business activity or earn revenue from it, and you are generally not expected to pay ZUS contributions or file VAT declarations for that period.",
+  "institutionIds": [
+    "inst-ceidg"
+  ],
+  "relatedPathIds": [
+    "path-suspending-closing-business"
+  ],
+  "officialSourceIds": [
+    "src-biznes-suspend-ceidg",
+    "src-biznes-suspending-closing-overview"
+  ]
+}

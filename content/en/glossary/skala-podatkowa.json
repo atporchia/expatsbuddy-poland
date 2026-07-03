@@ -1,0 +1,16 @@
+{
+  "id": "term-skala-podatkowa",
+  "slug": "skala-podatkowa",
+  "term": "skala podatkowa",
+  "language": "pl",
+  "plainMeaning": "The tax scale — the default form of personal income tax (PIT) for business income if you do not choose another form. It is progressive, meaning the rate depends on how much you earn, and it keeps access to most tax reliefs.",
+  "institutionIds": [
+    "inst-tax-office"
+  ],
+  "relatedPathIds": [
+    "path-taxes-vat-invoices"
+  ],
+  "officialSourceIds": [
+    "src-biznes-taxation-overview"
+  ]
+}

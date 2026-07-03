@@ -129,5 +129,31 @@
     "shortName": "NAWA",
     "description": "Веде базу KWALIFIKATOR для перевірки визнання іноземного диплома в Польщі та координує процедуру нострифікації.",
     "website": "https://nawa.gov.pl/en/"
+  },
+  {
+    "id": "inst-ceidg",
+    "name": "CEIDG — Центральна реєстрація та інформація про підприємницьку діяльність",
+    "shortName": "CEIDG",
+    "description": "Національний реєстр одноосібних підприємств (JDG), яким керують через портал biznes.gov.pl.",
+    "website": "https://www.biznes.gov.pl/en"
+  },
+  {
+    "id": "inst-tax-office",
+    "name": "Податкова інспекція (urząd skarbowy) / Національна податкова адміністрація",
+    "shortName": "Податкова інспекція",
+    "description": "Місцева податкова інспекція та національна податкова адміністрація, що займаються PIT, ПДВ і NIP для підприємств."
+  },
+  {
+    "id": "inst-biznes-gov",
+    "name": "biznes.gov.pl",
+    "shortName": "biznes.gov.pl",
+    "description": "Офіційний інформаційно-сервісний портал для підприємців: реєстрація в CEIDG, податки, ПДВ і внески ZUS для бізнесу.",
+    "website": "https://www.biznes.gov.pl/en"
+  },
+  {
+    "id": "inst-client",
+    "name": "Клієнт / компанія-замовник",
+    "shortName": "Клієнт",
+    "description": "Компанія, яка замовляє послуги самозайнятої особи за договором B2B."
   }
 ]

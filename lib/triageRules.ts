@@ -8,6 +8,7 @@
 export const TRIAGE_QUESTION_IDS = [
   "stay",
   "job",
+  "business",
   "sick",
   "hospital",
   "document",
@@ -77,12 +78,18 @@ export function runTriage(answers: TriageAnswers): TriageResult {
     add(categorySlugs, "official-documents");
   }
 
+  if (answers.business) {
+    add(pathSlugs, "jdg-basics", "ceidg-registration", "b2b-basics");
+    add(categorySlugs, "business-self-employment");
+  }
+
   // Nothing matched: offer the categories overview.
   if (pathSlugs.length === 0 && categorySlugs.length === 0) {
     add(
       categorySlugs,
       "residence-trc",
       "work-job-loss",
+      "business-self-employment",
       "sickness-sick-leave",
       "hospitalization-insurance",
       "official-documents",
@@ -91,7 +98,7 @@ export function runTriage(answers: TriageAnswers): TriageResult {
 
   return {
     pathSlugs: pathSlugs.slice(0, 4),
-    categorySlugs: categorySlugs.slice(0, 3),
+    categorySlugs: categorySlugs.slice(0, 6),
     urgent: Boolean(answers.urgent),
   };
 }

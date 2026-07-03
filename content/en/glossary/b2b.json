@@ -1,0 +1,19 @@
+{
+  "id": "term-b2b",
+  "slug": "b2b",
+  "term": "B2B",
+  "language": "en",
+  "plainMeaning": "Business-to-business: an arrangement where a self-employed person (usually running a JDG) provides services to a client company under a civil-law contract, rather than an employment contract. The self-employed person invoices the client and is responsible for their own taxes and ZUS contributions.",
+  "institutionIds": [
+    "inst-client",
+    "inst-ceidg"
+  ],
+  "relatedPathIds": [
+    "path-b2b-basics",
+    "path-jdg-basics"
+  ],
+  "officialSourceIds": [
+    "src-biznes-setting-up-business",
+    "src-biznes-foreign-nationals-types"
+  ]
+}

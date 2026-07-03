@@ -1,0 +1,20 @@
+{
+  "id": "term-jdg",
+  "slug": "jdg",
+  "term": "JDG",
+  "language": "pl",
+  "plainMeaning": "A one-person business, the most common way to be self-employed in Poland. The owner runs the business under their own name and is personally liable for it. Registering a JDG also triggers registration with the tax office (NIP) and the statistical office (REGON), and sets up ZUS as the entrepreneur's insurance payer.",
+  "institutionIds": [
+    "inst-ceidg",
+    "inst-biznes-gov"
+  ],
+  "relatedPathIds": [
+    "path-jdg-basics",
+    "path-ceidg-registration",
+    "path-b2b-basics"
+  ],
+  "officialSourceIds": [
+    "src-biznes-setting-up-business",
+    "src-biznes-before-registering"
+  ]
+}

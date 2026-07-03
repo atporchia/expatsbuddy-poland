@@ -129,5 +129,31 @@
     "shortName": "NAWA",
     "description": "Runs KWALIFIKATOR, the database for checking how a foreign academic diploma is recognized in Poland, and coordinates diploma nostrification.",
     "website": "https://nawa.gov.pl/en/"
+  },
+  {
+    "id": "inst-ceidg",
+    "name": "CEIDG — Central Registration and Information on Business",
+    "shortName": "CEIDG",
+    "description": "The national register of one-person businesses (sole proprietorships), managed through the biznes.gov.pl portal.",
+    "website": "https://www.biznes.gov.pl/en"
+  },
+  {
+    "id": "inst-tax-office",
+    "name": "Tax office (urząd skarbowy) / Krajowa Administracja Skarbowa",
+    "shortName": "Tax office",
+    "description": "The local tax office and national tax administration handling PIT, VAT, and NIP matters for businesses."
+  },
+  {
+    "id": "inst-biznes-gov",
+    "name": "biznes.gov.pl",
+    "shortName": "biznes.gov.pl",
+    "description": "The official information and service portal for entrepreneurs, covering CEIDG registration, taxes, VAT, and ZUS for businesses.",
+    "website": "https://www.biznes.gov.pl/en"
+  },
+  {
+    "id": "inst-client",
+    "name": "Client / contracting business",
+    "shortName": "Client",
+    "description": "The business that contracts a self-employed person's services under a B2B agreement."
   }
 ]

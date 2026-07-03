@@ -1,0 +1,19 @@
+{
+  "id": "term-skladka-zdrowotna",
+  "slug": "skladka-zdrowotna",
+  "term": "składka zdrowotna",
+  "language": "pl",
+  "plainMeaning": "Внесок на медичне страхування, який підприємці, зареєстровані в CEIDG, щомісяця сплачують до ZUS. Його сплата забезпечує покриття Національного фонду здоров'я (NFZ). Офіційні джерела описують суму як таку, що залежить від обраної форми оподаткування та чинних порогів, які змінюються з часом.",
+  "institutionIds": [
+    "inst-zus",
+    "inst-nfz"
+  ],
+  "relatedPathIds": [
+    "path-health-insurance-self-employed",
+    "path-zus-entrepreneurs"
+  ],
+  "officialSourceIds": [
+    "src-biznes-zus-contribution-types",
+    "src-zus-contributions"
+  ]
+}

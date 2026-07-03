@@ -1,0 +1,18 @@
+{
+  "id": "term-pkd",
+  "slug": "pkd",
+  "term": "PKD",
+  "language": "pl",
+  "plainMeaning": "Polska Klasyfikacja Działalności — the Polish Classification of Activities, a system of codes describing what kind of business activity you carry out. You select one or more PKD codes when registering a JDG in CEIDG, and can add or remove codes later.",
+  "institutionIds": [
+    "inst-ceidg"
+  ],
+  "relatedPathIds": [
+    "path-jdg-basics",
+    "path-ceidg-registration"
+  ],
+  "officialSourceIds": [
+    "src-biznes-register-ceidg",
+    "src-biznes-before-registering"
+  ]
+}

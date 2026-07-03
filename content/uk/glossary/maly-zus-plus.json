@@ -1,0 +1,17 @@
+{
+  "id": "term-maly-zus-plus",
+  "slug": "maly-zus-plus",
+  "term": "Mały ZUS Plus",
+  "language": "pl",
+  "plainMeaning": "Малий ZUS Плюс — програма, що дозволяє невеликим підприємцям сплачувати соціальні внески пропорційно до доходу, а не від фіксованої заявленої бази, за умови дотримання порогів доходу та часових обмежень, описаних ZUS і biznes.gov.pl. Вона йде після етапів пільги для початківців і преференційних внесків для підприємців, які відповідають умовам.",
+  "institutionIds": [
+    "inst-zus"
+  ],
+  "relatedPathIds": [
+    "path-zus-entrepreneurs"
+  ],
+  "officialSourceIds": [
+    "src-biznes-zus-contribution-types",
+    "src-zus-contributions"
+  ]
+}

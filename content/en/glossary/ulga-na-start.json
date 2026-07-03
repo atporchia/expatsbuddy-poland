@@ -1,0 +1,17 @@
+{
+  "id": "term-ulga-na-start",
+  "slug": "ulga-na-start",
+  "term": "ulga na start",
+  "language": "pl",
+  "plainMeaning": "Start-up relief — a preferential period for new entrepreneurs (generally people starting a JDG for the first time, or restarting after a long break) during which social insurance contributions are not owed to ZUS, though the health contribution is still due. Official ZUS and biznes.gov.pl sources describe the exact conditions and duration.",
+  "institutionIds": [
+    "inst-zus"
+  ],
+  "relatedPathIds": [
+    "path-zus-entrepreneurs"
+  ],
+  "officialSourceIds": [
+    "src-biznes-zus-contribution-types",
+    "src-zus-contributions"
+  ]
+}

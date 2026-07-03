@@ -1,0 +1,20 @@
+{
+  "id": "term-ceidg",
+  "slug": "ceidg",
+  "term": "CEIDG",
+  "language": "pl",
+  "plainMeaning": "Centralna Ewidencja i Informacja o Działalności Gospodarczej — the Central Registration and Information on Business, the national register of one-person businesses (JDG). Registering, changing details, suspending, resuming, or closing a JDG all go through CEIDG, mainly via the biznes.gov.pl portal.",
+  "institutionIds": [
+    "inst-ceidg",
+    "inst-biznes-gov"
+  ],
+  "relatedPathIds": [
+    "path-ceidg-registration",
+    "path-jdg-basics",
+    "path-suspending-closing-business"
+  ],
+  "officialSourceIds": [
+    "src-biznes-register-ceidg",
+    "src-biznes-before-registering"
+  ]
+}

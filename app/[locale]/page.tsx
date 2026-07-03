@@ -93,14 +93,6 @@ export default async function HomePage({
           {t.home.categoriesHeading}
         </h2>
         <div className="mt-4 grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
-          {categories.map((c) => (
-            <CategoryCard
-              key={c.id}
-              category={c}
-              locale={locale}
-              pathCount={getPathsForCategory(c.id, locale as Locale).length}
-            />
-          ))}
           <Link
             href={routes.start(locale)}
             className="group flex flex-col justify-center rounded-xl border-2 border-dashed border-red-200 bg-red-50/40 p-5 text-center transition hover:border-[#DC143C]/40 hover:bg-red-50 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-red-600"
@@ -110,6 +102,14 @@ export default async function HomePage({
             </h3>
             <p className="mt-2 text-sm text-slate-600">{t.home.startTileText}</p>
           </Link>
+          {categories.map((c) => (
+            <CategoryCard
+              key={c.id}
+              category={c}
+              locale={locale}
+              pathCount={getPathsForCategory(c.id, locale as Locale).length}
+            />
+          ))}
         </div>
       </section>
 

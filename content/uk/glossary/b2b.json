@@ -1,0 +1,19 @@
+{
+  "id": "term-b2b",
+  "slug": "b2b",
+  "term": "B2B",
+  "language": "en",
+  "plainMeaning": "Business-to-business (бізнес для бізнесу) — форма співпраці, коли самозайнята особа (зазвичай із JDG) надає послуги компанії-клієнту за цивільно-правовим договором, а не трудовим договором. Самозайнята особа виставляє клієнту рахунок-фактуру і сама відповідає за свої податки та внески ZUS.",
+  "institutionIds": [
+    "inst-client",
+    "inst-ceidg"
+  ],
+  "relatedPathIds": [
+    "path-b2b-basics",
+    "path-jdg-basics"
+  ],
+  "officialSourceIds": [
+    "src-biznes-setting-up-business",
+    "src-biznes-foreign-nationals-types"
+  ]
+}

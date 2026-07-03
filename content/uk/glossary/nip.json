@@ -1,0 +1,19 @@
+{
+  "id": "term-nip",
+  "slug": "nip",
+  "term": "NIP",
+  "language": "pl",
+  "plainMeaning": "Numer Identyfikacji Podatkowej — податковий ідентифікаційний номер. Реєстрація JDG через CEIDG автоматично повідомляє податкову інспекцію про присвоєння NIP, який потім використовується на рахунках-фактурах і в податкових деклараціях.",
+  "institutionIds": [
+    "inst-ceidg",
+    "inst-tax-office"
+  ],
+  "relatedPathIds": [
+    "path-ceidg-registration",
+    "path-taxes-vat-invoices"
+  ],
+  "officialSourceIds": [
+    "src-biznes-register-ceidg",
+    "src-biznes-before-registering"
+  ]
+}

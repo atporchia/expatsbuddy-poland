@@ -96,6 +96,8 @@ const en = {
     questions: {
       stay: "Are you trying to understand your right to stay in Poland?",
       job: "Did your job end, or are you worried about employment documents?",
+      business:
+        "Are you self-employed, or thinking about starting a one-person business (JDG) or B2B work?",
       sick: "Are you sick or on medical leave?",
       hospital: "Were you hospitalized or did you have surgery?",
       document: "Are you trying to understand a type of official document?",
@@ -262,6 +264,8 @@ const uk: Dict = {
     questions: {
       stay: "Ви намагаєтеся розібратися з правом на перебування в Польщі?",
       job: "Ваша робота закінчилася або вас турбують документи про працевлаштування?",
+      business:
+        "Ви самозайняті, або думаєте відкрити одноосібне підприємство (JDG) чи працювати за B2B?",
       sick: "Ви хворієте або перебуваєте на лікарняному?",
       hospital: "Ви були госпіталізовані або перенесли операцію?",
       document: "Ви намагаєтеся зрозуміти, що це за офіційний документ?",

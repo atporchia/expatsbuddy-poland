@@ -1,0 +1,17 @@
+{
+  "id": "term-regon",
+  "slug": "regon",
+  "term": "REGON",
+  "language": "pl",
+  "plainMeaning": "Статистичний номер, який присвоює Головне статистичне управління (GUS) під час реєстрації бізнесу. Реєстрація JDG через CEIDG автоматично запускає запит REGON у межах того самого процесу — окремо подавати заяву не потрібно.",
+  "institutionIds": [
+    "inst-ceidg"
+  ],
+  "relatedPathIds": [
+    "path-ceidg-registration"
+  ],
+  "officialSourceIds": [
+    "src-biznes-register-ceidg",
+    "src-biznes-before-registering"
+  ]
+}

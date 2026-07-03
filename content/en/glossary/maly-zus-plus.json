@@ -1,0 +1,17 @@
+{
+  "id": "term-maly-zus-plus",
+  "slug": "maly-zus-plus",
+  "term": "Mały ZUS Plus",
+  "language": "pl",
+  "plainMeaning": "Small ZUS Plus — a scheme letting smaller entrepreneurs pay social insurance contributions calculated in proportion to their income rather than a flat declared base, subject to revenue thresholds and time limits described by ZUS and biznes.gov.pl. It follows the start-up relief and preferential-contribution stages for entrepreneurs who qualify.",
+  "institutionIds": [
+    "inst-zus"
+  ],
+  "relatedPathIds": [
+    "path-zus-entrepreneurs"
+  ],
+  "officialSourceIds": [
+    "src-biznes-zus-contribution-types",
+    "src-zus-contributions"
+  ]
+}

@@ -1,0 +1,18 @@
+{
+  "id": "term-faktura",
+  "slug": "faktura",
+  "term": "faktura",
+  "language": "pl",
+  "plainMeaning": "An invoice. Self-employed people running a JDG generally issue invoices for their services or goods, including under B2B contracts. VAT payers have specific invoice content requirements; official sources note invoices can be issued in a foreign language for foreign clients, though VAT accounting itself is kept in Polish złoty.",
+  "institutionIds": [
+    "inst-tax-office"
+  ],
+  "relatedPathIds": [
+    "path-taxes-vat-invoices",
+    "path-b2b-basics"
+  ],
+  "officialSourceIds": [
+    "src-biznes-vat-obligations",
+    "src-biznes-who-must-pay-vat"
+  ]
+}
