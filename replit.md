@@ -31,7 +31,7 @@ violate them, stop and ask instead of proceeding.
    informational-only for legal-risk reasons.
 7. **Do not remove or reword compliance UI.** These must remain on every page
    where they currently appear, with their text unchanged:
-   - the disclaimer boxes (`DisclaimerBox`)
+   - the site-wide disclaimer text in the footer (`SiteFooter`)
    - the "What this page does not do" section
    - official source cards: the "Official source" label, institution,
      language, source type, "last checked" date, and `target="_blank"`

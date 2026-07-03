@@ -8,7 +8,6 @@ import {
   type TriageAnswers,
 } from "@/lib/triageRules";
 import { routes } from "@/lib/routes";
-import { DisclaimerBox } from "./DisclaimerBox";
 
 type PathInfo = { slug: string; title: string; summary: string };
 type CategoryInfo = { slug: string; title: string };
@@ -150,7 +149,6 @@ export function TriageWizard({
           Start over
         </button>
       </div>
-      <DisclaimerBox />
     </div>
   );
 }

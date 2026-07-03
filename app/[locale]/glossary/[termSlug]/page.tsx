@@ -1,7 +1,6 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 import { notFound } from "next/navigation";
-import { DisclaimerBox } from "@/components/DisclaimerBox";
 import { FeedbackWidget } from "@/components/FeedbackWidget";
 import { InstitutionList } from "@/components/InstitutionBadge";
 import { RelatedPaths } from "@/components/RelatedPaths";
@@ -113,7 +112,6 @@ export default async function GlossaryTermPage({
         </section>
       )}
 
-      <DisclaimerBox />
       <FeedbackWidget pageType="glossary" pageSlug={term.slug} />
     </article>
   );

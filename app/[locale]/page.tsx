@@ -1,7 +1,6 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 import { CategoryCard } from "@/components/CategoryCard";
-import { DisclaimerBox } from "@/components/DisclaimerBox";
 import { SearchBox } from "@/components/SearchBox";
 import { getCategories, getPathsForCategory } from "@/lib/content";
 import { routes } from "@/lib/routes";
@@ -102,7 +101,6 @@ export default async function HomePage({
         </div>
       </section>
 
-      <DisclaimerBox />
     </div>
   );
 }

@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import Link from "next/link";
 import { notFound } from "next/navigation";
 import { MDXRemote } from "next-mdx-remote/rsc";
-import { DisclaimerBox, PageScopeBox } from "@/components/DisclaimerBox";
+import { PageScopeBox } from "@/components/DisclaimerBox";
 import { FeedbackWidget } from "@/components/FeedbackWidget";
 import { InstitutionList } from "@/components/InstitutionBadge";
 import { RelatedPaths } from "@/components/RelatedPaths";
@@ -177,7 +177,6 @@ export default async function PathPage({
         </Section>
       )}
 
-      <DisclaimerBox />
       <FeedbackWidget pageType="path" pageSlug={path.slug} />
     </article>
   );

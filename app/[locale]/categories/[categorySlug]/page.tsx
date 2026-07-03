@@ -1,7 +1,6 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 import { notFound } from "next/navigation";
-import { DisclaimerBox } from "@/components/DisclaimerBox";
 import { FeedbackWidget } from "@/components/FeedbackWidget";
 import { InstitutionList } from "@/components/InstitutionBadge";
 import { PathCard } from "@/components/PathCard";
@@ -164,7 +163,6 @@ export default async function CategoryPage({
         </section>
       )}
 
-      <DisclaimerBox />
       <FeedbackWidget pageType="category" pageSlug={category.slug} />
     </div>
   );

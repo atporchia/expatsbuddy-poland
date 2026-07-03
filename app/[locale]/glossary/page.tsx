@@ -1,6 +1,5 @@
 import type { Metadata } from "next";
 import Link from "next/link";
-import { DisclaimerBox } from "@/components/DisclaimerBox";
 import { SearchBox } from "@/components/SearchBox";
 import { getGlossaryTerms } from "@/lib/content";
 import { routes } from "@/lib/routes";
@@ -54,7 +53,6 @@ export default async function GlossaryPage({
         ))}
       </ul>
 
-      <DisclaimerBox />
     </div>
   );
 }

@@ -1,17 +1,3 @@
-const DEFAULT_TEXT =
-  "ExpatsBuddy provides general educational information and links to official sources. It does not provide legal, medical, tax, immigration, benefits, or insurance advice.";
-
-export function DisclaimerBox({ text = DEFAULT_TEXT }: { text?: string }) {
-  return (
-    <aside
-      role="note"
-      className="rounded-lg border border-amber-200 bg-amber-50 px-4 py-3 text-sm text-amber-900"
-    >
-      {text}
-    </aside>
-  );
-}
-
 export function PageScopeBox({ items }: { items: string[] }) {
   return (
     <section
