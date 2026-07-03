@@ -122,5 +122,12 @@
     "name": "gov.pl",
     "shortName": "gov.pl",
     "description": "The central Polish government portal, including the Your Europe in Poland section."
+  },
+  {
+    "id": "inst-nawa",
+    "name": "NAWA — Polish National Agency for Academic Exchange",
+    "shortName": "NAWA",
+    "description": "Runs KWALIFIKATOR, the database for checking how a foreign academic diploma is recognized in Poland, and coordinates diploma nostrification.",
+    "website": "https://nawa.gov.pl/en/"
   }
 ]

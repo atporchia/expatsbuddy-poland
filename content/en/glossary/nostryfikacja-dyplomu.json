@@ -1,0 +1,10 @@
+{
+  "id": "term-nostryfikacja-dyplomu",
+  "slug": "nostryfikacja-dyplomu",
+  "term": "nostryfikacja dyplomu",
+  "language": "pl",
+  "plainMeaning": "Diploma nostrification — the procedure that establishes a foreign diploma's Polish equivalent when no treaty already recognizes it automatically. Whether it applies to you depends on the profession: for regulated professions (for example doctor, nurse, architect), recognizing the diploma is generally required before you can practice, regardless of nationality. For most other, non-regulated jobs, there is no government recognition step — the employer decides directly whether to accept a foreign diploma. NAWA's KWALIFIKATOR database can help you check how a specific foreign diploma compares, but using it is not obligatory.",
+  "institutionIds": ["inst-nawa", "inst-university", "inst-employer"],
+  "relatedPathIds": ["path-registering-as-unemployed", "path-work-based-trc"],
+  "officialSourceIds": ["src-nawa-kwalifikator", "src-biznes-qualifications"]
+}

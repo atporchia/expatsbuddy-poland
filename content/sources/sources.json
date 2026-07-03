@@ -1,5 +1,25 @@
 [
   {
+    "id": "src-nawa-kwalifikator",
+    "title": "KWALIFIKATOR — check how a foreign diploma is recognized in Poland",
+    "institution": "NAWA — National Agency for Academic Exchange",
+    "url": "https://nawa.gov.pl/en/recognition/system-kwalifikator",
+    "language": "en",
+    "sourceType": "portal",
+    "relatedPathIds": ["path-registering-as-unemployed", "path-work-based-trc"],
+    "lastCheckedAt": "2026-07-03"
+  },
+  {
+    "id": "src-biznes-qualifications",
+    "title": "Confirmation of professional qualifications in Poland",
+    "institution": "biznes.gov.pl",
+    "url": "https://www.biznes.gov.pl/en/portal/001822",
+    "language": "en",
+    "sourceType": "explainer",
+    "relatedPathIds": ["path-registering-as-unemployed", "path-work-based-trc"],
+    "lastCheckedAt": "2026-07-03"
+  },
+  {
     "id": "src-mos-single-permit",
     "title": "Temporary residence and work permit (single permit)",
     "institution": "MOS / Office for Foreigners",
