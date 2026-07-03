@@ -1,0 +1,16 @@
+{
+  "id": "term-osoba-poszukujaca-pracy",
+  "slug": "osoba-poszukujaca-pracy",
+  "term": "osoba poszukująca pracy",
+  "language": "pl",
+  "plainMeaning": "Особа, що шукає роботу — статус в управлінні праці для тих, хто шукає роботу, але не відповідає умовам статусу безробітного (або не потребує його). Дає доступ до частини послуг.",
+  "institutionIds": [
+    "inst-labour-office"
+  ],
+  "relatedPathIds": [
+    "path-registering-as-unemployed"
+  ],
+  "officialSourceIds": [
+    "src-psz-register-docs"
+  ]
+}

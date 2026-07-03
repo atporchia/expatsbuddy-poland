@@ -12,20 +12,20 @@ export default function sitemap(): MetadataRoute.Sitemap {
       { url: `${BASE_URL}${routes.glossary(locale)}`, priority: 0.8 },
       { url: `${BASE_URL}${routes.start(locale)}`, priority: 0.8 },
     );
-    for (const c of getCategories()) {
+    for (const c of getCategories(locale)) {
       entries.push({
         url: `${BASE_URL}${routes.category(locale, c.slug)}`,
         priority: 0.9,
       });
     }
-    for (const p of getPaths()) {
+    for (const p of getPaths(locale)) {
       entries.push({
         url: `${BASE_URL}${routes.path(locale, p.slug)}`,
         lastModified: p.lastReviewedAt,
         priority: 0.9,
       });
     }
-    for (const t of getGlossaryTerms()) {
+    for (const t of getGlossaryTerms(locale)) {
       entries.push({
         url: `${BASE_URL}${routes.glossaryTerm(locale, t.slug)}`,
         priority: 0.6,

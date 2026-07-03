@@ -1,0 +1,17 @@
+{
+  "id": "term-wojewoda",
+  "slug": "wojewoda",
+  "term": "wojewoda",
+  "language": "pl",
+  "plainMeaning": "Воєвода — представник уряду в регіоні, який ухвалює рішення у справах легалізації перебування. Дозволи на проживання надаються «воєводою» регіону, де ви мешкаєте.",
+  "institutionIds": [
+    "inst-voivodeship"
+  ],
+  "relatedPathIds": [
+    "path-work-based-trc",
+    "path-eu-citizen-registration"
+  ],
+  "officialSourceIds": [
+    "src-mos-permit-temporary"
+  ]
+}

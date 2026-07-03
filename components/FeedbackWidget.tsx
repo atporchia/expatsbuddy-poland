@@ -2,23 +2,27 @@
 
 import { useState } from "react";
 import type { FeedbackType } from "@/lib/types";
+import { getDict } from "@/lib/i18n";
 
-const OPTIONS: { value: FeedbackType; label: string }[] = [
-  { value: "helpful", label: "Helpful" },
-  { value: "confusing", label: "Confusing" },
-  { value: "missing_information", label: "Missing info" },
-  { value: "wrong_or_outdated", label: "Wrong / outdated" },
-  { value: "broken_link", label: "Broken link" },
-  { value: "other", label: "Other" },
+const OPTION_VALUES: FeedbackType[] = [
+  "helpful",
+  "confusing",
+  "missing_information",
+  "wrong_or_outdated",
+  "broken_link",
+  "other",
 ];
 
 export function FeedbackWidget({
   pageType,
   pageSlug,
+  locale = "en",
 }: {
   pageType: "category" | "path" | "glossary";
   pageSlug: string;
+  locale?: string;
 }) {
+  const t = getDict(locale).feedback;
   const [selected, setSelected] = useState<FeedbackType | null>(null);
   const [comment, setComment] = useState("");
   const [state, setState] = useState<"idle" | "sending" | "done" | "error">(
@@ -48,7 +52,7 @@ export function FeedbackWidget({
   if (state === "done") {
     return (
       <aside className="rounded-lg border border-slate-200 bg-slate-50 px-4 py-3 text-sm text-slate-600">
-        Thanks for your feedback!
+        {t.thanks}
       </aside>
     );
   }
@@ -58,28 +62,28 @@ export function FeedbackWidget({
       aria-label="Page feedback"
       className="rounded-lg border border-slate-200 bg-slate-50 px-4 py-4"
     >
-      <p className="text-sm font-medium text-slate-700">Was this page useful?</p>
+      <p className="text-sm font-medium text-slate-700">{t.question}</p>
       <div className="mt-2 flex flex-wrap gap-2" role="group" aria-label="Feedback type">
-        {OPTIONS.map((o) => (
+        {OPTION_VALUES.map((value) => (
           <button
-            key={o.value}
+            key={value}
             type="button"
-            onClick={() => setSelected(o.value)}
-            aria-pressed={selected === o.value}
+            onClick={() => setSelected(value)}
+            aria-pressed={selected === value}
             className={`rounded-full border px-3 py-1 text-xs font-medium transition focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-blue-600 ${
-              selected === o.value
+              selected === value
                 ? "border-blue-400 bg-blue-50 text-blue-800"
                 : "border-slate-200 bg-white text-slate-600 hover:border-blue-300"
             }`}
           >
-            {o.label}
+            {t.options[value]}
           </button>
         ))}
       </div>
       {selected && (
         <div className="mt-3">
           <label htmlFor="feedback-comment" className="text-xs text-slate-500">
-            Optional comment
+            {t.optionalComment}
           </label>
           <textarea
             id="feedback-comment"
@@ -89,8 +93,7 @@ export function FeedbackWidget({
             className="mt-1 w-full rounded-lg border border-slate-200 bg-white p-2 text-sm focus-visible:outline-2 focus-visible:outline-blue-600"
           />
           <p className="mt-1 text-xs text-slate-500">
-            Do not include personal, medical, financial, or legal details in
-            feedback.
+{t.privacyWarning}
           </p>
           <button
             type="button"
@@ -98,11 +101,11 @@ export function FeedbackWidget({
             disabled={state === "sending"}
             className="mt-3 rounded-lg bg-blue-700 px-4 py-1.5 text-xs font-medium text-white transition hover:bg-blue-800 disabled:opacity-50 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-blue-600"
           >
-            {state === "sending" ? "Sending…" : "Submit"}
+            {state === "sending" ? t.sending : t.submit}
           </button>
           {state === "error" && (
             <p className="mt-2 text-sm text-red-700">
-              Something went wrong sending feedback. Please try again later.
+{t.error}
             </p>
           )}
         </div>

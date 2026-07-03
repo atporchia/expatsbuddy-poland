@@ -1,6 +1,6 @@
 import Link from "next/link";
 import { getPathById } from "@/lib/content";
-import { routes } from "@/lib/routes";
+import { routes, type Locale } from "@/lib/routes";
 
 export function RelatedPaths({
   pathIds,
@@ -10,7 +10,7 @@ export function RelatedPaths({
   locale: string;
 }) {
   const paths = pathIds
-    .map((id) => getPathById(id))
+    .map((id) => getPathById(id, locale as Locale))
     .filter((p): p is NonNullable<typeof p> => Boolean(p));
   if (paths.length === 0) return null;
   return (

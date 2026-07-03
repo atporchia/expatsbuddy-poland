@@ -1,0 +1,18 @@
+{
+  "id": "term-z-10",
+  "slug": "z-10",
+  "term": "Z-10",
+  "language": "pl",
+  "plainMeaning": "Форма ZUS: заява-декларація, що подається разом із вимогами про лікарняну чи реабілітаційну виплату за періоди після завершення страхування — наприклад, після закінчення трудового договору.",
+  "institutionIds": [
+    "inst-zus"
+  ],
+  "relatedPathIds": [
+    "path-sick-leave-after-contract-ends",
+    "path-zas-53"
+  ],
+  "officialSourceIds": [
+    "src-zus-z10",
+    "src-zus-sickness-forms"
+  ]
+}

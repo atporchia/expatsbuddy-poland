@@ -1,0 +1,17 @@
+{
+  "id": "term-pobyt-czasowy-i-praca",
+  "slug": "pobyt-czasowy-i-praca",
+  "term": "pobyt czasowy i praca",
+  "language": "pl",
+  "plainMeaning": "Скорочена назва дозволу на тимчасове проживання і роботу — «єдиного дозволу», який поєднує право на перебування в Польщі з дозволом на роботу в конкретного роботодавця.",
+  "institutionIds": [
+    "inst-mos",
+    "inst-voivodeship"
+  ],
+  "relatedPathIds": [
+    "path-work-based-trc"
+  ],
+  "officialSourceIds": [
+    "src-mos-single-permit"
+  ]
+}

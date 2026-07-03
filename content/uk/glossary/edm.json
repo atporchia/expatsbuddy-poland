@@ -1,0 +1,18 @@
+{
+  "id": "term-edm",
+  "slug": "edm",
+  "term": "EDM",
+  "language": "pl",
+  "plainMeaning": "Elektroniczna dokumentacja medyczna — електронна медична документація: результати аналізів, діагнози, лікарняні виписки та подібні записи, доступні через IKP.",
+  "institutionIds": [
+    "inst-pacjent",
+    "inst-hospital"
+  ],
+  "relatedPathIds": [
+    "path-hospital-discharge-document",
+    "path-private-insurance-claim-basics"
+  ],
+  "officialSourceIds": [
+    "src-pacjent-edm"
+  ]
+}

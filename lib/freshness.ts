@@ -19,10 +19,12 @@ export function needsReviewWarning(p: Path): boolean {
   return ageDays > cadence || p.status === "needs_review";
 }
 
-export function formatDate(iso: string): string {
+const DATE_LOCALES: Record<string, string> = { en: "en-GB", uk: "uk-UA" };
+
+export function formatDate(iso: string, locale = "en"): string {
   const d = new Date(iso);
   if (Number.isNaN(d.getTime())) return iso;
-  return d.toLocaleDateString("en-GB", {
+  return d.toLocaleDateString(DATE_LOCALES[locale] ?? "en-GB", {
     day: "numeric",
     month: "long",
     year: "numeric",

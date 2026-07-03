@@ -4,35 +4,18 @@
  * "start with this explainer page" suggestions.
  */
 
-export type TriageQuestion = {
-  id: string;
-  question: string;
-};
-
-export const TRIAGE_QUESTIONS: TriageQuestion[] = [
-  {
-    id: "stay",
-    question: "Are you trying to understand your right to stay in Poland?",
-  },
-  {
-    id: "job",
-    question:
-      "Did your job end, or are you worried about employment documents?",
-  },
-  { id: "sick", question: "Are you sick or on medical leave?" },
-  { id: "hospital", question: "Were you hospitalized or did you have surgery?" },
-  {
-    id: "document",
-    question: "Are you trying to understand a type of official document?",
-  },
-  { id: "insurance", question: "Are you dealing with private insurance?" },
-  { id: "eu", question: "Are you an EU/EFTA/Swiss citizen?" },
-  { id: "noneu", question: "Are you a non-EU citizen?" },
-  {
-    id: "urgent",
-    question: "Is your situation urgent or connected to an official deadline?",
-  },
-];
+/** Question text lives in the i18n dictionaries (lib/i18n.ts, start.questions). */
+export const TRIAGE_QUESTION_IDS = [
+  "stay",
+  "job",
+  "sick",
+  "hospital",
+  "document",
+  "insurance",
+  "eu",
+  "noneu",
+  "urgent",
+] as const;
 
 export type TriageAnswers = Record<string, boolean>;
 

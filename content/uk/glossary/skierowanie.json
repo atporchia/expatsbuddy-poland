@@ -1,0 +1,18 @@
+{
+  "id": "term-skierowanie",
+  "slug": "skierowanie",
+  "term": "skierowanie",
+  "language": "pl",
+  "plainMeaning": "Направлення — документ від лікаря, що скеровує вас на спеціалізоване чи стаціонарне лікування. В офіційних джерелах зазначено, що в раптових станах загрози життю чи здоров'ю направлення не потрібне.",
+  "institutionIds": [
+    "inst-doctor",
+    "inst-hospital",
+    "inst-nfz"
+  ],
+  "relatedPathIds": [
+    "path-hospital-discharge-document"
+  ],
+  "officialSourceIds": [
+    "src-pacjent-hospital-treatment"
+  ]
+}

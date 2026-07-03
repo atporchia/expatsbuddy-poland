@@ -1,0 +1,17 @@
+{
+  "id": "term-decyzja-administracyjna",
+  "slug": "decyzja-administracyjna",
+  "term": "decyzja administracyjna",
+  "language": "pl",
+  "plainMeaning": "Адміністративне рішення — офіційний документ, що завершує процедуру (наприклад, надання або відмова в дозволі). Рішення містить обґрунтування та порядок оскарження.",
+  "institutionIds": [
+    "inst-mos",
+    "inst-voivodeship"
+  ],
+  "relatedPathIds": [
+    "path-common-official-documents"
+  ],
+  "officialSourceIds": [
+    "src-mos-formal-deficiencies"
+  ]
+}

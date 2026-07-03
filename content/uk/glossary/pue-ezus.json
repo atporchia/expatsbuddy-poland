@@ -1,0 +1,18 @@
+{
+  "id": "term-pue-ezus",
+  "slug": "pue-ezus",
+  "term": "PUE / eZUS",
+  "language": "pl",
+  "plainMeaning": "Електронна платформа послуг ZUS (раніше PUE ZUS, тепер eZUS) — онлайн-кабінет, де застраховані бачать свої лікарняні e-ZLA і можуть подавати заяви, як-от ZAS-53 чи ZNp-7, електронно.",
+  "institutionIds": [
+    "inst-ezus",
+    "inst-zus"
+  ],
+  "relatedPathIds": [
+    "path-zas-53",
+    "path-sick-leave-after-contract-ends"
+  ],
+  "officialSourceIds": [
+    "src-gov-pue"
+  ]
+}

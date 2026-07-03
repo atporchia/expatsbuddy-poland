@@ -1,22 +1,15 @@
 import type { OfficialSource } from "@/lib/types";
 import { formatDate } from "@/lib/freshness";
+import { getDict } from "@/lib/i18n";
 
-const LANGUAGE_LABEL: Record<OfficialSource["language"], string> = {
-  pl: "Polish",
-  en: "English",
-  mixed: "Polish / English",
-};
-
-const TYPE_LABEL: Record<OfficialSource["sourceType"], string> = {
-  form: "Form page",
-  explainer: "Explainer",
-  checklist: "Checklist",
-  pdf: "PDF",
-  qna: "Q&A",
-  portal: "Portal",
-};
-
-export function SourceCard({ source }: { source: OfficialSource }) {
+export function SourceCard({
+  source,
+  locale = "en",
+}: {
+  source: OfficialSource;
+  locale?: string;
+}) {
+  const t = getDict(locale).sourceCard;
   return (
     <a
       href={source.url}
@@ -26,7 +19,7 @@ export function SourceCard({ source }: { source: OfficialSource }) {
     >
       <div className="flex items-center justify-between gap-2">
         <span className="inline-flex items-center gap-1 rounded-full bg-emerald-600 px-2 py-0.5 text-[11px] font-semibold uppercase tracking-wide text-white">
-          Official source
+          {t.officialSource}
         </span>
         <span className="text-xs text-slate-500">{source.institution}</span>
       </div>
@@ -37,18 +30,24 @@ export function SourceCard({ source }: { source: OfficialSource }) {
         </span>
       </p>
       <p className="mt-2 text-xs text-slate-500">
-        {TYPE_LABEL[source.sourceType]} · {LANGUAGE_LABEL[source.language]} ·
-        Last checked {formatDate(source.lastCheckedAt)}
+        {t.typeLabels[source.sourceType]} · {t.languageLabels[source.language]}{" "}
+        · {t.lastChecked} {formatDate(source.lastCheckedAt, locale)}
       </p>
     </a>
   );
 }
 
-export function SourceCardList({ sources }: { sources: OfficialSource[] }) {
+export function SourceCardList({
+  sources,
+  locale = "en",
+}: {
+  sources: OfficialSource[];
+  locale?: string;
+}) {
   return (
     <div className="grid gap-3 sm:grid-cols-2">
       {sources.map((s) => (
-        <SourceCard key={s.id} source={s} />
+        <SourceCard key={s.id} source={s} locale={locale} />
       ))}
     </div>
   );

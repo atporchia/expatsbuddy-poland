@@ -1,6 +1,7 @@
 import Link from "next/link";
 import type { Category } from "@/lib/types";
 import { routes } from "@/lib/routes";
+import { getDict } from "@/lib/i18n";
 
 export function CategoryCard({
   category,
@@ -23,7 +24,7 @@ export function CategoryCard({
         {category.description}
       </p>
       <p className="mt-3 text-xs font-medium text-blue-700">
-        {pathCount} explainer {pathCount === 1 ? "page" : "pages"} →
+        {getDict(locale).home.explainerPages(pathCount)}
       </p>
     </Link>
   );

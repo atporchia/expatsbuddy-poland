@@ -10,11 +10,12 @@ import {
   getGlossaryTerms,
   getSourcesByIds,
 } from "@/lib/content";
-import { LOCALES, routes } from "@/lib/routes";
+import { LOCALES, routes, type Locale } from "@/lib/routes";
+import { getDict } from "@/lib/i18n";
 
 export function generateStaticParams() {
   return LOCALES.flatMap((locale) =>
-    getGlossaryTerms().map((t) => ({ locale, termSlug: t.slug })),
+    getGlossaryTerms(locale).map((t) => ({ locale, termSlug: t.slug })),
   );
 }
 
@@ -25,12 +26,18 @@ export async function generateMetadata({
 }: {
   params: Promise<{ locale: string; termSlug: string }>;
 }): Promise<Metadata> {
-  const { termSlug } = await params;
-  const term = getGlossaryTermBySlug(termSlug);
+  const { locale, termSlug } = await params;
+  const term = getGlossaryTermBySlug(termSlug, locale as Locale);
   if (!term) return {};
   return {
-    title: `What is ${term.term}?`,
+    title: locale === "uk" ? `Що таке ${term.term}?` : `What is ${term.term}?`,
     description: term.plainMeaning.slice(0, 160),
+    alternates: {
+      canonical: routes.glossaryTerm(locale, term.slug),
+      languages: Object.fromEntries(
+        LOCALES.map((l) => [l, routes.glossaryTerm(l, term.slug)]),
+      ),
+    },
   };
 }
 
@@ -40,7 +47,8 @@ export default async function GlossaryTermPage({
   params: Promise<{ locale: string; termSlug: string }>;
 }) {
   const { locale, termSlug } = await params;
-  const term = getGlossaryTermBySlug(termSlug);
+  const t = getDict(locale);
+  const term = getGlossaryTermBySlug(termSlug, locale as Locale);
   if (!term) notFound();
 
   const sources = getSourcesByIds(term.officialSourceIds);
@@ -52,19 +60,19 @@ export default async function GlossaryTermPage({
           href={routes.glossary(locale)}
           className="text-sm font-medium text-blue-700 hover:underline"
         >
-          ← Glossary
+          {t.glossary.back}
         </Link>
         <h1 className="mt-2 text-2xl font-bold tracking-tight text-slate-900 sm:text-3xl">
           {term.term}
         </h1>
         <p className="mt-1 text-sm text-slate-500">
-          {term.language === "pl" ? "Polish term" : "English term"}
+          {term.language === "pl" ? t.glossary.polishTerm : t.glossary.englishTerm}
         </p>
       </header>
 
       <section aria-labelledby="meaning">
         <h2 id="meaning" className="text-lg font-semibold text-slate-900">
-          What it generally means
+          {t.glossary.meaning}
         </h2>
         <p className="mt-3 max-w-3xl leading-relaxed text-slate-700">
           {term.plainMeaning}
@@ -82,10 +90,10 @@ export default async function GlossaryTermPage({
             id="term-institutions"
             className="text-lg font-semibold text-slate-900"
           >
-            Usually connected to
+            {t.glossary.connectedTo}
           </h2>
           <div className="mt-3">
-            <InstitutionList ids={term.institutionIds} />
+            <InstitutionList ids={term.institutionIds} locale={locale} />
           </div>
         </section>
       )}
@@ -93,7 +101,7 @@ export default async function GlossaryTermPage({
       {term.relatedPathIds.length > 0 && (
         <section aria-labelledby="term-paths">
           <h2 id="term-paths" className="text-lg font-semibold text-slate-900">
-            Explainer pages that mention this term
+            {t.glossary.mentionedIn}
           </h2>
           <div className="mt-3">
             <RelatedPaths pathIds={term.relatedPathIds} locale={locale} />
@@ -104,15 +112,15 @@ export default async function GlossaryTermPage({
       {sources.length > 0 && (
         <section aria-labelledby="term-sources">
           <h2 id="term-sources" className="text-lg font-semibold text-slate-900">
-            Official sources
+            {t.glossary.sources}
           </h2>
           <div className="mt-3">
-            <SourceCardList sources={sources} />
+            <SourceCardList sources={sources} locale={locale} />
           </div>
         </section>
       )}
 
-      <FeedbackWidget pageType="glossary" pageSlug={term.slug} />
+      <FeedbackWidget pageType="glossary" pageSlug={term.slug} locale={locale} />
     </article>
   );
 }

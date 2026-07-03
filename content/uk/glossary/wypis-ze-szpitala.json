@@ -1,0 +1,16 @@
+{
+  "id": "term-wypis-ze-szpitala",
+  "slug": "wypis-ze-szpitala",
+  "term": "wypis ze szpitala",
+  "language": "pl",
+  "plainMeaning": "Неформальна назва виписки з лікарні — і моменту виходу з лікарні, і виписної документації (див. karta informacyjna leczenia szpitalnego).",
+  "institutionIds": [
+    "inst-hospital"
+  ],
+  "relatedPathIds": [
+    "path-hospital-discharge-document"
+  ],
+  "officialSourceIds": [
+    "src-pacjent-hospital-stay"
+  ]
+}

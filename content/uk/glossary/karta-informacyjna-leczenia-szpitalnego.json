@@ -1,0 +1,19 @@
+{
+  "id": "term-karta-informacyjna",
+  "slug": "karta-informacyjna-leczenia-szpitalnego",
+  "term": "karta informacyjna leczenia szpitalnego",
+  "language": "pl",
+  "plainMeaning": "Виписний документ з лікарні — видається після завершення стаціонарного лікування; загалом підсумовує перебування, діагноз, лікування та рекомендації. Його часто просять страховики й лікарі.",
+  "institutionIds": [
+    "inst-hospital",
+    "inst-pacjent"
+  ],
+  "relatedPathIds": [
+    "path-hospital-discharge-document",
+    "path-private-insurance-claim-basics"
+  ],
+  "officialSourceIds": [
+    "src-pacjent-edm",
+    "src-pacjent-hospital-stay"
+  ]
+}

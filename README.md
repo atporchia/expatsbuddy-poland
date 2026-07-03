@@ -32,19 +32,37 @@ npm run build          # validation + production build
 
 ## Content model
 
-- `content/paths/*.mdx` — explainer pages: frontmatter (institutions, terms,
-  documents, source IDs, risk level, review date, status) + a plain-language
-  MDX body. Every path needs **at least 3 official sources** and a
-  "what this page does not do" section — enforced by `validate-content`,
-  which fails the build otherwise.
+Content is split per locale: `content/en/**` and `content/uk/**`, each with
+the same structure. `content/sources/**` (the official-source database) is
+shared across locales, since the same gov.pl/ZUS/MOS pages serve every
+language.
+
+- `content/<locale>/paths/*.mdx` — explainer pages: frontmatter (institutions,
+  terms, documents, source IDs, risk level, review date, status) + a
+  plain-language MDX body. Every path needs **at least 3 official sources**
+  and a "what this page does not do" section — enforced by
+  `validate-content`, which fails the build otherwise. The `id` and `slug`
+  in frontmatter must match exactly across locales; `validate-content` also
+  checks that every locale has a translation for every English slug.
 - `content/sources/sources.json` — the official-source database. Only approved
   official domains are allowed; each source records `lastCheckedAt`.
-- `content/glossary/*.json` — plain-language definitions of Polish
+- `content/<locale>/glossary/*.json` — plain-language definitions of Polish
   bureaucracy terms, linked to paths and sources.
-- `content/categories/*.json` — the five life-situation categories with
-  explicit scope ("helps with" / "does not help with").
+- `content/<locale>/categories/*.json` — the five life-situation categories
+  with explicit scope ("helps with" / "does not help with").
+- `content/<locale>/institutions.json` — institution names/descriptions per
+  locale.
+- UI strings (navigation, buttons, section headings) live in `lib/i18n.ts`,
+  not in the content files.
 
-All launch content is `status: draft` pending human review.
+Adding a locale: add it to `LOCALES` in `lib/routes.ts`, add a dictionary in
+`lib/i18n.ts`, and create `content/<locale>/{categories,paths,glossary}` plus
+`institutions.json` mirroring the English slugs.
+
+English content is `status: published`. Ukrainian content is `status: draft`:
+it was machine-translated and has not been reviewed by a native speaker.
+Review and flip each Ukrainian path to `published` individually before
+relying on it, especially the four residence/TRC pages (`riskLevel: high`).
 
 ## Feedback storage (Supabase)
 

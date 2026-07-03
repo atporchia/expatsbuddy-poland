@@ -1,0 +1,18 @@
+{
+  "id": "term-z-3",
+  "slug": "z-3",
+  "term": "Z-3",
+  "language": "pl",
+  "plainMeaning": "Форма ZUS: довідка платника внесків (zaświadczenie płatnika składek), яку заповнює роботодавець; містить дані, за якими ZUS розраховує виплату працівника.",
+  "institutionIds": [
+    "inst-zus",
+    "inst-employer"
+  ],
+  "relatedPathIds": [
+    "path-sick-leave-after-contract-ends"
+  ],
+  "officialSourceIds": [
+    "src-zus-z3",
+    "src-zus-sickness-forms"
+  ]
+}

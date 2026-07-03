@@ -1,0 +1,16 @@
+{
+  "id": "term-ikp",
+  "slug": "ikp",
+  "term": "IKP",
+  "language": "pl",
+  "plainMeaning": "Internetowe Konto Pacjenta — онлайн-кабінет пацієнта на pacjent.gov.pl. Його має кожен, у кого є номер PESEL; там видно е-рецепти, е-направлення та електронну медичну документацію, також у застосунку mojeIKP.",
+  "institutionIds": [
+    "inst-pacjent"
+  ],
+  "relatedPathIds": [
+    "path-hospital-discharge-document"
+  ],
+  "officialSourceIds": [
+    "src-pacjent-ikp"
+  ]
+}

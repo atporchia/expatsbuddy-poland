@@ -1,0 +1,19 @@
+{
+  "id": "term-zas-53",
+  "slug": "zas-53",
+  "term": "ZAS-53",
+  "language": "pl",
+  "plainMeaning": "Форма ZUS: заява про лікарняну виплату (wniosek o zasiłek chorobowy). Згадується, коли особа звертається безпосередньо до ZUS, зокрема після завершення страхування. Чи стосується вона вашої ситуації — підтверджує ZUS.",
+  "institutionIds": [
+    "inst-zus",
+    "inst-ezus"
+  ],
+  "relatedPathIds": [
+    "path-zas-53",
+    "path-sick-leave-after-contract-ends"
+  ],
+  "officialSourceIds": [
+    "src-zus-zas53",
+    "src-zus-sickness-forms"
+  ]
+}

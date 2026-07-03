@@ -1,0 +1,19 @@
+{
+  "id": "term-e-zla",
+  "slug": "e-zla",
+  "term": "e-ZLA",
+  "language": "pl",
+  "plainMeaning": "Електронний лікарняний — довідка про тимчасову непрацездатність, яку видає лікар; передається електронно до ZUS і роботодавцю. З грудня 2018 року лікарняні видаються електронно.",
+  "institutionIds": [
+    "inst-doctor",
+    "inst-zus",
+    "inst-ezus"
+  ],
+  "relatedPathIds": [
+    "path-sick-leave-after-contract-ends",
+    "path-zas-53"
+  ],
+  "officialSourceIds": [
+    "src-zus-ezla-employee"
+  ]
+}

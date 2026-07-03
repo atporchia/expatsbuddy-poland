@@ -1,0 +1,18 @@
+{
+  "id": "term-sor",
+  "slug": "sor",
+  "term": "SOR",
+  "language": "pl",
+  "plainMeaning": "Szpitalny Oddział Ratunkowy — лікарняне відділення невідкладної допомоги, для раптових загроз життю або здоров'ю. Офіційні сторінки підкреслюють: це не заміна візиту до сімейного лікаря чи спеціаліста. У надзвичайних ситуаціях телефонуйте 112.",
+  "institutionIds": [
+    "inst-sor",
+    "inst-hospital"
+  ],
+  "relatedPathIds": [
+    "path-hospital-discharge-document"
+  ],
+  "officialSourceIds": [
+    "src-pacjent-sor"
+  ],
+  "warning": "Якщо ви вважаєте, що життю чи здоров'ю загрожує небезпека, негайно телефонуйте 112 або їдьте до найближчого SOR."
+}

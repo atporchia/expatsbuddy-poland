@@ -1,7 +1,14 @@
 import { getInstitutionById } from "@/lib/content";
+import type { Locale } from "@/lib/routes";
 
-export function InstitutionBadge({ id }: { id: string }) {
-  const institution = getInstitutionById(id);
+export function InstitutionBadge({
+  id,
+  locale = "en",
+}: {
+  id: string;
+  locale?: string;
+}) {
+  const institution = getInstitutionById(id, locale as Locale);
   const label = institution?.shortName ?? id;
   return (
     <span
@@ -13,11 +20,17 @@ export function InstitutionBadge({ id }: { id: string }) {
   );
 }
 
-export function InstitutionList({ ids }: { ids: string[] }) {
+export function InstitutionList({
+  ids,
+  locale = "en",
+}: {
+  ids: string[];
+  locale?: string;
+}) {
   return (
     <div className="flex flex-wrap gap-1.5">
       {ids.map((id) => (
-        <InstitutionBadge key={id} id={id} />
+        <InstitutionBadge key={id} id={id} locale={locale} />
       ))}
     </div>
   );

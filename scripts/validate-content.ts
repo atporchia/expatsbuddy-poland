@@ -12,6 +12,7 @@ import {
   getPaths,
   getSources,
 } from "../lib/content";
+import { LOCALES } from "../lib/routes";
 
 const PROHIBITED_PHRASES = [
   "you are eligible",
@@ -58,11 +59,6 @@ function checkProhibited(where: string, text: string) {
 
 const sources = getSources();
 const sourceIds = new Set(sources.map((s) => s.id));
-const institutions = new Set(getInstitutions().map((i) => i.id));
-const paths = getPaths();
-const pathIds = new Set(paths.map((p) => p.id));
-const categories = getCategories();
-const categoryIds = new Set(categories.map((c) => c.id));
 
 for (const s of sources) {
   const host = new URL(s.url).hostname.replace(/^www\./, "");
@@ -78,74 +74,110 @@ for (const s of sources) {
   }
 }
 
-for (const p of paths) {
-  const where = `path ${p.slug}`;
-  if (!p.userSituation) errors.push(`${where}: missing userSituation`);
-  if (!p.summary) errors.push(`${where}: missing summary`);
-  if (!p.body?.trim()) errors.push(`${where}: missing plain-language body`);
-  if (!p.lastReviewedAt) errors.push(`${where}: missing lastReviewedAt`);
-  if (!categoryIds.has(p.categoryId)) {
-    errors.push(`${where}: unknown categoryId ${p.categoryId}`);
+for (const locale of LOCALES) {
+  const institutions = new Set(getInstitutions(locale).map((i) => i.id));
+  const paths = getPaths(locale);
+  const pathIds = new Set(paths.map((p) => p.id));
+  const categories = getCategories(locale);
+  const categoryIds = new Set(categories.map((c) => c.id));
+
+  for (const p of paths) {
+    const where = `[${locale}] path ${p.slug}`;
+    if (!p.userSituation) errors.push(`${where}: missing userSituation`);
+    if (!p.summary) errors.push(`${where}: missing summary`);
+    if (!p.body?.trim()) errors.push(`${where}: missing plain-language body`);
+    if (!p.lastReviewedAt) errors.push(`${where}: missing lastReviewedAt`);
+    if (!categoryIds.has(p.categoryId)) {
+      errors.push(`${where}: unknown categoryId ${p.categoryId}`);
+    }
+    if (p.officialSourceIds.length < 3) {
+      errors.push(`${where}: has ${p.officialSourceIds.length} official sources, needs at least 3`);
+    }
+    if (p.whatThisDoesNotDo.length === 0) {
+      errors.push(`${where}: missing "what this page does not do" items`);
+    }
+    if (p.commonTerms.length === 0) errors.push(`${where}: missing glossary terms`);
+    if (p.relatedPathIds.length === 0) errors.push(`${where}: missing related paths`);
+    if (p.institutions.length === 0) errors.push(`${where}: missing institutions`);
+    for (const id of p.officialSourceIds) {
+      if (!sourceIds.has(id)) errors.push(`${where}: unknown source id ${id}`);
+    }
+    for (const id of p.relatedPathIds) {
+      if (!pathIds.has(id)) errors.push(`${where}: unknown related path id ${id}`);
+    }
+    for (const id of p.institutions) {
+      if (!institutions.has(id)) errors.push(`${where}: unknown institution id ${id}`);
+    }
+    checkProhibited(
+      where,
+      [p.summary, p.userSituation, p.body, ...p.whatThisExplains].join("\n"),
+    );
   }
-  if (p.officialSourceIds.length < 3) {
-    errors.push(`${where}: has ${p.officialSourceIds.length} official sources, needs at least 3`);
+
+  for (const c of categories) {
+    const where = `[${locale}] category ${c.slug}`;
+    if (c.owns.length === 0 || c.doesNotOwn.length === 0) {
+      errors.push(`${where}: needs both "owns" and "doesNotOwn" scope lists`);
+    }
+    for (const id of c.pathIds) {
+      if (!pathIds.has(id)) errors.push(`${where}: unknown path id ${id}`);
+    }
+    for (const id of c.institutionIds) {
+      if (!institutions.has(id)) errors.push(`${where}: unknown institution id ${id}`);
+    }
+    checkProhibited(where, [c.description, ...c.owns].join("\n"));
   }
-  if (p.whatThisDoesNotDo.length === 0) {
-    errors.push(`${where}: missing "what this page does not do" items`);
+
+  for (const t of getGlossaryTerms(locale)) {
+    const where = `[${locale}] glossary ${t.slug}`;
+    if (!t.plainMeaning) errors.push(`${where}: missing plainMeaning`);
+    for (const id of t.relatedPathIds) {
+      if (!pathIds.has(id)) errors.push(`${where}: unknown path id ${id}`);
+    }
+    for (const id of t.officialSourceIds) {
+      if (!sourceIds.has(id)) errors.push(`${where}: unknown source id ${id}`);
+    }
+    for (const id of t.institutionIds) {
+      if (!institutions.has(id)) errors.push(`${where}: unknown institution id ${id}`);
+    }
+    checkProhibited(where, t.plainMeaning);
   }
-  if (p.commonTerms.length === 0) errors.push(`${where}: missing glossary terms`);
-  if (p.relatedPathIds.length === 0) errors.push(`${where}: missing related paths`);
-  if (p.institutions.length === 0) errors.push(`${where}: missing institutions`);
-  for (const id of p.officialSourceIds) {
-    if (!sourceIds.has(id)) errors.push(`${where}: unknown source id ${id}`);
-  }
-  for (const id of p.relatedPathIds) {
-    if (!pathIds.has(id)) errors.push(`${where}: unknown related path id ${id}`);
-  }
-  for (const id of p.institutions) {
-    if (!institutions.has(id)) errors.push(`${where}: unknown institution id ${id}`);
-  }
-  checkProhibited(
-    where,
-    [p.summary, p.userSituation, p.body, ...p.whatThisExplains].join("\n"),
-  );
 }
 
-for (const c of categories) {
-  const where = `category ${c.slug}`;
-  if (c.owns.length === 0 || c.doesNotOwn.length === 0) {
-    errors.push(`${where}: needs both "owns" and "doesNotOwn" scope lists`);
+// Locale parity: every locale must publish the same slugs.
+const base = LOCALES[0];
+const basePathSlugs = new Set(getPaths(base).map((p) => p.slug));
+const baseTermSlugs = new Set(getGlossaryTerms(base).map((t) => t.slug));
+const baseCategorySlugs = new Set(getCategories(base).map((c) => c.slug));
+for (const locale of LOCALES.slice(1)) {
+  const pathSlugs = new Set(getPaths(locale).map((p) => p.slug));
+  const termSlugs = new Set(getGlossaryTerms(locale).map((t) => t.slug));
+  const categorySlugs = new Set(getCategories(locale).map((c) => c.slug));
+  for (const s of basePathSlugs) {
+    if (!pathSlugs.has(s)) errors.push(`[${locale}] missing path translation: ${s}`);
   }
-  for (const id of c.pathIds) {
-    if (!pathIds.has(id)) errors.push(`${where}: unknown path id ${id}`);
+  for (const s of pathSlugs) {
+    if (!basePathSlugs.has(s)) errors.push(`[${locale}] extra path not in ${base}: ${s}`);
   }
-  for (const id of c.institutionIds) {
-    if (!institutions.has(id)) errors.push(`${where}: unknown institution id ${id}`);
+  for (const s of baseTermSlugs) {
+    if (!termSlugs.has(s)) errors.push(`[${locale}] missing glossary translation: ${s}`);
   }
-  checkProhibited(where, [c.description, ...c.owns].join("\n"));
-}
-
-for (const t of getGlossaryTerms()) {
-  const where = `glossary ${t.slug}`;
-  if (!t.plainMeaning) errors.push(`${where}: missing plainMeaning`);
-  for (const id of t.relatedPathIds) {
-    if (!pathIds.has(id)) errors.push(`${where}: unknown path id ${id}`);
+  for (const s of baseCategorySlugs) {
+    if (!categorySlugs.has(s)) errors.push(`[${locale}] missing category translation: ${s}`);
   }
-  for (const id of t.officialSourceIds) {
-    if (!sourceIds.has(id)) errors.push(`${where}: unknown source id ${id}`);
-  }
-  for (const id of t.institutionIds) {
-    if (!institutions.has(id)) errors.push(`${where}: unknown institution id ${id}`);
-  }
-  checkProhibited(where, t.plainMeaning);
 }
 
 if (errors.length > 0) {
   console.error(`Content validation failed with ${errors.length} error(s):\n`);
-  for (const e of errors) console.error(`  ✗ ${e}`);
+  for (const e of errors) console.error(`  \u2717 ${e}`);
   process.exit(1);
 }
 
 console.log(
-  `Content validation passed: ${paths.length} paths, ${categories.length} categories, ${getGlossaryTerms().length} glossary terms, ${sources.length} sources.`,
+  `Content validation passed for locales [${LOCALES.join(", ")}]: ` +
+    LOCALES.map(
+      (l) =>
+        `${l}: ${getPaths(l).length} paths / ${getCategories(l).length} categories / ${getGlossaryTerms(l).length} terms`,
+    ).join("; ") +
+    `; ${sources.length} shared sources.`,
 );

@@ -1,0 +1,18 @@
+{
+  "id": "term-zus",
+  "slug": "zus",
+  "term": "ZUS",
+  "language": "pl",
+  "plainMeaning": "Zakład Ubezpieczeń Społecznych — Управління соціального страхування. Займається соціальним страхуванням: лікарняні виплати, реабілітаційна допомога, допомога у зв'язку з материнством, пенсії та відповідні форми й рішення.",
+  "institutionIds": [
+    "inst-zus"
+  ],
+  "relatedPathIds": [
+    "path-sick-leave-after-contract-ends",
+    "path-zas-53",
+    "path-rehabilitation-benefit"
+  ],
+  "officialSourceIds": [
+    "src-lang-zus-sick-pay"
+  ]
+}

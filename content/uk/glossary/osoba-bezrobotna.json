@@ -1,0 +1,16 @@
+{
+  "id": "term-osoba-bezrobotna",
+  "slug": "osoba-bezrobotna",
+  "term": "osoba bezrobotna",
+  "language": "pl",
+  "plainMeaning": "Безробітна особа — офіційний статус, який отримують після реєстрації в управлінні праці за виконання відповідних умов. Це окреме поняття від отримання допомоги з безробіття.",
+  "institutionIds": [
+    "inst-labour-office"
+  ],
+  "relatedPathIds": [
+    "path-registering-as-unemployed"
+  ],
+  "officialSourceIds": [
+    "src-psz-register-docs"
+  ]
+}

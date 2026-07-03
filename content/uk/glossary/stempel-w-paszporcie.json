@@ -1,0 +1,17 @@
+{
+  "id": "term-stempel-w-paszporcie",
+  "slug": "stempel-w-paszporcie",
+  "term": "stempel w paszporcie",
+  "language": "pl",
+  "plainMeaning": "Штамп у паспорті, що підтверджує подання заяви про легалізацію перебування. Зазвичай його пов'язують із легальністю перебування на час розгляду справи; точні наслідки описані на офіційних сторінках.",
+  "institutionIds": [
+    "inst-voivodeship",
+    "inst-mos"
+  ],
+  "relatedPathIds": [
+    "path-work-based-trc"
+  ],
+  "officialSourceIds": [
+    "src-mos-permit-temporary"
+  ]
+}

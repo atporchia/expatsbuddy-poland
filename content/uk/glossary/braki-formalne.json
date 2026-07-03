@@ -1,0 +1,20 @@
+{
+  "id": "term-braki-formalne",
+  "slug": "braki-formalne",
+  "term": "braki formalne",
+  "language": "pl",
+  "plainMeaning": "Формальні недоліки — відсутність формальних елементів у заяві (наприклад, підпису чи фотографій). Управління надсилає запит про їх усунення у визначений строк; неповна заява може залишитися без розгляду.",
+  "institutionIds": [
+    "inst-mos",
+    "inst-voivodeship"
+  ],
+  "relatedPathIds": [
+    "path-work-based-trc",
+    "path-student-trc",
+    "path-family-based-trc",
+    "path-common-official-documents"
+  ],
+  "officialSourceIds": [
+    "src-mos-formal-deficiencies"
+  ]
+}

@@ -3,15 +3,30 @@ import Link from "next/link";
 import { CategoryCard } from "@/components/CategoryCard";
 import { SearchBox } from "@/components/SearchBox";
 import { getCategories, getPathsForCategory } from "@/lib/content";
-import { routes } from "@/lib/routes";
+import { routes, LOCALES, type Locale } from "@/lib/routes";
+import { getDict } from "@/lib/i18n";
 
-export const metadata: Metadata = {
-  title: "Polish bureaucracy, explained for foreigners",
-  description:
-    "Understand common situations around residence, work, sick leave, hospitalization, insurance, and official documents in Poland — with links to official Polish sources.",
-};
+export async function generateMetadata({
+  params,
+}: {
+  params: Promise<{ locale: string }>;
+}): Promise<Metadata> {
+  const { locale } = await params;
+  const t = getDict(locale);
+  return {
+    title: t.meta.home.title,
+    description: t.meta.home.description,
+    alternates: {
+      canonical: routes.home(locale),
+      languages: Object.fromEntries(
+        LOCALES.map((l) => [l, routes.home(l)]),
+      ),
+    },
+  };
+}
 
 function PolishFlagHero({ locale }: { locale: string }) {
+  const t = getDict(locale);
   return (
     <div className="-mx-4 -mt-8">
       <div className="flex h-3">
@@ -34,14 +49,13 @@ function PolishFlagHero({ locale }: { locale: string }) {
           </svg>
         </div>
         <h1 className="text-3xl font-extrabold tracking-tight text-slate-900 sm:text-4xl md:text-5xl">
-          Polish bureaucracy,
+          {t.home.heroTitleLine1}
           <br />
-          <span className="text-[#DC143C]">explained</span> for foreigners.
+          <span className="text-[#DC143C]">{t.home.heroHighlight}</span>{" "}
+          {t.home.heroTitleRest}
         </h1>
         <p className="mx-auto mt-5 max-w-2xl text-lg leading-relaxed text-slate-600">
-          Understand common situations around residence, work, sick leave,
-          hospitalization, insurance, and official documents — with links to
-          official Polish sources.
+          {t.home.heroSubtitle}
         </p>
         <div className="mx-auto mt-7 max-w-xl">
           <SearchBox locale={locale} large />
@@ -64,7 +78,8 @@ export default async function HomePage({
   params: Promise<{ locale: string }>;
 }) {
   const { locale } = await params;
-  const categories = getCategories();
+  const t = getDict(locale);
+  const categories = getCategories(locale as Locale);
 
   return (
     <div className="space-y-8">
@@ -75,7 +90,7 @@ export default async function HomePage({
           id="categories-heading"
           className="text-xl font-semibold text-slate-900"
         >
-          What do you need help understanding?
+          {t.home.categoriesHeading}
         </h2>
         <div className="mt-4 grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
           {categories.map((c) => (
@@ -83,7 +98,7 @@ export default async function HomePage({
               key={c.id}
               category={c}
               locale={locale}
-              pathCount={getPathsForCategory(c.id).length}
+              pathCount={getPathsForCategory(c.id, locale as Locale).length}
             />
           ))}
           <Link
@@ -91,12 +106,9 @@ export default async function HomePage({
             className="group flex flex-col justify-center rounded-xl border-2 border-dashed border-red-200 bg-red-50/40 p-5 text-center transition hover:border-[#DC143C]/40 hover:bg-red-50 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-red-600"
           >
             <h3 className="text-lg font-semibold text-slate-900">
-              I don&rsquo;t know where to start
+              {t.nav.startLong}
             </h3>
-            <p className="mt-2 text-sm text-slate-600">
-              Answer a few simple questions and we&rsquo;ll point you to the
-              relevant explainer pages.
-            </p>
+            <p className="mt-2 text-sm text-slate-600">{t.home.startTileText}</p>
           </Link>
         </div>
       </section>

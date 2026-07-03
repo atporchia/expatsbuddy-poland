@@ -2,13 +2,27 @@ import type { Metadata } from "next";
 import Link from "next/link";
 import { SearchBox } from "@/components/SearchBox";
 import { getGlossaryTerms } from "@/lib/content";
-import { routes } from "@/lib/routes";
+import { routes, LOCALES, type Locale } from "@/lib/routes";
+import { getDict } from "@/lib/i18n";
 
-export const metadata: Metadata = {
-  title: "Glossary of Polish bureaucracy terms",
-  description:
-    "Plain-language explanations of common Polish bureaucracy terms: karta pobytu, świadectwo pracy, ZUS forms like ZAS-53 and Z-10, e-ZLA, SOR, and more.",
-};
+export async function generateMetadata({
+  params,
+}: {
+  params: Promise<{ locale: string }>;
+}): Promise<Metadata> {
+  const { locale } = await params;
+  const t = getDict(locale);
+  return {
+    title: t.meta.glossary.title,
+    description: t.meta.glossary.description,
+    alternates: {
+      canonical: routes.glossary(locale),
+      languages: Object.fromEntries(
+        LOCALES.map((l) => [l, routes.glossary(l)]),
+      ),
+    },
+  };
+}
 
 export default async function GlossaryPage({
   params,
@@ -16,19 +30,17 @@ export default async function GlossaryPage({
   params: Promise<{ locale: string }>;
 }) {
   const { locale } = await params;
-  const terms = getGlossaryTerms();
+  const t = getDict(locale);
+  const terms = getGlossaryTerms(locale as Locale);
 
   return (
     <div className="space-y-8">
       <header>
         <h1 className="text-2xl font-bold tracking-tight text-slate-900 sm:text-3xl">
-          Glossary
+          {t.glossary.title}
         </h1>
         <p className="mt-3 max-w-3xl leading-relaxed text-slate-600">
-          Common Polish bureaucracy terms, explained in plain language. Each
-          term links to the explainer pages and official sources where it
-          appears. Definitions describe what a term generally means — they are
-          not advice about your situation.
+          {t.glossary.intro}
         </p>
         <div className="mt-4 max-w-xl">
           <SearchBox locale={locale} large />

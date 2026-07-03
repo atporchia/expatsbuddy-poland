@@ -3,11 +3,12 @@
 import { useState } from "react";
 import Link from "next/link";
 import {
-  TRIAGE_QUESTIONS,
+  TRIAGE_QUESTION_IDS,
   runTriage,
   type TriageAnswers,
 } from "@/lib/triageRules";
 import { routes } from "@/lib/routes";
+import { getDict } from "@/lib/i18n";
 
 type PathInfo = { slug: string; title: string; summary: string };
 type CategoryInfo = { slug: string; title: string };
@@ -22,25 +23,26 @@ export function TriageWizard({
   pathIndex: Record<string, PathInfo>;
   categoryIndex: Record<string, CategoryInfo>;
 }) {
+  const t = getDict(locale).start;
   const [step, setStep] = useState(0);
   const [answers, setAnswers] = useState<TriageAnswers>({});
-  const done = step >= TRIAGE_QUESTIONS.length;
+  const done = step >= TRIAGE_QUESTION_IDS.length;
 
   function answer(value: boolean) {
-    const q = TRIAGE_QUESTIONS[step];
-    setAnswers((prev) => ({ ...prev, [q.id]: value }));
+    const id = TRIAGE_QUESTION_IDS[step];
+    setAnswers((prev) => ({ ...prev, [id]: value }));
     setStep((s) => s + 1);
   }
 
   if (!done) {
-    const q = TRIAGE_QUESTIONS[step];
+    const id = TRIAGE_QUESTION_IDS[step];
     return (
       <div className="rounded-xl border border-slate-200 bg-white p-6 shadow-sm">
         <p className="text-xs font-medium uppercase tracking-wide text-slate-500">
-          Question {step + 1} of {TRIAGE_QUESTIONS.length}
+          {t.questionOf(step + 1, TRIAGE_QUESTION_IDS.length)}
         </p>
         <h2 className="mt-2 text-lg font-semibold text-slate-900">
-          {q.question}
+          {t.questions[id]}
         </h2>
         <div className="mt-5 flex gap-3">
           <button
@@ -48,14 +50,14 @@ export function TriageWizard({
             onClick={() => answer(true)}
             className="rounded-lg bg-blue-700 px-6 py-2.5 text-sm font-medium text-white transition hover:bg-blue-800 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-blue-600"
           >
-            Yes
+            {t.yes}
           </button>
           <button
             type="button"
             onClick={() => answer(false)}
             className="rounded-lg border border-slate-300 bg-white px-6 py-2.5 text-sm font-medium text-slate-700 transition hover:border-blue-400 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-blue-600"
           >
-            No
+            {t.no}
           </button>
           {step > 0 && (
             <button
@@ -63,7 +65,7 @@ export function TriageWizard({
               onClick={() => setStep((s) => s - 1)}
               className="ml-auto rounded-lg px-3 py-2.5 text-sm text-slate-500 hover:text-slate-800 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-blue-600"
             >
-              ← Back
+              {t.back}
             </button>
           )}
         </div>
@@ -83,24 +85,18 @@ export function TriageWizard({
     <div className="space-y-5">
       <div className="rounded-xl border border-slate-200 bg-white p-6 shadow-sm">
         <h2 className="text-lg font-semibold text-slate-900">
-          Suggested reading, based on your answers
+          {t.resultsHeading}
         </h2>
-        <p className="mt-1 text-sm text-slate-600">
-          These explainer pages describe the general official path. They do not
-          tell you what to apply for or whether you qualify.
-        </p>
+        <p className="mt-1 text-sm text-slate-600">{t.resultsNote}</p>
         {result.urgent && (
           <p className="mt-3 rounded-lg border border-amber-200 bg-amber-50 px-4 py-3 text-sm text-amber-900">
-            If your situation is urgent or connected to an official deadline,
-            contact the relevant institution directly (the office named in your
-            documents) or a qualified professional. ExpatsBuddy cannot
-            calculate or confirm deadlines.
+            {t.urgentNote}
           </p>
         )}
         {paths.length > 0 && (
           <div className="mt-4">
             <h3 className="text-sm font-semibold text-slate-700">
-              Start with these explainer pages
+              {t.startWith}
             </h3>
             <ul className="mt-2 grid gap-2">
               {paths.map((p) => (
@@ -122,7 +118,7 @@ export function TriageWizard({
         {categories.length > 0 && (
           <div className="mt-4">
             <h3 className="text-sm font-semibold text-slate-700">
-              You may also want to browse
+              {t.alsoBrowse}
             </h3>
             <ul className="mt-2 flex flex-wrap gap-2">
               {categories.map((c) => (
@@ -146,7 +142,7 @@ export function TriageWizard({
           }}
           className="mt-5 text-sm text-slate-500 underline underline-offset-2 hover:text-slate-800 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-blue-600"
         >
-          Start over
+          {t.startOver}
         </button>
       </div>
     </div>

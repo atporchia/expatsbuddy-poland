@@ -1,0 +1,17 @@
+{
+  "id": "term-legalny-pobyt",
+  "slug": "legalny-pobyt",
+  "term": "legalny pobyt",
+  "language": "pl",
+  "plainMeaning": "Легальне перебування — наявність чинної підстави перебувати в Польщі (наприклад, віза, дозвіл на проживання або безвізовий режим). Офіційні джерела розглядають легальність перебування і дозвіл на роботу як два окремі питання.",
+  "institutionIds": [
+    "inst-mos"
+  ],
+  "relatedPathIds": [
+    "path-work-based-trc",
+    "path-eu-citizen-registration"
+  ],
+  "officialSourceIds": [
+    "src-mos-work-general"
+  ]
+}

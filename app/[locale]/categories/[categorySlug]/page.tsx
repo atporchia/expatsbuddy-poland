@@ -12,11 +12,12 @@ import {
   getPathsForCategory,
   getSourcesByIds,
 } from "@/lib/content";
-import { LOCALES, routes } from "@/lib/routes";
+import { LOCALES, routes, type Locale } from "@/lib/routes";
+import { getDict } from "@/lib/i18n";
 
 export function generateStaticParams() {
   return LOCALES.flatMap((locale) =>
-    getCategories().map((c) => ({ locale, categorySlug: c.slug })),
+    getCategories(locale).map((c) => ({ locale, categorySlug: c.slug })),
   );
 }
 
@@ -27,12 +28,18 @@ export async function generateMetadata({
 }: {
   params: Promise<{ locale: string; categorySlug: string }>;
 }): Promise<Metadata> {
-  const { categorySlug } = await params;
-  const category = getCategoryBySlug(categorySlug);
+  const { locale, categorySlug } = await params;
+  const category = getCategoryBySlug(categorySlug, locale as Locale);
   if (!category) return {};
   return {
     title: category.title,
     description: category.description,
+    alternates: {
+      canonical: routes.category(locale, category.slug),
+      languages: Object.fromEntries(
+        LOCALES.map((l) => [l, routes.category(l, category.slug)]),
+      ),
+    },
   };
 }
 
@@ -42,14 +49,17 @@ export default async function CategoryPage({
   params: Promise<{ locale: string; categorySlug: string }>;
 }) {
   const { locale, categorySlug } = await params;
-  const category = getCategoryBySlug(categorySlug);
+  const t = getDict(locale);
+  const category = getCategoryBySlug(categorySlug, locale as Locale);
   if (!category) notFound();
 
-  const paths = getPathsForCategory(category.id);
+  const paths = getPathsForCategory(category.id, locale as Locale);
   const sourceIds = [...new Set(paths.flatMap((p) => p.officialSourceIds))];
   const sources = getSourcesByIds(sourceIds);
   const terms = [...new Set(paths.flatMap((p) => p.commonTerms))];
-  const otherCategories = getCategories().filter((c) => c.id !== category.id);
+  const otherCategories = getCategories(locale as Locale).filter(
+    (c) => c.id !== category.id,
+  );
 
   return (
     <div className="space-y-8">
@@ -65,7 +75,7 @@ export default async function CategoryPage({
       <div className="grid gap-4 sm:grid-cols-2">
         <section className="rounded-xl border border-slate-200 bg-white p-5">
           <h2 className="text-sm font-semibold text-emerald-800">
-            This category helps with
+            {t.category.helpsWith}
           </h2>
           <ul className="mt-2 list-disc pl-5 text-sm text-slate-600">
             {category.owns.map((item) => (
@@ -77,7 +87,7 @@ export default async function CategoryPage({
         </section>
         <section className="rounded-xl border border-slate-200 bg-white p-5">
           <h2 className="text-sm font-semibold text-red-800">
-            This category does not help with
+            {t.category.doesNotHelpWith}
           </h2>
           <ul className="mt-2 list-disc pl-5 text-sm text-slate-600">
             {category.doesNotOwn.map((item) => (
@@ -91,7 +101,7 @@ export default async function CategoryPage({
 
       <div>
         <p className="text-sm font-medium text-slate-500">
-          Not what you need? Try another category:
+          {t.category.tryAnother}
         </p>
         <div className="mt-2 flex flex-wrap gap-2">
           {otherCategories.map((c) => (
@@ -107,14 +117,14 @@ export default async function CategoryPage({
             href={routes.start(locale)}
             className="inline-flex items-center rounded-lg border border-blue-200 bg-blue-50 px-3 py-1.5 text-sm font-medium text-blue-700 shadow-sm transition hover:border-blue-400 hover:bg-blue-100 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-blue-600"
           >
-            I don&rsquo;t know where to start →
+            {t.nav.startLong} →
           </Link>
         </div>
       </div>
 
       <section aria-labelledby="paths-heading">
         <h2 id="paths-heading" className="text-lg font-semibold text-slate-900">
-          Explainer pages
+          {t.category.explainerPages}
         </h2>
         <div className="mt-3 grid gap-4 sm:grid-cols-2">
           {paths.map((p) => (
@@ -128,17 +138,17 @@ export default async function CategoryPage({
           id="institutions-heading"
           className="text-lg font-semibold text-slate-900"
         >
-          Key institutions
+          {t.category.keyInstitutions}
         </h2>
         <div className="mt-3">
-          <InstitutionList ids={category.institutionIds} />
+          <InstitutionList ids={category.institutionIds} locale={locale} />
         </div>
       </section>
 
       {terms.length > 0 && (
         <section aria-labelledby="terms-heading">
           <h2 id="terms-heading" className="text-lg font-semibold text-slate-900">
-            Most common Polish terms
+            {t.category.commonTerms}
           </h2>
           <div className="mt-3">
             <TermChips terms={terms} locale={locale} />
@@ -152,18 +162,18 @@ export default async function CategoryPage({
             id="sources-heading"
             className="text-lg font-semibold text-slate-900"
           >
-            Official source pool
+            {t.category.sourcePool}
           </h2>
           <p className="mt-1 text-sm text-slate-600">
-            Official pages used across this category&rsquo;s explainers.
+            {t.category.sourcePoolNote}
           </p>
           <div className="mt-3">
-            <SourceCardList sources={sources} />
+            <SourceCardList sources={sources} locale={locale} />
           </div>
         </section>
       )}
 
-      <FeedbackWidget pageType="category" pageSlug={category.slug} />
+      <FeedbackWidget pageType="category" pageSlug={category.slug} locale={locale} />
     </div>
   );
 }

@@ -1,0 +1,19 @@
+{
+  "id": "term-karta-pobytu",
+  "slug": "karta-pobytu",
+  "term": "karta pobytu",
+  "language": "pl",
+  "plainMeaning": "Карта побиту — пластикова картка, що підтверджує дозвіл на проживання для громадянина країни поза ЄС у Польщі. Це підтвердження вже наданого дозволу, а не сама заява на дозвіл.",
+  "institutionIds": [
+    "inst-mos",
+    "inst-voivodeship"
+  ],
+  "relatedPathIds": [
+    "path-work-based-trc",
+    "path-student-trc",
+    "path-family-based-trc"
+  ],
+  "officialSourceIds": [
+    "src-mos-permit-temporary"
+  ]
+}

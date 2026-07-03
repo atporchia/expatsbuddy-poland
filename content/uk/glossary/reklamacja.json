@@ -1,0 +1,18 @@
+{
+  "id": "term-reklamacja",
+  "slug": "reklamacja",
+  "term": "reklamacja",
+  "language": "pl",
+  "plainMeaning": "Скарга до фінансової установи, зокрема страховика — регламентована процедура із законодавчо визначеними строками відповіді. Якщо процедуру скарги вичерпано, може допомогти Фінансовий омбудсмен.",
+  "institutionIds": [
+    "inst-insurer",
+    "inst-rf"
+  ],
+  "relatedPathIds": [
+    "path-private-insurance-claim-basics"
+  ],
+  "officialSourceIds": [
+    "src-rf-complaints",
+    "src-rf-intervention"
+  ]
+}

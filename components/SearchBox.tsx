@@ -5,12 +5,7 @@ import Link from "next/link";
 import MiniSearch from "minisearch";
 import type { SearchDoc } from "@/lib/types";
 import { routes } from "@/lib/routes";
-
-const TYPE_LABEL: Record<SearchDoc["type"], string> = {
-  path: "Explainer",
-  category: "Category",
-  glossary: "Glossary",
-};
+import { getDict } from "@/lib/i18n";
 
 function docHref(doc: SearchDoc, locale: string): string {
   switch (doc.type) {
@@ -30,6 +25,7 @@ export function SearchBox({
   locale: string;
   large?: boolean;
 }) {
+  const t = getDict(locale);
   const [docs, setDocs] = useState<SearchDoc[] | null>(null);
   const [query, setQuery] = useState("");
   const [open, setOpen] = useState(false);
@@ -38,7 +34,7 @@ export function SearchBox({
   useEffect(() => {
     let cancelled = false;
     if (docs === null) {
-      fetch("/api/search-index")
+      fetch(`/api/search-index/${locale}`)
         .then((r) => r.json())
         .then((d: SearchDoc[]) => {
           if (!cancelled) setDocs(d);
@@ -48,7 +44,7 @@ export function SearchBox({
     return () => {
       cancelled = true;
     };
-  }, [docs]);
+  }, [docs, locale]);
 
   const mini = useMemo(() => {
     if (!docs) return null;
@@ -85,12 +81,12 @@ export function SearchBox({
   return (
     <div ref={rootRef} className="relative w-full">
       <label htmlFor={large ? "search-large" : "search"} className="sr-only">
-        Search subpaths and glossary
+        {t.search.ariaLabel}
       </label>
       <input
         id={large ? "search-large" : "search"}
         type="search"
-        placeholder="Search e.g. ZAS-53, karta pobytu, sick leave…"
+        placeholder={t.search.placeholder}
         value={query}
         onChange={(e) => {
           setQuery(e.target.value);
@@ -109,8 +105,7 @@ export function SearchBox({
         >
           {results.length === 0 && (
             <li className="px-4 py-3 text-sm text-slate-500">
-              No matching pages. Try a Polish or English term, or browse the
-              categories.
+{t.search.noResults}
             </li>
           )}
           {results.map((r) => (
@@ -121,7 +116,7 @@ export function SearchBox({
                 className="flex w-full items-center gap-3 px-4 py-2.5 text-left text-sm hover:bg-blue-50 focus-visible:bg-blue-50 focus-visible:outline-none"
               >
                 <span className="shrink-0 rounded bg-slate-100 px-1.5 py-0.5 text-[11px] font-medium text-slate-500">
-                  {TYPE_LABEL[r.type]}
+                  {t.search.typeLabels[r.type]}
                 </span>
                 <span className="text-slate-800">{r.title}</span>
                 {r.categoryTitle && (

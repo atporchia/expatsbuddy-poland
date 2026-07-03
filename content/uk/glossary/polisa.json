@@ -1,0 +1,16 @@
+{
+  "id": "term-polisa",
+  "slug": "polisa",
+  "term": "polisa",
+  "language": "pl",
+  "plainMeaning": "Страховий поліс — договірний документ, що підтверджує страхове покриття. Разом із загальними умовами (OWU) він визначає, за що платить страховик; покриття завжди залежить від конкретного поліса.",
+  "institutionIds": [
+    "inst-insurer"
+  ],
+  "relatedPathIds": [
+    "path-private-insurance-claim-basics"
+  ],
+  "officialSourceIds": [
+    "src-gov-policyholders"
+  ]
+}

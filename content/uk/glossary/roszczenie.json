@@ -1,0 +1,16 @@
+{
+  "id": "term-roszczenie",
+  "slug": "roszczenie",
+  "term": "roszczenie",
+  "language": "pl",
+  "plainMeaning": "Страхова вимога — звернення до страховика про виплату за полісом після страхової події; зазвичай подається на бланку страховика з підтвердними документами.",
+  "institutionIds": [
+    "inst-insurer"
+  ],
+  "relatedPathIds": [
+    "path-private-insurance-claim-basics"
+  ],
+  "officialSourceIds": [
+    "src-gov-policyholders"
+  ]
+}

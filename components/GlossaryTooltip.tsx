@@ -1,6 +1,6 @@
 import Link from "next/link";
 import { getGlossaryTerms } from "@/lib/content";
-import { routes } from "@/lib/routes";
+import { routes, type Locale } from "@/lib/routes";
 
 /**
  * Renders a term as a link to its glossary page when a matching glossary
@@ -14,7 +14,7 @@ export function GlossaryTooltip({
   term: string;
   locale: string;
 }) {
-  const entry = getGlossaryTerms().find(
+  const entry = getGlossaryTerms(locale as Locale).find(
     (t) => t.term.toLowerCase() === term.toLowerCase(),
   );
   if (!entry) {

@@ -1,0 +1,17 @@
+{
+  "id": "term-znp-7",
+  "slug": "znp-7",
+  "term": "ZNp-7",
+  "language": "pl",
+  "plainMeaning": "Форма ZUS: заява про реабілітаційну допомогу (świadczenie rehabilitacyjne), яку подає заявник, зазвичай разом із медичною довідкою OL-9.",
+  "institutionIds": [
+    "inst-zus"
+  ],
+  "relatedPathIds": [
+    "path-rehabilitation-benefit"
+  ],
+  "officialSourceIds": [
+    "src-zus-rehab-forms",
+    "src-zus-rehab-docs"
+  ]
+}

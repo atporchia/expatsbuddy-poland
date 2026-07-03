@@ -15,11 +15,12 @@ import {
   getSourcesByIds,
 } from "@/lib/content";
 import { formatDate, needsReviewWarning } from "@/lib/freshness";
-import { LOCALES, routes } from "@/lib/routes";
+import { LOCALES, routes, type Locale } from "@/lib/routes";
+import { getDict } from "@/lib/i18n";
 
 export function generateStaticParams() {
   return LOCALES.flatMap((locale) =>
-    getPaths().map((p) => ({ locale, pathSlug: p.slug })),
+    getPaths(locale).map((p) => ({ locale, pathSlug: p.slug })),
   );
 }
 
@@ -31,12 +32,17 @@ export async function generateMetadata({
   params: Promise<{ locale: string; pathSlug: string }>;
 }): Promise<Metadata> {
   const { locale, pathSlug } = await params;
-  const path = getPathBySlug(pathSlug);
+  const path = getPathBySlug(pathSlug, locale as Locale);
   if (!path) return {};
   return {
     title: path.title,
     description: path.summary,
-    alternates: { canonical: routes.path(locale, path.slug) },
+    alternates: {
+      canonical: routes.path(locale, path.slug),
+      languages: Object.fromEntries(
+        LOCALES.map((l) => [l, routes.path(l, path.slug)]),
+      ),
+    },
   };
 }
 
@@ -65,10 +71,11 @@ export default async function PathPage({
   params: Promise<{ locale: string; pathSlug: string }>;
 }) {
   const { locale, pathSlug } = await params;
-  const path = getPathBySlug(pathSlug);
+  const t = getDict(locale);
+  const path = getPathBySlug(pathSlug, locale as Locale);
   if (!path) notFound();
 
-  const category = getCategoryById(path.categoryId);
+  const category = getCategoryById(path.categoryId, locale as Locale);
   const sources = getSourcesByIds(path.officialSourceIds);
   const stale = needsReviewWarning(path);
 
@@ -106,7 +113,7 @@ export default async function PathPage({
           “{path.userSituation}”
         </p>
         <p className="mt-2 text-xs text-slate-400">
-          Last reviewed {formatDate(path.lastReviewedAt)}
+          {t.path.lastReviewed} {formatDate(path.lastReviewedAt, locale)}
           {path.status !== "published" && (
             <span className="ml-2 rounded bg-slate-200 px-1.5 py-0.5 font-medium uppercase tracking-wide text-slate-600">
               {path.status.replace("_", " ")}
@@ -117,17 +124,17 @@ export default async function PathPage({
 
       {stale && (
         <p className="rounded-lg border border-amber-200 bg-amber-50 px-4 py-3 text-sm text-amber-900">
-          This page may need review. Always check the official sources below.
+          {t.path.staleWarning}
         </p>
       )}
 
-      <Section id="what-this-means" title="What this situation means">
+      <Section id="what-this-means" title={t.path.whatThisMeans}>
         <div className="prose-explainer max-w-3xl text-slate-700">
           <MDXRemote source={path.body} />
         </div>
       </Section>
 
-      <Section id="who-for" title="Who this page is for">
+      <Section id="who-for" title={t.path.whoFor}>
         <ul className="list-disc pl-5 text-slate-700">
           {path.whoThisIsFor.map((item) => (
             <li key={item} className="mt-1 leading-relaxed">
@@ -137,15 +144,15 @@ export default async function PathPage({
         </ul>
       </Section>
 
-      <Section id="institutions" title="Which institution is usually involved">
-        <InstitutionList ids={path.institutions} />
+      <Section id="institutions" title={t.path.institutions}>
+        <InstitutionList ids={path.institutions} locale={locale} />
       </Section>
 
-      <Section id="terms" title="Terms you may see">
+      <Section id="terms" title={t.path.terms}>
         <TermChips terms={path.commonTerms} locale={locale} />
       </Section>
 
-      <Section id="documents" title="Documents often mentioned">
+      <Section id="documents" title={t.path.documents}>
         <ul className="list-disc pl-5 text-slate-700">
           {path.commonDocuments.map((item) => (
             <li key={item} className="mt-1 leading-relaxed">
@@ -155,7 +162,7 @@ export default async function PathPage({
         </ul>
       </Section>
 
-      <Section id="explains" title="What this page can explain">
+      <Section id="explains" title={t.path.explains}>
         <ul className="list-disc pl-5 text-slate-700">
           {path.whatThisExplains.map((item) => (
             <li key={item} className="mt-1 leading-relaxed">
@@ -165,19 +172,19 @@ export default async function PathPage({
         </ul>
       </Section>
 
-      <PageScopeBox items={path.whatThisDoesNotDo} />
+      <PageScopeBox items={path.whatThisDoesNotDo} title={t.path.cannotDo} />
 
-      <Section id="sources" title="Official sources">
-        <SourceCardList sources={sources} />
+      <Section id="sources" title={t.path.sources}>
+        <SourceCardList sources={sources} locale={locale} />
       </Section>
 
       {path.relatedPathIds.length > 0 && (
-        <Section id="related" title="Related paths">
+        <Section id="related" title={t.path.related}>
           <RelatedPaths pathIds={path.relatedPathIds} locale={locale} />
         </Section>
       )}
 
-      <FeedbackWidget pageType="path" pageSlug={path.slug} />
+      <FeedbackWidget pageType="path" pageSlug={path.slug} locale={locale} />
     </article>
   );
 }

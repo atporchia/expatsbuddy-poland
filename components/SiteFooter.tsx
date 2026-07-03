@@ -1,28 +1,22 @@
 import Link from "next/link";
 import { routes } from "@/lib/routes";
+import { getDict } from "@/lib/i18n";
 
 export function SiteFooter({ locale }: { locale: string }) {
+  const t = getDict(locale);
   return (
     <footer className="mt-16 border-t border-slate-200 bg-white">
       <div className="mx-auto max-w-5xl space-y-4 px-4 py-8 text-sm text-slate-500">
-        <p>
-          ExpatsBuddy provides general educational information and links to
-          official sources. It does not provide legal, medical, tax,
-          immigration, benefits, or insurance advice. It does not interpret
-          personal documents, calculate deadlines or entitlements, or submit
-          forms. Always check the linked official sources or contact the
-          relevant institution or a qualified professional for your specific
-          situation.
-        </p>
+        <p>{t.footer.disclaimer}</p>
         <nav aria-label="Footer" className="flex flex-wrap gap-4">
           <Link href={routes.home(locale)} className="hover:text-blue-800">
-            Home
+            {t.nav.home}
           </Link>
           <Link href={routes.glossary(locale)} className="hover:text-blue-800">
-            Glossary
+            {t.nav.glossary}
           </Link>
           <Link href={routes.start(locale)} className="hover:text-blue-800">
-            I don&rsquo;t know where to start
+            {t.nav.startLong}
           </Link>
         </nav>
         <p>© {new Date().getFullYear()} ExpatsBuddy Poland</p>

@@ -1,0 +1,18 @@
+{
+  "id": "term-urzad-pracy",
+  "slug": "urzad-pracy",
+  "term": "urząd pracy",
+  "language": "pl",
+  "plainMeaning": "Управління праці. На практиці зазвичай повітове управління праці (powiatowy urząd pracy) — місцеве управління, де реєструються безробітні та доступні послуги працевлаштування.",
+  "institutionIds": [
+    "inst-labour-office",
+    "inst-psz"
+  ],
+  "relatedPathIds": [
+    "path-registering-as-unemployed",
+    "path-unemployment-benefit"
+  ],
+  "officialSourceIds": [
+    "src-psz-register-docs"
+  ]
+}

@@ -1,0 +1,19 @@
+{
+  "id": "term-zezwolenie-pobyt-czasowy",
+  "slug": "zezwolenie-na-pobyt-czasowy",
+  "term": "zezwolenie na pobyt czasowy",
+  "language": "pl",
+  "plainMeaning": "Дозвіл на тимчасове проживання — адміністративне рішення, що дозволяє громадянину країни поза ЄС перебувати в Польщі визначений період; надається воєводою з конкретною метою: робота, навчання або сім'я.",
+  "institutionIds": [
+    "inst-mos",
+    "inst-voivodeship"
+  ],
+  "relatedPathIds": [
+    "path-work-based-trc",
+    "path-student-trc",
+    "path-family-based-trc"
+  ],
+  "officialSourceIds": [
+    "src-mos-permit-temporary"
+  ]
+}

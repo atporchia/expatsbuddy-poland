@@ -1,0 +1,18 @@
+{
+  "id": "term-swiadectwo-pracy",
+  "slug": "swiadectwo-pracy",
+  "term": "świadectwo pracy",
+  "language": "pl",
+  "plainMeaning": "Свідоцтво про роботу — документ, який роботодавець видає після завершення працевлаштування; підсумовує відпрацьований період. Використовується в управлінні праці та майбутніми роботодавцями. Це не те саме, що трудовий договір.",
+  "institutionIds": [
+    "inst-employer",
+    "inst-labour-office"
+  ],
+  "relatedPathIds": [
+    "path-certificate-of-employment",
+    "path-registering-as-unemployed"
+  ],
+  "officialSourceIds": [
+    "src-gov-certificate-of-employment"
+  ]
+}
