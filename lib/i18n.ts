@@ -79,6 +79,7 @@ const en = {
     sources: "Official sources",
     polishTerm: "Polish term",
     englishTerm: "English term",
+    processFromPath: (title: string) => `Full steps on the "${title}" page.`,
   },
   start: {
     title: "I don’t know where to start",
@@ -266,6 +267,7 @@ const uk: Dict = {
     sources: "Офіційні джерела",
     polishTerm: "Польський термін",
     englishTerm: "Англійський термін",
+    processFromPath: (title: string) => `Повні кроки на сторінці «${title}».`,
   },
   start: {
     title: "Не знаю, з чого почати",

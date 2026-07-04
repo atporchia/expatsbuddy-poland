@@ -8,6 +8,7 @@ import { SourceCardList } from "@/components/SourceCard";
 import {
   getGlossaryTermBySlug,
   getGlossaryTerms,
+  getProcessStepsForTerm,
   getSourcesByIds,
 } from "@/lib/content";
 import { LOCALES, routes, type Locale } from "@/lib/routes";
@@ -52,6 +53,7 @@ export default async function GlossaryTermPage({
   if (!term) notFound();
 
   const sources = getSourcesByIds(term.officialSourceIds);
+  const process = getProcessStepsForTerm(term, locale as Locale);
 
   return (
     <article className="space-y-8">
@@ -83,6 +85,32 @@ export default async function GlossaryTermPage({
           </p>
         )}
       </section>
+
+      {process && (
+        <section aria-labelledby="term-process">
+          <h2 id="term-process" className="text-lg font-semibold text-slate-900">
+            {t.path.officialProcess}
+          </h2>
+          <p className="mb-3 mt-2 text-sm italic text-slate-500">
+            {t.path.officialProcessCaveat}
+          </p>
+          <ol className="list-decimal space-y-1.5 pl-5 text-slate-700">
+            {process.steps.map((step) => (
+              <li key={step} className="leading-relaxed">
+                {step}
+              </li>
+            ))}
+          </ol>
+          {process.borrowedFrom && (
+            <Link
+              href={routes.path(locale, process.borrowedFrom.slug)}
+              className="mt-2 inline-block text-sm font-medium text-blue-700 hover:underline"
+            >
+              {t.glossary.processFromPath(process.borrowedFrom.title)}
+            </Link>
+          )}
+        </section>
+      )}
 
       {term.institutionIds.length > 0 && (
         <section aria-labelledby="term-institutions">

@@ -66,6 +66,14 @@ export type GlossaryTerm = {
   relatedPathIds: string[];
   officialSourceIds: string[];
   warning?: string;
+  /**
+   * Optional numbered "how to do this" steps, for standalone forms/
+   * documents with no dedicated Path page (e.g. Z-10, IKP). Terms that
+   * DO map to a Path should leave this unset — the term page borrows
+   * that Path's officialProcessSteps instead, so the steps have one
+   * source of truth. See getProcessStepsForTerm in lib/content.ts.
+   */
+  officialProcessSteps?: string[];
 };
 
 export type FeedbackType =

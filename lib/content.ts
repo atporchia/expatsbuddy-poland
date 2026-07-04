@@ -164,6 +164,29 @@ export function getTermsForPath(
   );
 }
 
+/**
+ * "How to do this" steps for a glossary term page. Prefers the term's own
+ * officialProcessSteps (standalone forms/documents with no dedicated Path,
+ * e.g. Z-10); otherwise borrows steps from the first related Path that has
+ * them, so a single Path's steps stay the one source of truth instead of
+ * being copied into every glossary term that mentions it.
+ */
+export function getProcessStepsForTerm(
+  term: GlossaryTerm,
+  locale: Locale = DEFAULT_LOCALE,
+): { steps: string[]; borrowedFrom: Path | null } | null {
+  if (term.officialProcessSteps && term.officialProcessSteps.length > 0) {
+    return { steps: term.officialProcessSteps, borrowedFrom: null };
+  }
+  for (const pathId of term.relatedPathIds) {
+    const path = getPathById(pathId, locale);
+    if (path?.officialProcessSteps && path.officialProcessSteps.length > 0) {
+      return { steps: path.officialProcessSteps, borrowedFrom: path };
+    }
+  }
+  return null;
+}
+
 /** Documents for the client-side search index. */
 export function getSearchDocs(locale: Locale = DEFAULT_LOCALE): SearchDoc[] {
   const docs: SearchDoc[] = [];

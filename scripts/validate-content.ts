@@ -158,7 +158,10 @@ for (const locale of LOCALES) {
     for (const id of t.institutionIds) {
       if (!institutions.has(id)) errors.push(`${where}: unknown institution id ${id}`);
     }
-    checkProhibited(where, t.plainMeaning);
+    checkProhibited(
+      where,
+      [t.plainMeaning, ...(t.officialProcessSteps ?? [])].join("\n"),
+    );
   }
 }
 
