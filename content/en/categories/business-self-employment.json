@@ -3,6 +3,7 @@
   "slug": "business-self-employment",
   "title": "Business & Self-Employment",
   "description": "This category explains the basics of starting and managing a one-person business (JDG) in Poland, including B2B work, CEIDG registration, ZUS contributions, health insurance as self-employed, taxes and VAT, and suspending or closing a business. It also gives a lighter overview of other business forms, like spółka z o.o., so you understand that not every business in Poland goes through CEIDG.",
+  "shortDescription": "JDG, CEIDG, ZUS, taxes",
   "owns": [
     "JDG / sole proprietorship basics",
     "B2B work basics",
@@ -19,7 +20,13 @@
     "residence permits based on running a business",
     "legal or financial advice about your specific business"
   ],
-  "institutionIds": ["inst-ceidg", "inst-biznes-gov", "inst-tax-office", "inst-zus", "inst-client"],
+  "institutionIds": [
+    "inst-ceidg",
+    "inst-biznes-gov",
+    "inst-tax-office",
+    "inst-zus",
+    "inst-client"
+  ],
   "pathIds": [
     "path-jdg-basics",
     "path-b2b-basics",

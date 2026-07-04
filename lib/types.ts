@@ -5,6 +5,8 @@ export type Category = {
   slug: string;
   title: string;
   description: string;
+  /** 3-5 word homepage-tile descriptor, built from real terms (e.g. "e-ZLA, ZUS sick pay"). */
+  shortDescription: string;
   owns: string[];
   doesNotOwn: string[];
   institutionIds: string[];

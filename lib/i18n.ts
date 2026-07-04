@@ -37,9 +37,9 @@ const en = {
     heroSubtitle:
       "Understand common situations around residence, work, sick leave, hospitalization, insurance, and official documents — with links to official Polish sources.",
     categoriesHeading: "What do you need help understanding?",
-    startTileText:
-      "Answer a few simple questions and we’ll point you to the relevant explainer pages.",
-    explainerPages: (n: number) => `${n} explainer ${n === 1 ? "page" : "pages"} →`,
+    startTileText: (n: number) =>
+      `Answer ${n} quick questions — we’ll point you to the right pages.`,
+    explainerPages: (n: number) => `${n} ${n === 1 ? "page" : "pages"}`,
   },
   category: {
     helpsWith: "This category helps with",
@@ -194,8 +194,17 @@ const uk: Dict = {
     heroSubtitle:
       "Розберіться в типових ситуаціях: легалізація перебування, робота, лікарняний, госпіталізація, страхування та офіційні документи — з посиланнями на офіційні польські джерела.",
     categoriesHeading: "У чому вам потрібно розібратися?",
-    startTileText:
-      "Дайте відповідь на кілька простих запитань — і ми підкажемо, які сторінки прочитати.",
+    startTileText: (n: number) => {
+      const mod10 = n % 10;
+      const mod100 = n % 100;
+      const word =
+        mod10 === 1 && mod100 !== 11
+          ? "питання"
+          : mod10 >= 2 && mod10 <= 4 && (mod100 < 12 || mod100 > 14)
+            ? "питання"
+            : "питань";
+      return `Дайте відповідь на ${n} ${word} — і ми підкажемо потрібні сторінки.`;
+    },
     explainerPages: (n: number) => {
       const mod10 = n % 10;
       const mod100 = n % 100;
@@ -205,7 +214,7 @@ const uk: Dict = {
           : mod10 >= 2 && mod10 <= 4 && (mod100 < 12 || mod100 > 14)
             ? "сторінки"
             : "сторінок";
-      return `${n} ${word} →`;
+      return `${n} ${word}`;
     },
   },
   category: {

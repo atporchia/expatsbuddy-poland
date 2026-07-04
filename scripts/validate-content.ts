@@ -128,13 +128,16 @@ for (const locale of LOCALES) {
     if (c.owns.length === 0 || c.doesNotOwn.length === 0) {
       errors.push(`${where}: needs both "owns" and "doesNotOwn" scope lists`);
     }
+    if (!c.shortDescription) {
+      errors.push(`${where}: missing shortDescription (homepage tile crashes without it)`);
+    }
     for (const id of c.pathIds) {
       if (!pathIds.has(id)) errors.push(`${where}: unknown path id ${id}`);
     }
     for (const id of c.institutionIds) {
       if (!institutions.has(id)) errors.push(`${where}: unknown institution id ${id}`);
     }
-    checkProhibited(where, [c.description, ...c.owns].join("\n"));
+    checkProhibited(where, [c.description, c.shortDescription, ...c.owns].join("\n"));
   }
 
   for (const t of getGlossaryTerms(locale)) {

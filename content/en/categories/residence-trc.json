@@ -3,6 +3,7 @@
   "slug": "residence-trc",
   "title": "Residence / TRC",
   "description": "This category explains common residence situations for foreigners in Poland: temporary residence permits connected to work, studies, and family, and residence registration for EU/EFTA/Swiss citizens. It helps you recognize the institutions, terms, and documents involved and find the official pages that describe each path.",
+  "shortDescription": "Work, study & family permits",
   "owns": [
     "legal stay and residence cards at a general level",
     "temporary residence connected to work (single permit)",
@@ -16,7 +17,12 @@
     "medical insurance claims",
     "personal eligibility decisions or legal strategy for your case"
   ],
-  "institutionIds": ["inst-mos", "inst-voivodeship", "inst-employer", "inst-university"],
+  "institutionIds": [
+    "inst-mos",
+    "inst-voivodeship",
+    "inst-employer",
+    "inst-university"
+  ],
   "pathIds": [
     "path-work-based-trc",
     "path-student-trc",

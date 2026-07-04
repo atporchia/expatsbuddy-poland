@@ -3,6 +3,7 @@
   "slug": "official-documents",
   "title": "Official Letters & Documents",
   "description": "This category explains common families of Polish official documents — ZUS forms, residence documents, employer documents, medical documents, and insurer documents — so you can recognize what type of document you are looking at and which institution usually owns it. It does not interpret personal letters.",
+  "shortDescription": "ZUS, MOS & employer forms",
   "owns": [
     "common document families and what they generally contain",
     "which institution usually issues each document family",
@@ -22,6 +23,8 @@
     "inst-hospital",
     "inst-insurer"
   ],
-  "pathIds": ["path-common-official-documents"],
+  "pathIds": [
+    "path-common-official-documents"
+  ],
   "status": "published"
 }

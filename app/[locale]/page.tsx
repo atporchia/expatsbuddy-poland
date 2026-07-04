@@ -2,9 +2,11 @@ import type { Metadata } from "next";
 import Link from "next/link";
 import { CategoryCard } from "@/components/CategoryCard";
 import { SearchBox } from "@/components/SearchBox";
+import { StartIcon } from "@/components/CategoryIcon";
 import { getCategories, getPathsForCategory } from "@/lib/content";
 import { routes, LOCALES, type Locale } from "@/lib/routes";
 import { getDict } from "@/lib/i18n";
+import { TRIAGE_QUESTION_IDS } from "@/lib/triageRules";
 
 export async function generateMetadata({
   params,
@@ -72,6 +74,32 @@ function PolishFlagHero({ locale }: { locale: string }) {
   );
 }
 
+function StartCard({ locale }: { locale: string }) {
+  const t = getDict(locale);
+  return (
+    <Link
+      href={routes.start(locale)}
+      className="group mb-3 flex w-full items-center gap-4 rounded-2xl bg-gradient-to-br from-slate-800 to-slate-900 p-5 text-left text-white shadow-sm transition hover:shadow-md focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-slate-600"
+    >
+      <span className="flex h-12 w-12 shrink-0 items-center justify-center rounded-xl bg-white/15">
+        <StartIcon className="h-6 w-6" />
+      </span>
+      <span className="flex-1">
+        <span className="block text-lg font-bold">{t.nav.startLong}</span>
+        <span className="mt-0.5 block text-sm text-white/80">
+          {t.home.startTileText(TRIAGE_QUESTION_IDS.length)}
+        </span>
+      </span>
+      <span
+        aria-hidden="true"
+        className="text-2xl transition group-hover:translate-x-0.5"
+      >
+        →
+      </span>
+    </Link>
+  );
+}
+
 export default async function HomePage({
   params,
 }: {
@@ -92,27 +120,20 @@ export default async function HomePage({
         >
           {t.home.categoriesHeading}
         </h2>
-        <div className="mt-4 grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
-          <Link
-            href={routes.start(locale)}
-            className="group flex flex-col justify-center rounded-xl border-2 border-dashed border-red-200 bg-red-50/40 p-5 text-center transition hover:border-[#DC143C]/40 hover:bg-red-50 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-red-600"
-          >
-            <h3 className="text-lg font-semibold text-slate-900">
-              {t.nav.startLong}
-            </h3>
-            <p className="mt-2 text-sm text-slate-600">{t.home.startTileText}</p>
-          </Link>
-          {categories.map((c) => (
-            <CategoryCard
-              key={c.id}
-              category={c}
-              locale={locale}
-              pathCount={getPathsForCategory(c.id, locale as Locale).length}
-            />
-          ))}
+        <div className="mt-4">
+          <StartCard locale={locale} />
+          <div className="grid gap-3 sm:grid-cols-2 lg:grid-cols-3">
+            {categories.map((c) => (
+              <CategoryCard
+                key={c.id}
+                category={c}
+                locale={locale}
+                pathCount={getPathsForCategory(c.id, locale as Locale).length}
+              />
+            ))}
+          </div>
         </div>
       </section>
-
     </div>
   );
 }

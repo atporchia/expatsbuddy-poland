@@ -3,6 +3,7 @@
   "slug": "business-self-employment",
   "title": "Бізнес і самозайнятість",
   "description": "Ця категорія пояснює основи відкриття та ведення одноосібного підприємства (JDG) у Польщі: робота за B2B, реєстрація в CEIDG, внески ZUS, медичне страхування самозайнятих, податки та ПДВ, а також призупинення чи закриття діяльності. Вона також дає короткий огляд інших форм бізнесу, як-от spółka z o.o., щоб ви розуміли, що не кожен бізнес у Польщі веде справи через CEIDG.",
+  "shortDescription": "JDG, CEIDG, ZUS, податки",
   "owns": [
     "основи JDG / одноосібного підприємства",
     "основи роботи за B2B",
@@ -19,7 +20,13 @@
     "дозволи на проживання на підставі ведення бізнесу",
     "юридичні чи фінансові консультації щодо вашого конкретного бізнесу"
   ],
-  "institutionIds": ["inst-ceidg", "inst-biznes-gov", "inst-tax-office", "inst-zus", "inst-client"],
+  "institutionIds": [
+    "inst-ceidg",
+    "inst-biznes-gov",
+    "inst-tax-office",
+    "inst-zus",
+    "inst-client"
+  ],
   "pathIds": [
     "path-jdg-basics",
     "path-b2b-basics",
