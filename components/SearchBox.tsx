@@ -101,7 +101,7 @@ export function SearchBox({
       {open && query.trim().length >= 2 && (
         <ul
           role="listbox"
-          className="absolute left-0 right-0 top-full z-50 mt-1 max-h-96 overflow-auto rounded-lg border border-slate-200 bg-white shadow-lg"
+          className="absolute left-0 right-0 top-full z-50 mt-1 max-h-96 overflow-y-auto overflow-x-hidden rounded-lg border border-slate-200 bg-white shadow-lg"
         >
           {results.length === 0 && (
             <li className="px-4 py-3 text-sm text-slate-500">
@@ -113,14 +113,21 @@ export function SearchBox({
               <Link
                 href={docHref(r, locale)}
                 onClick={() => setOpen(false)}
-                className="flex w-full items-center gap-3 px-4 py-2.5 text-left text-sm hover:bg-blue-50 focus-visible:bg-blue-50 focus-visible:outline-none"
+                className="flex w-full flex-col gap-0.5 px-4 py-2.5 text-left text-sm hover:bg-blue-50 focus-visible:bg-blue-50 focus-visible:outline-none"
               >
-                <span className="shrink-0 rounded bg-slate-100 px-1.5 py-0.5 text-[11px] font-medium text-slate-500">
-                  {t.search.typeLabels[r.type]}
+                <span className="flex min-w-0 items-center gap-2">
+                  <span className="shrink-0 rounded bg-slate-100 px-1.5 py-0.5 text-[11px] font-medium text-slate-500">
+                    {t.search.typeLabels[r.type]}
+                  </span>
+                  <span
+                    title={r.title}
+                    className="min-w-0 flex-1 truncate text-slate-800"
+                  >
+                    {r.title}
+                  </span>
                 </span>
-                <span className="text-slate-800">{r.title}</span>
                 {r.categoryTitle && (
-                  <span className="ml-auto shrink-0 text-xs text-slate-400">
+                  <span className="truncate text-xs text-slate-400">
                     {r.categoryTitle}
                   </span>
                 )}

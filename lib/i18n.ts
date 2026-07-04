@@ -52,7 +52,7 @@ const en = {
     sourcePoolNote: "Official pages used across this category’s explainers.",
   },
   path: {
-    whatThisMeans: "What this situation means",
+    whatThisMeans: "Overview",
     whoFor: "Who this page is for",
     institutions: "Which institution is usually involved",
     terms: "Terms you may see",
@@ -229,7 +229,7 @@ const uk: Dict = {
       "Офіційні сторінки, використані в поясненнях цієї категорії.",
   },
   path: {
-    whatThisMeans: "Що означає ця ситуація",
+    whatThisMeans: "Огляд",
     whoFor: "Для кого ця сторінка",
     institutions: "Яка установа зазвичай залучена",
     terms: "Терміни, які можуть траплятися",
