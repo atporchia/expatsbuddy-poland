@@ -49,7 +49,12 @@ export function SearchBox({
   const mini = useMemo(() => {
     if (!docs) return null;
     const m = new MiniSearch<SearchDoc>({
-      fields: ["title", "text", "categoryTitle"],
+      // categoryTitle is intentionally excluded from search ranking: it's
+      // shown as a secondary line on each result, but indexing it caused
+      // every sibling page to rank for the category's own name (e.g.
+      // searching "citizenship" surfaced unrelated pages just because
+      // they sit in the "Residence / TRC / Citizenship" category).
+      fields: ["title", "text"],
       storeFields: ["type", "slug", "title", "categoryTitle"],
       searchOptions: {
         boost: { title: 3 },

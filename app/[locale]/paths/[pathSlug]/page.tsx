@@ -172,8 +172,6 @@ export default async function PathPage({
         </ul>
       </Section>
 
-      <PageScopeBox items={path.whatThisDoesNotDo} title={t.path.cannotDo} />
-
       <Section id="sources" title={t.path.sources}>
         <SourceCardList sources={sources} locale={locale} />
       </Section>
@@ -183,6 +181,8 @@ export default async function PathPage({
           <RelatedPaths pathIds={path.relatedPathIds} locale={locale} />
         </Section>
       )}
+
+      <PageScopeBox items={path.whatThisDoesNotDo} title={t.path.cannotDo} />
 
       <FeedbackWidget pageType="path" pageSlug={path.slug} locale={locale} />
     </article>

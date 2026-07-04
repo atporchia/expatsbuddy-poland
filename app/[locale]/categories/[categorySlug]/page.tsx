@@ -99,29 +99,6 @@ export default async function CategoryPage({
         </section>
       </div>
 
-      <div>
-        <p className="text-sm font-medium text-slate-500">
-          {t.category.tryAnother}
-        </p>
-        <div className="mt-2 flex flex-wrap gap-2">
-          {otherCategories.map((c) => (
-            <Link
-              key={c.id}
-              href={routes.category(locale, c.slug)}
-              className="inline-flex items-center rounded-lg border border-slate-200 bg-white px-3 py-1.5 text-sm font-medium text-slate-700 shadow-sm transition hover:border-blue-300 hover:text-blue-800 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-blue-600"
-            >
-              {c.title}
-            </Link>
-          ))}
-          <Link
-            href={routes.start(locale)}
-            className="inline-flex items-center rounded-lg border border-blue-200 bg-blue-50 px-3 py-1.5 text-sm font-medium text-blue-700 shadow-sm transition hover:border-blue-400 hover:bg-blue-100 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-blue-600"
-          >
-            {t.nav.startLong} →
-          </Link>
-        </div>
-      </div>
-
       <section aria-labelledby="paths-heading">
         <h2 id="paths-heading" className="text-lg font-semibold text-slate-900">
           {t.category.explainerPages}
@@ -172,6 +149,29 @@ export default async function CategoryPage({
           </div>
         </section>
       )}
+
+      <div>
+        <p className="text-sm font-medium text-slate-500">
+          {t.category.tryAnother}
+        </p>
+        <div className="mt-2 flex flex-wrap gap-2">
+          {otherCategories.map((c) => (
+            <Link
+              key={c.id}
+              href={routes.category(locale, c.slug)}
+              className="inline-flex items-center rounded-lg border border-slate-200 bg-white px-3 py-1.5 text-sm font-medium text-slate-700 shadow-sm transition hover:border-blue-300 hover:text-blue-800 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-blue-600"
+            >
+              {c.title}
+            </Link>
+          ))}
+          <Link
+            href={routes.start(locale)}
+            className="inline-flex items-center rounded-lg border border-blue-200 bg-blue-50 px-3 py-1.5 text-sm font-medium text-blue-700 shadow-sm transition hover:border-blue-400 hover:bg-blue-100 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-blue-600"
+          >
+            {t.nav.startLong} →
+          </Link>
+        </div>
+      </div>
 
       <FeedbackWidget pageType="category" pageSlug={category.slug} locale={locale} />
     </div>

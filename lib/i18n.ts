@@ -17,7 +17,7 @@ const en = {
     start: {
       title: "I don't know where to start",
       description:
-        "Answer a few simple questions about your situation in Poland and get pointed to the relevant plain-language explainer pages with official sources.",
+        "Answer a few simple questions about your situation in Poland and get pointed to the relevant plain-language guides with official sources.",
     },
   },
   nav: {
@@ -45,11 +45,11 @@ const en = {
     helpsWith: "This category helps with",
     doesNotHelpWith: "This category does not help with",
     tryAnother: "Not what you need? Try another category:",
-    explainerPages: "Explainer pages",
+    explainerPages: "Guides",
     keyInstitutions: "Key institutions",
     commonTerms: "Most common Polish terms",
     sourcePool: "Official source pool",
-    sourcePoolNote: "Official pages used across this category’s explainers.",
+    sourcePoolNote: "Official pages used across this category’s guides.",
   },
   path: {
     whatThisMeans: "Overview",
@@ -68,11 +68,11 @@ const en = {
   glossary: {
     title: "Glossary",
     intro:
-      "Common Polish bureaucracy terms, explained in plain language. Each term links to the explainer pages and official sources where it appears. Definitions describe what a term generally means — they are not advice about your situation.",
+      "Common Polish bureaucracy terms, explained in plain language. Each term links to the guides and official sources where it appears. Definitions describe what a term generally means — they are not advice about your situation.",
     back: "← Glossary",
     meaning: "What it generally means",
     connectedTo: "Usually connected to",
-    mentionedIn: "Explainer pages that mention this term",
+    mentionedIn: "Guides that mention this term",
     sources: "Official sources",
     polishTerm: "Polish term",
     englishTerm: "English term",
@@ -80,17 +80,17 @@ const en = {
   start: {
     title: "I don’t know where to start",
     intro:
-      "Answer a few yes/no questions and we’ll suggest explainer pages to read. This is routing, not advice: no eligibility checks, no deadlines, no recommendations to apply for anything.",
+      "Answer a few yes/no questions and we’ll suggest guides to read. This is routing, not advice: no eligibility checks, no deadlines, no recommendations to apply for anything.",
     questionOf: (n: number, total: number) => `Question ${n} of ${total}`,
     yes: "Yes",
     no: "No",
     back: "← Back",
     resultsHeading: "Suggested reading, based on your answers",
     resultsNote:
-      "These explainer pages describe the general official path. They do not tell you what to apply for or whether you qualify.",
+      "These guides describe the general official path. They do not tell you what to apply for or whether you qualify.",
     urgentNote:
       "If your situation is urgent or connected to an official deadline, contact the relevant institution directly (the office named in your documents) or a qualified professional. ExpatsBuddy cannot calculate or confirm deadlines.",
-    startWith: "Start with these explainer pages",
+    startWith: "Start with these guides",
     alsoBrowse: "You may also want to browse",
     startOver: "Start over",
     questions: {
@@ -113,7 +113,7 @@ const en = {
     noResults:
       "No matching pages. Try a Polish or English term, or browse the categories.",
     typeLabels: {
-      path: "Explainer",
+      path: "Guide",
       category: "Category",
       glossary: "Glossary",
     } as Record<string, string>,
@@ -155,7 +155,7 @@ const en = {
   },
   cookies: {
     message:
-      "We use cookies to show ads on this site. You can accept or decline — this does not affect how the explainer pages work.",
+      "We use cookies to show ads on this site. You can accept or decline — this does not affect how the guides work.",
     accept: "Accept",
     decline: "Decline",
     settingsLink: "Cookie settings",
@@ -228,7 +228,7 @@ const uk: Dict = {
     helpsWith: "Ця категорія допомагає з",
     doesNotHelpWith: "Ця категорія не допомагає з",
     tryAnother: "Не те, що ви шукали? Спробуйте іншу категорію:",
-    explainerPages: "Пояснювальні сторінки",
+    explainerPages: "Порадники",
     keyInstitutions: "Основні установи",
     commonTerms: "Найпоширеніші польські терміни",
     sourcePool: "Офіційні джерела категорії",
@@ -256,7 +256,7 @@ const uk: Dict = {
     back: "← Довідник",
     meaning: "Що це зазвичай означає",
     connectedTo: "Зазвичай пов’язано з",
-    mentionedIn: "Пояснювальні сторінки з цим терміном",
+    mentionedIn: "Порадники, що згадують цей термін",
     sources: "Офіційні джерела",
     polishTerm: "Польський термін",
     englishTerm: "Англійський термін",
@@ -297,7 +297,7 @@ const uk: Dict = {
     noResults:
       "Нічого не знайдено. Спробуйте польський, англійський чи український термін або перегляньте категорії.",
     typeLabels: {
-      path: "Пояснення",
+      path: "Порадник",
       category: "Категорія",
       glossary: "Довідник",
     } as Record<string, string>,
