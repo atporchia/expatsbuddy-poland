@@ -153,6 +153,13 @@ const en = {
       mixed: "Polish / English",
     } as Record<string, string>,
   },
+  cookies: {
+    message:
+      "We use cookies to show ads on this site. You can accept or decline — this does not affect how the explainer pages work.",
+    accept: "Accept",
+    decline: "Decline",
+    settingsLink: "Cookie settings",
+  },
 };
 
 export type Dict = typeof en;
@@ -329,6 +336,13 @@ const uk: Dict = {
       en: "англійська",
       mixed: "польська / англійська",
     } as Record<string, string>,
+  },
+  cookies: {
+    message:
+      "Ми використовуємо файли cookie для показу реклами на цьому сайті. Ви можете погодитися або відмовитися — це не впливає на роботу пояснювальних сторінок.",
+    accept: "Погодитися",
+    decline: "Відмовитися",
+    settingsLink: "Налаштування cookie",
   },
 };
 

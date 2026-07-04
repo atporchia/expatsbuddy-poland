@@ -21,6 +21,9 @@ export const metadata: Metadata = {
   },
   description:
     "Understand common situations around residence, work, sick leave, hospitalization, insurance, and official documents in Poland — with links to official Polish sources.",
+  other: {
+    "google-adsense-account": "ca-pub-4964109306080105",
+  },
 };
 
 export default function RootLayout({

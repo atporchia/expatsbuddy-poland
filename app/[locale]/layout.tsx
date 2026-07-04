@@ -2,6 +2,7 @@ import { notFound } from "next/navigation";
 import { SiteHeader } from "@/components/SiteHeader";
 import { SiteFooter } from "@/components/SiteFooter";
 import { LangAttribute } from "@/components/LangAttribute";
+import { CookieConsent } from "@/components/CookieConsent";
 import { LOCALES, isLocale } from "@/lib/routes";
 
 export function generateStaticParams() {
@@ -27,6 +28,7 @@ export default async function LocaleLayout({
         {children}
       </main>
       <SiteFooter locale={locale} />
+      <CookieConsent locale={locale} />
     </>
   );
 }

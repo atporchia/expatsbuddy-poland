@@ -27,8 +27,10 @@ violate them, stop and ask instead of proceeding.
 5. **Do not add dependencies** without explicit approval in chat. No UI kits,
    no icon packs, no animation libraries. Inline SVG is fine.
 6. **Do not add features.** No document upload, no AI chat/answers, no auth,
-   no payments, no cookies/trackers. This product is deliberately
-   informational-only for legal-risk reasons.
+   no payments, no new tracking scripts beyond the existing consent-gated
+   Google AdSense integration (`components/CookieConsent.tsx`) and Vercel
+   Analytics. This product is deliberately informational-only for
+   legal-risk reasons.
 7. **Do not remove or reword compliance UI.** These must remain on every page
    where they currently appear, with their text unchanged:
    - the site-wide disclaimer text in the footer (`SiteFooter`)

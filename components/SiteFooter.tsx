@@ -1,6 +1,7 @@
 import Link from "next/link";
 import { routes } from "@/lib/routes";
 import { getDict } from "@/lib/i18n";
+import { CookieSettingsLink } from "./CookieConsent";
 
 export function SiteFooter({ locale }: { locale: string }) {
   const t = getDict(locale);
@@ -18,6 +19,7 @@ export function SiteFooter({ locale }: { locale: string }) {
           <Link href={routes.start(locale)} className="hover:text-blue-800">
             {t.nav.startLong}
           </Link>
+          <CookieSettingsLink locale={locale} />
         </nav>
         <p>© {new Date().getFullYear()} ExpatsBuddy Poland</p>
       </div>
