@@ -3,13 +3,14 @@
   "slug": "zas-53",
   "term": "ZAS-53",
   "language": "pl",
-  "plainMeaning": "A ZUS form: the application for sickness benefit (wniosek o zasiłek chorobowy). Mentioned where a person applies to ZUS directly, including after insurance has ended. Whether it applies to a specific situation is for ZUS to confirm.",
+  "plainMeaning": "A ZUS form: the application for sickness benefit (wniosek o zasiłek chorobowy), used mainly by people applying to ZUS directly rather than through an employer — for example the self-employed, or situations after insurance has ended (often alongside the Z-10 statement). It's a different document from the e-ZLA sick note a doctor issues, and from the Z-3 certificate an employer submits for most employees instead. Whether it applies to a specific situation is for ZUS to confirm.",
   "institutionIds": [
     "inst-zus",
     "inst-ezus"
   ],
   "relatedPathIds": [
     "path-zas-53",
+    "path-sick-leave-basics",
     "path-sick-leave-after-contract-ends"
   ],
   "officialSourceIds": [
