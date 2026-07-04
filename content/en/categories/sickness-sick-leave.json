@@ -5,6 +5,8 @@
   "description": "This category explains common Polish sick-leave and ZUS sickness-benefit concepts. It helps you recognize terms such as e-ZLA, ZAS-53, Z-10, Z-3, ZNp-7, OL-9, and świadczenie rehabilitacyjne, and shows where the official ZUS and gov.pl pages describe each situation.",
   "shortDescription": "e-ZLA, ZUS sick pay",
   "owns": [
+    "the difference between employer-paid sick pay and ZUS sickness benefit",
+    "why sick leave works differently under B2B and self-employment",
     "e-ZLA electronic sick notes at a general level",
     "sickness benefit concepts, including after insurance has ended",
     "common ZUS forms mentioned in sickness situations",
@@ -23,6 +25,7 @@
     "inst-employer"
   ],
   "pathIds": [
+    "path-sick-leave-basics",
     "path-sick-leave-after-contract-ends",
     "path-zas-53",
     "path-rehabilitation-benefit"

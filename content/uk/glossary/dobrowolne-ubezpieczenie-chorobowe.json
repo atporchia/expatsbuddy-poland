@@ -1,0 +1,17 @@
+{
+  "id": "term-dobrowolne-ubezpieczenie-chorobowe",
+  "slug": "dobrowolne-ubezpieczenie-chorobowe",
+  "term": "Добровільне лікарняне страхування (dobrowolne ubezpieczenie chorobowe)",
+  "language": "pl",
+  "plainMeaning": "Добровільне лікарняне страхування — страхування ZUS, до якого самозайняті особи можуть приєднатися за бажанням через форму ZUS ZUA, оскільки лікарняне страхування, на відміну від пенсійного, інвалідного та страхування від нещасних випадків, не є для них обов'язковим.",
+  "institutionIds": [
+    "inst-zus"
+  ],
+  "relatedPathIds": [
+    "path-sick-leave-basics",
+    "path-zus-entrepreneurs"
+  ],
+  "officialSourceIds": [
+    "src-lang-zus-sick-pay"
+  ]
+}

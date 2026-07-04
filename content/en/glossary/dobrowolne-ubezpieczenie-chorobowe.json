@@ -1,0 +1,17 @@
+{
+  "id": "term-dobrowolne-ubezpieczenie-chorobowe",
+  "slug": "dobrowolne-ubezpieczenie-chorobowe",
+  "term": "dobrowolne ubezpieczenie chorobowe",
+  "language": "pl",
+  "plainMeaning": "Voluntary sickness insurance — the opt-in ZUS insurance self-employed people can sign up for using the ZUS ZUA form, since sickness insurance, unlike pension, disability, and accident insurance, is not mandatory for them.",
+  "institutionIds": [
+    "inst-zus"
+  ],
+  "relatedPathIds": [
+    "path-sick-leave-basics",
+    "path-zus-entrepreneurs"
+  ],
+  "officialSourceIds": [
+    "src-lang-zus-sick-pay"
+  ]
+}

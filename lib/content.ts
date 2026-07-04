@@ -90,7 +90,10 @@ export function getPathsForCategory(
   categoryId: string,
   locale: Locale = DEFAULT_LOCALE,
 ): Path[] {
-  return getPaths(locale).filter((p) => p.categoryId === categoryId);
+  const order = getCategoryById(categoryId, locale)?.pathIds ?? [];
+  return getPaths(locale)
+    .filter((p) => p.categoryId === categoryId)
+    .sort((a, b) => order.indexOf(a.id) - order.indexOf(b.id));
 }
 
 export function getGlossaryTerms(

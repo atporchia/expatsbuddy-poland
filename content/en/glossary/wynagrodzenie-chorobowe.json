@@ -1,0 +1,17 @@
+{
+  "id": "term-wynagrodzenie-chorobowe",
+  "slug": "wynagrodzenie-chorobowe",
+  "term": "wynagrodzenie chorobowe",
+  "language": "pl",
+  "plainMeaning": "Sick pay — the payment an employer makes directly to an employee for the first 33 days of sickness in a calendar year (14 days if the employee is over 50), generally at 80% of pay, before ZUS takes over with sickness benefit.",
+  "institutionIds": [
+    "inst-employer",
+    "inst-zus"
+  ],
+  "relatedPathIds": [
+    "path-sick-leave-basics"
+  ],
+  "officialSourceIds": [
+    "src-lang-zus-sick-pay"
+  ]
+}

@@ -1,0 +1,17 @@
+{
+  "id": "term-wynagrodzenie-chorobowe",
+  "slug": "wynagrodzenie-chorobowe",
+  "term": "Лікарняні від роботодавця (wynagrodzenie chorobowe)",
+  "language": "pl",
+  "plainMeaning": "Лікарняні від роботодавця — виплата, яку роботодавець сплачує працівнику напряму за перші 33 дні хвороби за календарний рік (14 днів, якщо працівнику понад 50), зазвичай у розмірі 80% від оплати, перш ніж ZUS перебирає виплату лікарняної допомоги.",
+  "institutionIds": [
+    "inst-employer",
+    "inst-zus"
+  ],
+  "relatedPathIds": [
+    "path-sick-leave-basics"
+  ],
+  "officialSourceIds": [
+    "src-lang-zus-sick-pay"
+  ]
+}
