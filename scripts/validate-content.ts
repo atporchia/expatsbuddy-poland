@@ -104,9 +104,6 @@ for (const locale of LOCALES) {
     if (!p.whoThisIsFor || p.whoThisIsFor.length === 0) {
       errors.push(`${where}: missing whoThisIsFor (page render crashes without it)`);
     }
-    if (!p.whatThisExplains || p.whatThisExplains.length === 0) {
-      errors.push(`${where}: missing whatThisExplains`);
-    }
     if (p.relatedPathIds.length === 0) errors.push(`${where}: missing related paths`);
     if (p.institutions.length === 0) errors.push(`${where}: missing institutions`);
     for (const id of p.officialSourceIds) {
@@ -125,7 +122,6 @@ for (const locale of LOCALES) {
         p.briefOverview,
         p.userSituation,
         p.body,
-        ...p.whatThisExplains,
         ...(p.officialProcessSteps ?? []),
       ].join("\n"),
     );

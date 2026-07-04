@@ -58,7 +58,6 @@ const en = {
     institutions: "Which institution is usually involved",
     terms: "Terms you may see",
     documents: "Documents often mentioned",
-    explains: "What this page can explain",
     officialProcess: "General official process",
     officialProcessCaveat:
       "This is the general sequence official sources describe, not personalized guidance — your specific situation may need different steps.",
@@ -247,7 +246,6 @@ const uk: Dict = {
     institutions: "Яка установа зазвичай залучена",
     terms: "Терміни, які можуть траплятися",
     documents: "Документи, які часто згадуються",
-    explains: "Що пояснює ця сторінка",
     officialProcess: "Загальний офіційний порядок дій",
     officialProcessCaveat:
       "Це загальна послідовність, яку описують офіційні джерела, а не персональна порада — ваша ситуація може вимагати інших кроків.",

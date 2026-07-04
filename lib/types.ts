@@ -32,7 +32,6 @@ export type Path = {
   institutions: string[];
   commonTerms: string[];
   commonDocuments: string[];
-  whatThisExplains: string[];
   /**
    * Optional numbered list of the general steps official sources describe
    * for this procedure (e.g. "log in via PUE/eZUS" -> "select the form" ->

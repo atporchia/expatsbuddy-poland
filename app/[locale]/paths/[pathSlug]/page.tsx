@@ -182,16 +182,6 @@ export default async function PathPage({
         </ul>
       </Section>
 
-      <Section id="explains" title={t.path.explains}>
-        <ul className="list-disc pl-5 text-slate-700">
-          {path.whatThisExplains.map((item) => (
-            <li key={item} className="mt-1 leading-relaxed">
-              {item}
-            </li>
-          ))}
-        </ul>
-      </Section>
-
       {path.officialProcessSteps && path.officialProcessSteps.length > 0 && (
         <Section id="official-process" title={t.path.officialProcess}>
           <p className="mb-3 text-sm italic text-slate-500">
