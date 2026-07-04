@@ -119,7 +119,13 @@ for (const locale of LOCALES) {
     }
     checkProhibited(
       where,
-      [p.summary, p.userSituation, p.body, ...p.whatThisExplains].join("\n"),
+      [
+        p.summary,
+        p.userSituation,
+        p.body,
+        ...p.whatThisExplains,
+        ...(p.officialProcessSteps ?? []),
+      ].join("\n"),
     );
   }
 

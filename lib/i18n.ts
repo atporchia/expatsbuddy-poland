@@ -58,6 +58,9 @@ const en = {
     terms: "Terms you may see",
     documents: "Documents often mentioned",
     explains: "What this page can explain",
+    officialProcess: "General official process",
+    officialProcessCaveat:
+      "This is the general sequence official sources describe, not personalized guidance — your specific situation may need different steps.",
     cannotDo: "What this page does not do",
     sources: "Official sources",
     related: "Related paths",
@@ -242,6 +245,9 @@ const uk: Dict = {
     terms: "Терміни, які можуть траплятися",
     documents: "Документи, які часто згадуються",
     explains: "Що пояснює ця сторінка",
+    officialProcess: "Загальний офіційний порядок дій",
+    officialProcessCaveat:
+      "Це загальна послідовність, яку описують офіційні джерела, а не персональна порада — ваша ситуація може вимагати інших кроків.",
     cannotDo: "Чого ця сторінка не робить",
     sources: "Офіційні джерела",
     related: "Пов’язані теми",

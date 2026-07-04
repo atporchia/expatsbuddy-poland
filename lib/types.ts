@@ -26,6 +26,14 @@ export type Path = {
   commonTerms: string[];
   commonDocuments: string[];
   whatThisExplains: string[];
+  /**
+   * Optional numbered list of the general steps official sources describe
+   * for this procedure (e.g. "log in via PUE/eZUS" -> "select the form" ->
+   * "submit"). Paraphrased from the cited officialSourceIds, never
+   * personalized — omit entirely for pages that don't map to one
+   * procedure (e.g. glossary-style document-family overviews).
+   */
+  officialProcessSteps?: string[];
   whatThisDoesNotDo: string[];
   officialSourceIds: string[];
   relatedPathIds: string[];

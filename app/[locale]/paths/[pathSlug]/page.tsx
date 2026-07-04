@@ -172,6 +172,21 @@ export default async function PathPage({
         </ul>
       </Section>
 
+      {path.officialProcessSteps && path.officialProcessSteps.length > 0 && (
+        <Section id="official-process" title={t.path.officialProcess}>
+          <p className="mb-3 text-sm italic text-slate-500">
+            {t.path.officialProcessCaveat}
+          </p>
+          <ol className="list-decimal space-y-1.5 pl-5 text-slate-700">
+            {path.officialProcessSteps.map((step) => (
+              <li key={step} className="leading-relaxed">
+                {step}
+              </li>
+            ))}
+          </ol>
+        </Section>
+      )}
+
       <Section id="sources" title={t.path.sources}>
         <SourceCardList sources={sources} locale={locale} />
       </Section>
