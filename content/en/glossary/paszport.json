@@ -1,0 +1,18 @@
+{
+  "id": "term-paszport",
+  "slug": "paszport",
+  "term": "paszport",
+  "language": "pl",
+  "plainMeaning": "Passport — a travel document that can only be issued to someone who already holds Polish citizenship. Applied for in person at a passport office (voivodeship office) in Poland or a consulate abroad, with biometric data collected as part of the visit.",
+  "institutionIds": [
+    "inst-voivodeship",
+    "inst-govpl"
+  ],
+  "relatedPathIds": [
+    "path-citizenship-and-passport"
+  ],
+  "officialSourceIds": [
+    "src-obywatel-passport-en",
+    "src-gov-passport-adult"
+  ]
+}

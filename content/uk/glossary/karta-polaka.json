@@ -1,0 +1,16 @@
+{
+  "id": "term-karta-polaka",
+  "slug": "karta-polaka",
+  "term": "Karta Polaka",
+  "language": "pl",
+  "plainMeaning": "Karta Polaka (Карта поляка) — документ, що підтверджує належність до польського народу для людей без громадянства Польщі, які мають польське походження або активно підтримують польську культуру чи мову за кордоном. Офіційні джерела описують її як одну з можливих підстав для заяви на громадянство, а не саме громадянство.",
+  "institutionIds": [
+    "inst-mswia"
+  ],
+  "relatedPathIds": [
+    "path-citizenship-and-passport"
+  ],
+  "officialSourceIds": [
+    "src-mswia-recognition"
+  ]
+}

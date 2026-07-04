@@ -1,15 +1,16 @@
 {
   "id": "residence-trc",
   "slug": "residence-trc",
-  "title": "Residence / TRC",
-  "description": "This category explains common residence situations for foreigners in Poland: temporary residence permits connected to work, studies, and family, and residence registration for EU/EFTA/Swiss citizens. It helps you recognize the institutions, terms, and documents involved and find the official pages that describe each path.",
-  "shortDescription": "Work, study & family permits",
+  "title": "Residence / TRC / Citizenship",
+  "description": "This category explains common residence situations for foreigners in Poland: temporary residence permits connected to work, studies, and family; residence registration for EU/EFTA/Swiss citizens; and the two official routes to Polish citizenship, plus how a Polish passport fits in. It helps you recognize the institutions, terms, and documents involved and find the official pages that describe each path.",
+  "shortDescription": "Work, study, family & citizenship",
   "owns": [
     "legal stay and residence cards at a general level",
     "temporary residence connected to work (single permit)",
     "temporary residence for studies",
     "residence based on family",
-    "EU/EFTA/Swiss citizen residence registration"
+    "EU/EFTA/Swiss citizen residence registration",
+    "Polish citizenship (recognition and presidential grant) and passport basics"
   ],
   "doesNotOwn": [
     "employment settlement or disputes with an employer",
@@ -27,7 +28,8 @@
     "path-work-based-trc",
     "path-student-trc",
     "path-family-based-trc",
-    "path-eu-citizen-registration"
+    "path-eu-citizen-registration",
+    "path-citizenship-and-passport"
   ],
   "status": "published"
 }

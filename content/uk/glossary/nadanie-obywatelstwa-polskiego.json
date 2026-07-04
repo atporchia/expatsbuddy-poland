@@ -1,0 +1,17 @@
+{
+  "id": "term-nadanie-obywatelstwa-polskiego",
+  "slug": "nadanie-obywatelstwa-polskiego",
+  "term": "nadanie obywatelstwa polskiego",
+  "language": "pl",
+  "plainMeaning": "Надання громадянства Польщі Президентом — дискреційний шлях для людей без громадянства Польщі, без фіксованих умов, які застосовуються при визнанні. Не має встановленого законом строку; офіційні джерела зазначають, що зазвичай триває понад рік.",
+  "institutionIds": [
+    "inst-mswia",
+    "inst-voivodeship"
+  ],
+  "relatedPathIds": [
+    "path-citizenship-and-passport"
+  ],
+  "officialSourceIds": [
+    "src-mswia-grant"
+  ]
+}

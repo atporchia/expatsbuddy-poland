@@ -1,0 +1,16 @@
+{
+  "id": "term-karta-polaka",
+  "slug": "karta-polaka",
+  "term": "Karta Polaka",
+  "language": "pl",
+  "plainMeaning": "The Pole's Card — a document confirming belonging to the Polish nation for people without Polish citizenship who have Polish origin or are active in Polish culture/language abroad. Official sources describe it as one possible basis supporting a citizenship application, not citizenship itself.",
+  "institutionIds": [
+    "inst-mswia"
+  ],
+  "relatedPathIds": [
+    "path-citizenship-and-passport"
+  ],
+  "officialSourceIds": [
+    "src-mswia-recognition"
+  ]
+}

@@ -155,5 +155,12 @@
     "name": "Client / contracting business",
     "shortName": "Client",
     "description": "The business that contracts a self-employed person's services under a B2B agreement."
+  },
+  {
+    "id": "inst-mswia",
+    "name": "Ministry of the Interior and Administration (MSWiA)",
+    "shortName": "MSWiA",
+    "description": "The ministry that decides citizenship matters: recognition as a Polish citizen, and preparing grants of citizenship for the President's decision.",
+    "website": "https://www.gov.pl/web/mswia-en"
   }
 ]

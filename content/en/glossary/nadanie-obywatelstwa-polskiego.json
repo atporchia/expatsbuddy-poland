@@ -1,0 +1,17 @@
+{
+  "id": "term-nadanie-obywatelstwa-polskiego",
+  "slug": "nadanie-obywatelstwa-polskiego",
+  "term": "nadanie obywatelstwa polskiego",
+  "language": "pl",
+  "plainMeaning": "Grant of Polish citizenship by the President — a discretionary route open to people who do not hold Polish citizenship, without the fixed conditions used for recognition. No statutory deadline; official sources note it commonly takes over a year.",
+  "institutionIds": [
+    "inst-mswia",
+    "inst-voivodeship"
+  ],
+  "relatedPathIds": [
+    "path-citizenship-and-passport"
+  ],
+  "officialSourceIds": [
+    "src-mswia-grant"
+  ]
+}

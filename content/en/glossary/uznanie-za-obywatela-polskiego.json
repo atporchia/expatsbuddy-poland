@@ -1,0 +1,17 @@
+{
+  "id": "term-uznanie-za-obywatela-polskiego",
+  "slug": "uznanie-za-obywatela-polskiego",
+  "term": "uznanie za obywatela polskiego",
+  "language": "pl",
+  "plainMeaning": "Recognition as a Polish citizen — a citizenship route based on meeting one of several set conditions (for example years of legal residence, marriage to a Polish citizen, refugee status, or Polish origin). Decided by the voivodeship governor, generally within about two months.",
+  "institutionIds": [
+    "inst-voivodeship",
+    "inst-mswia"
+  ],
+  "relatedPathIds": [
+    "path-citizenship-and-passport"
+  ],
+  "officialSourceIds": [
+    "src-mswia-recognition"
+  ]
+}

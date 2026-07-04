@@ -6,7 +6,10 @@
     "url": "https://www.biznes.gov.pl/en/portal/0621",
     "language": "en",
     "sourceType": "portal",
-    "relatedPathIds": ["path-jdg-basics", "path-b2b-basics"],
+    "relatedPathIds": [
+      "path-jdg-basics",
+      "path-b2b-basics"
+    ],
     "lastCheckedAt": "2026-07-03"
   },
   {
@@ -16,7 +19,10 @@
     "url": "https://www.biznes.gov.pl/en/portal/ou736",
     "language": "en",
     "sourceType": "checklist",
-    "relatedPathIds": ["path-ceidg-registration", "path-jdg-basics"],
+    "relatedPathIds": [
+      "path-ceidg-registration",
+      "path-jdg-basics"
+    ],
     "lastCheckedAt": "2026-07-03"
   },
   {
@@ -26,7 +32,11 @@
     "url": "https://biznes.gov.pl/en/portal/001823",
     "language": "en",
     "sourceType": "explainer",
-    "relatedPathIds": ["path-jdg-basics", "path-ceidg-registration", "path-b2b-basics"],
+    "relatedPathIds": [
+      "path-jdg-basics",
+      "path-ceidg-registration",
+      "path-b2b-basics"
+    ],
     "lastCheckedAt": "2026-07-03"
   },
   {
@@ -36,7 +46,11 @@
     "url": "https://www.biznes.gov.pl/en/portal/004055",
     "language": "en",
     "sourceType": "explainer",
-    "relatedPathIds": ["path-jdg-basics", "path-ceidg-registration", "path-b2b-basics"],
+    "relatedPathIds": [
+      "path-jdg-basics",
+      "path-ceidg-registration",
+      "path-b2b-basics"
+    ],
     "lastCheckedAt": "2026-07-03"
   },
   {
@@ -46,7 +60,10 @@
     "url": "https://www.biznes.gov.pl/en/portal/004113",
     "language": "en",
     "sourceType": "explainer",
-    "relatedPathIds": ["path-zus-entrepreneurs", "path-health-insurance-self-employed"],
+    "relatedPathIds": [
+      "path-zus-entrepreneurs",
+      "path-health-insurance-self-employed"
+    ],
     "lastCheckedAt": "2026-07-03"
   },
   {
@@ -56,7 +73,10 @@
     "url": "https://www.biznes.gov.pl/en/portal/004114",
     "language": "en",
     "sourceType": "checklist",
-    "relatedPathIds": ["path-zus-entrepreneurs", "path-health-insurance-self-employed"],
+    "relatedPathIds": [
+      "path-zus-entrepreneurs",
+      "path-health-insurance-self-employed"
+    ],
     "lastCheckedAt": "2026-07-03"
   },
   {
@@ -66,7 +86,10 @@
     "url": "https://lang.zus.pl/finances/contributions",
     "language": "en",
     "sourceType": "explainer",
-    "relatedPathIds": ["path-zus-entrepreneurs", "path-health-insurance-self-employed"],
+    "relatedPathIds": [
+      "path-zus-entrepreneurs",
+      "path-health-insurance-self-employed"
+    ],
     "lastCheckedAt": "2026-07-03"
   },
   {
@@ -76,7 +99,9 @@
     "url": "https://www.biznes.gov.pl/en/portal/0622",
     "language": "en",
     "sourceType": "portal",
-    "relatedPathIds": ["path-taxes-vat-invoices"],
+    "relatedPathIds": [
+      "path-taxes-vat-invoices"
+    ],
     "lastCheckedAt": "2026-07-03"
   },
   {
@@ -86,7 +111,9 @@
     "url": "https://www.biznes.gov.pl/en/portal/004121",
     "language": "en",
     "sourceType": "explainer",
-    "relatedPathIds": ["path-taxes-vat-invoices"],
+    "relatedPathIds": [
+      "path-taxes-vat-invoices"
+    ],
     "lastCheckedAt": "2026-07-03"
   },
   {
@@ -96,7 +123,9 @@
     "url": "https://www.biznes.gov.pl/en/portal/004160",
     "language": "en",
     "sourceType": "explainer",
-    "relatedPathIds": ["path-taxes-vat-invoices"],
+    "relatedPathIds": [
+      "path-taxes-vat-invoices"
+    ],
     "lastCheckedAt": "2026-07-03"
   },
   {
@@ -106,7 +135,9 @@
     "url": "https://www.biznes.gov.pl/en/portal/ou1609",
     "language": "en",
     "sourceType": "checklist",
-    "relatedPathIds": ["path-taxes-vat-invoices"],
+    "relatedPathIds": [
+      "path-taxes-vat-invoices"
+    ],
     "lastCheckedAt": "2026-07-03"
   },
   {
@@ -116,7 +147,9 @@
     "url": "https://www.biznes.gov.pl/en/portal/004127",
     "language": "en",
     "sourceType": "explainer",
-    "relatedPathIds": ["path-suspending-closing-business"],
+    "relatedPathIds": [
+      "path-suspending-closing-business"
+    ],
     "lastCheckedAt": "2026-07-03"
   },
   {
@@ -126,7 +159,9 @@
     "url": "https://www.biznes.gov.pl/en/portal/004054",
     "language": "en",
     "sourceType": "explainer",
-    "relatedPathIds": ["path-suspending-closing-business"],
+    "relatedPathIds": [
+      "path-suspending-closing-business"
+    ],
     "lastCheckedAt": "2026-07-03"
   },
   {
@@ -136,7 +171,9 @@
     "url": "https://www.biznes.gov.pl/en/portal/0624",
     "language": "en",
     "sourceType": "portal",
-    "relatedPathIds": ["path-suspending-closing-business"],
+    "relatedPathIds": [
+      "path-suspending-closing-business"
+    ],
     "lastCheckedAt": "2026-07-03"
   },
   {
@@ -146,7 +183,9 @@
     "url": "https://www.biznes.gov.pl/en/portal/ou884",
     "language": "en",
     "sourceType": "checklist",
-    "relatedPathIds": ["path-suspending-closing-business"],
+    "relatedPathIds": [
+      "path-suspending-closing-business"
+    ],
     "lastCheckedAt": "2026-07-03"
   },
   {
@@ -156,7 +195,10 @@
     "url": "https://nawa.gov.pl/en/recognition/system-kwalifikator",
     "language": "en",
     "sourceType": "portal",
-    "relatedPathIds": ["path-registering-as-unemployed", "path-work-based-trc"],
+    "relatedPathIds": [
+      "path-registering-as-unemployed",
+      "path-work-based-trc"
+    ],
     "lastCheckedAt": "2026-07-03"
   },
   {
@@ -166,7 +208,10 @@
     "url": "https://www.biznes.gov.pl/en/portal/001822",
     "language": "en",
     "sourceType": "explainer",
-    "relatedPathIds": ["path-registering-as-unemployed", "path-work-based-trc"],
+    "relatedPathIds": [
+      "path-registering-as-unemployed",
+      "path-work-based-trc"
+    ],
     "lastCheckedAt": "2026-07-03"
   },
   {
@@ -176,7 +221,9 @@
     "url": "https://www.mos.cudzoziemcy.gov.pl/en/categories-information/possibilities-legalization/non-eu-continued-stay/permit-temporary/work/permit-uniform/",
     "language": "en",
     "sourceType": "explainer",
-    "relatedPathIds": ["path-work-based-trc"],
+    "relatedPathIds": [
+      "path-work-based-trc"
+    ],
     "lastCheckedAt": "2026-07-02"
   },
   {
@@ -186,7 +233,10 @@
     "url": "https://www.mos.cudzoziemcy.gov.pl/en/categories-information/doing-the-job/principles-general/",
     "language": "en",
     "sourceType": "explainer",
-    "relatedPathIds": ["path-work-based-trc", "path-eu-citizen-registration"],
+    "relatedPathIds": [
+      "path-work-based-trc",
+      "path-eu-citizen-registration"
+    ],
     "lastCheckedAt": "2026-07-02"
   },
   {
@@ -196,7 +246,10 @@
     "url": "https://psz.praca.gov.pl/documents/10240/42353333/WORK+IN+POLAND_GUIDE+FOR+FOREIGNERS+FROM+THIRD+COUNTRIES_EN.pdf/18ebf27d-615c-2a18-2c5c-91218071464a?t=1756293815182",
     "language": "en",
     "sourceType": "pdf",
-    "relatedPathIds": ["path-work-based-trc", "path-eu-citizen-registration"],
+    "relatedPathIds": [
+      "path-work-based-trc",
+      "path-eu-citizen-registration"
+    ],
     "lastCheckedAt": "2026-07-02"
   },
   {
@@ -220,7 +273,9 @@
     "url": "https://www.mos.cudzoziemcy.gov.pl/en/categories-information/possibilities-legalization/non-eu-continued-stay/permit-temporary/study/permit-studies/",
     "language": "en",
     "sourceType": "explainer",
-    "relatedPathIds": ["path-student-trc"],
+    "relatedPathIds": [
+      "path-student-trc"
+    ],
     "lastCheckedAt": "2026-07-02"
   },
   {
@@ -230,7 +285,9 @@
     "url": "https://www.mos.cudzoziemcy.gov.pl/en/categories-information/possibilities-legalization/non-eu-continued-stay/permit-temporary/study/",
     "language": "en",
     "sourceType": "portal",
-    "relatedPathIds": ["path-student-trc"],
+    "relatedPathIds": [
+      "path-student-trc"
+    ],
     "lastCheckedAt": "2026-07-02"
   },
   {
@@ -240,7 +297,9 @@
     "url": "https://www.mos.cudzoziemcy.gov.pl/en/categories-information/possibilities-legalization/non-eu-continued-stay/permit-temporary/staying-with-family/spouse-ob-rp/",
     "language": "en",
     "sourceType": "explainer",
-    "relatedPathIds": ["path-family-based-trc"],
+    "relatedPathIds": [
+      "path-family-based-trc"
+    ],
     "lastCheckedAt": "2026-07-02"
   },
   {
@@ -250,7 +309,9 @@
     "url": "https://www.mos.cudzoziemcy.gov.pl/en/categories-information/possibilities-legalization/non-eu-continued-stay/permit-temporary/staying-with-family/non-eu-spouse/",
     "language": "en",
     "sourceType": "explainer",
-    "relatedPathIds": ["path-family-based-trc"],
+    "relatedPathIds": [
+      "path-family-based-trc"
+    ],
     "lastCheckedAt": "2026-07-02"
   },
   {
@@ -260,7 +321,9 @@
     "url": "https://www.mos.cudzoziemcy.gov.pl/en/categories-information/possibilities-legalization/non-eu-continued-stay/permit-temporary/staying-with-family/",
     "language": "en",
     "sourceType": "portal",
-    "relatedPathIds": ["path-family-based-trc"],
+    "relatedPathIds": [
+      "path-family-based-trc"
+    ],
     "lastCheckedAt": "2026-07-02"
   },
   {
@@ -270,7 +333,9 @@
     "url": "https://www.mos.cudzoziemcy.gov.pl/en/categories-information/possibilities-legalization/i-hold-the-citizenship-of-the-eu-no-li-is-ch-and-their-family-members/temporary-stay-90-days/registration-of-residence-of-an-eu-citizen/",
     "language": "en",
     "sourceType": "explainer",
-    "relatedPathIds": ["path-eu-citizen-registration"],
+    "relatedPathIds": [
+      "path-eu-citizen-registration"
+    ],
     "lastCheckedAt": "2026-07-02"
   },
   {
@@ -280,7 +345,9 @@
     "url": "https://www.mos.cudzoziemcy.gov.pl/en/categories-information/documents/documents-eu/certificate-of-registration-of-residence-of-an-eu-citizen/",
     "language": "en",
     "sourceType": "explainer",
-    "relatedPathIds": ["path-eu-citizen-registration"],
+    "relatedPathIds": [
+      "path-eu-citizen-registration"
+    ],
     "lastCheckedAt": "2026-07-02"
   },
   {
@@ -290,7 +357,9 @@
     "url": "https://www.gov.pl/web/your-europe/registration-of-residence2",
     "language": "en",
     "sourceType": "explainer",
-    "relatedPathIds": ["path-eu-citizen-registration"],
+    "relatedPathIds": [
+      "path-eu-citizen-registration"
+    ],
     "lastCheckedAt": "2026-07-02"
   },
   {
@@ -314,7 +383,9 @@
     "url": "https://www.gov.pl/web/your-europe/certificate-of-employment",
     "language": "en",
     "sourceType": "explainer",
-    "relatedPathIds": ["path-certificate-of-employment"],
+    "relatedPathIds": [
+      "path-certificate-of-employment"
+    ],
     "lastCheckedAt": "2026-07-02"
   },
   {
@@ -324,7 +395,9 @@
     "url": "https://www.gov.pl/web/your-europe/terms-and-conditions-of-employment2",
     "language": "en",
     "sourceType": "explainer",
-    "relatedPathIds": ["path-certificate-of-employment"],
+    "relatedPathIds": [
+      "path-certificate-of-employment"
+    ],
     "lastCheckedAt": "2026-07-02"
   },
   {
@@ -388,7 +461,9 @@
     "url": "https://lang-psz.praca.gov.pl/en/-/unemployment-benefit",
     "language": "en",
     "sourceType": "explainer",
-    "relatedPathIds": ["path-unemployment-benefit"],
+    "relatedPathIds": [
+      "path-unemployment-benefit"
+    ],
     "lastCheckedAt": "2026-07-02"
   },
   {
@@ -398,7 +473,10 @@
     "url": "https://www.gov.pl/web/your-europe/sickness-benefit",
     "language": "en",
     "sourceType": "explainer",
-    "relatedPathIds": ["path-sick-leave-after-contract-ends", "path-zas-53"],
+    "relatedPathIds": [
+      "path-sick-leave-after-contract-ends",
+      "path-zas-53"
+    ],
     "lastCheckedAt": "2026-07-02"
   },
   {
@@ -408,7 +486,10 @@
     "url": "https://www.zus.pl/en/-/jak-uzyskac-zasilek-chorobowy-z-tytulu-niezdolnosci-po-ustaniu-tytulu-ubezpieczenia-chorobowego-lub-ubezpieczenia-wypadkowego",
     "language": "mixed",
     "sourceType": "explainer",
-    "relatedPathIds": ["path-sick-leave-after-contract-ends", "path-zas-53"],
+    "relatedPathIds": [
+      "path-sick-leave-after-contract-ends",
+      "path-zas-53"
+    ],
     "lastCheckedAt": "2026-07-02"
   },
   {
@@ -418,7 +499,9 @@
     "url": "https://www.zus.pl/en/elektroniczne-zwolnienia-lekarskie-e-zla-/e-zla-informacje-dla-ubezpieczonych/otrzymales-e-zla-jakie-dokumenty-powinienes-zlozyc-aby-otrzymac-zasilek-chorobowy/jestes-pracownikiem-i-ubiegasz-sie-o-zasilek-chorobowy",
     "language": "mixed",
     "sourceType": "explainer",
-    "relatedPathIds": ["path-sick-leave-after-contract-ends"],
+    "relatedPathIds": [
+      "path-sick-leave-after-contract-ends"
+    ],
     "lastCheckedAt": "2026-07-02"
   },
   {
@@ -441,7 +524,9 @@
     "url": "https://www.zus.pl/en/-/za%C5%9Bwiadczenie-zas-53",
     "language": "mixed",
     "sourceType": "form",
-    "relatedPathIds": ["path-zas-53"],
+    "relatedPathIds": [
+      "path-zas-53"
+    ],
     "lastCheckedAt": "2026-07-02"
   },
   {
@@ -451,7 +536,9 @@
     "url": "https://lang.zus.pl/benefits/sick-pay-and-sickness-allowance",
     "language": "en",
     "sourceType": "explainer",
-    "relatedPathIds": ["path-sick-leave-after-contract-ends"],
+    "relatedPathIds": [
+      "path-sick-leave-after-contract-ends"
+    ],
     "lastCheckedAt": "2026-07-02"
   },
   {
@@ -461,7 +548,9 @@
     "url": "https://www.zus.pl/en/swiadczenia/zasilki/swiadczenie-rehabilitacyjne/z-ubezpieczenia-chorobowego/niezbedne-dokumenty",
     "language": "mixed",
     "sourceType": "checklist",
-    "relatedPathIds": ["path-rehabilitation-benefit"],
+    "relatedPathIds": [
+      "path-rehabilitation-benefit"
+    ],
     "lastCheckedAt": "2026-07-02"
   },
   {
@@ -471,7 +560,9 @@
     "url": "https://www.zus.pl/en/wzory-formularzy/zasilki/swiadczenie-rehabilitacyjne",
     "language": "mixed",
     "sourceType": "form",
-    "relatedPathIds": ["path-rehabilitation-benefit"],
+    "relatedPathIds": [
+      "path-rehabilitation-benefit"
+    ],
     "lastCheckedAt": "2026-07-02"
   },
   {
@@ -481,7 +572,9 @@
     "url": "https://www.gov.pl/web/your-europe/get-a-rehabilitation-benefit-under-sickness-insurance",
     "language": "en",
     "sourceType": "explainer",
-    "relatedPathIds": ["path-rehabilitation-benefit"],
+    "relatedPathIds": [
+      "path-rehabilitation-benefit"
+    ],
     "lastCheckedAt": "2026-07-02"
   },
   {
@@ -491,7 +584,9 @@
     "url": "https://lang.zus.pl/en/benefits/rehabilitation-benefits",
     "language": "en",
     "sourceType": "explainer",
-    "relatedPathIds": ["path-rehabilitation-benefit"],
+    "relatedPathIds": [
+      "path-rehabilitation-benefit"
+    ],
     "lastCheckedAt": "2026-07-02"
   },
   {
@@ -501,7 +596,9 @@
     "url": "https://www.zus.pl/en/-/za%C5%9Bwiadczenie-zus-z-3",
     "language": "mixed",
     "sourceType": "form",
-    "relatedPathIds": ["path-sick-leave-after-contract-ends"],
+    "relatedPathIds": [
+      "path-sick-leave-after-contract-ends"
+    ],
     "lastCheckedAt": "2026-07-02"
   },
   {
@@ -511,7 +608,10 @@
     "url": "https://www.zus.pl/en/wzory-formularzy/zasilki/zasilek-chorobowy/-/asset_publisher/TS3WYPoYHIaG/content/oswiadczenie-zus-z-10",
     "language": "mixed",
     "sourceType": "form",
-    "relatedPathIds": ["path-sick-leave-after-contract-ends", "path-zas-53"],
+    "relatedPathIds": [
+      "path-sick-leave-after-contract-ends",
+      "path-zas-53"
+    ],
     "lastCheckedAt": "2026-07-02"
   },
   {
@@ -521,7 +621,10 @@
     "url": "https://www.gov.pl/web/your-europe/electronic-services-platform-social-insurance-institution",
     "language": "en",
     "sourceType": "explainer",
-    "relatedPathIds": ["path-zas-53", "path-rehabilitation-benefit"],
+    "relatedPathIds": [
+      "path-zas-53",
+      "path-rehabilitation-benefit"
+    ],
     "lastCheckedAt": "2026-07-02"
   },
   {
@@ -531,7 +634,9 @@
     "url": "https://pacjent.gov.pl/internetowe-konto-pacjenta",
     "language": "pl",
     "sourceType": "portal",
-    "relatedPathIds": ["path-hospital-discharge-document"],
+    "relatedPathIds": [
+      "path-hospital-discharge-document"
+    ],
     "lastCheckedAt": "2026-07-02"
   },
   {
@@ -554,7 +659,9 @@
     "url": "https://pacjent.gov.pl/artykul/pobyt-w-szpitalu",
     "language": "pl",
     "sourceType": "explainer",
-    "relatedPathIds": ["path-hospital-discharge-document"],
+    "relatedPathIds": [
+      "path-hospital-discharge-document"
+    ],
     "lastCheckedAt": "2026-07-02"
   },
   {
@@ -564,7 +671,9 @@
     "url": "https://pacjent.gov.pl/leczenie-szpitalne",
     "language": "pl",
     "sourceType": "portal",
-    "relatedPathIds": ["path-hospital-discharge-document"],
+    "relatedPathIds": [
+      "path-hospital-discharge-document"
+    ],
     "lastCheckedAt": "2026-07-02"
   },
   {
@@ -574,7 +683,9 @@
     "url": "https://pacjent.gov.pl/szpitalny-oddzial-ratunkowy-sor",
     "language": "pl",
     "sourceType": "explainer",
-    "relatedPathIds": ["path-hospital-discharge-document"],
+    "relatedPathIds": [
+      "path-hospital-discharge-document"
+    ],
     "lastCheckedAt": "2026-07-02"
   },
   {
@@ -584,7 +695,9 @@
     "url": "https://pacjent.gov.pl/internetowe-konto-pacjenta/eskierowanie",
     "language": "pl",
     "sourceType": "explainer",
-    "relatedPathIds": ["path-hospital-discharge-document"],
+    "relatedPathIds": [
+      "path-hospital-discharge-document"
+    ],
     "lastCheckedAt": "2026-07-02"
   },
   {
@@ -594,7 +707,9 @@
     "url": "https://www.gov.pl/web/finance/the-protection-of-policyholders",
     "language": "en",
     "sourceType": "explainer",
-    "relatedPathIds": ["path-private-insurance-claim-basics"],
+    "relatedPathIds": [
+      "path-private-insurance-claim-basics"
+    ],
     "lastCheckedAt": "2026-07-02"
   },
   {
@@ -604,7 +719,9 @@
     "url": "https://archiwum.rf.gov.pl/en/rules-for-admitting-the-complaints/",
     "language": "en",
     "sourceType": "explainer",
-    "relatedPathIds": ["path-private-insurance-claim-basics"],
+    "relatedPathIds": [
+      "path-private-insurance-claim-basics"
+    ],
     "lastCheckedAt": "2026-07-02"
   },
   {
@@ -614,7 +731,57 @@
     "url": "https://rf.gov.pl/en/for-customers/intervention-procedure/",
     "language": "en",
     "sourceType": "explainer",
-    "relatedPathIds": ["path-private-insurance-claim-basics"],
+    "relatedPathIds": [
+      "path-private-insurance-claim-basics"
+    ],
     "lastCheckedAt": "2026-07-02"
+  },
+  {
+    "id": "src-mswia-recognition",
+    "title": "Apply to be recognised as a Polish citizen",
+    "institution": "Ministry of the Interior and Administration (MSWiA)",
+    "url": "https://www.gov.pl/web/mswia-en/apply-to-be-recognised-as-a-polish-citizen",
+    "language": "en",
+    "sourceType": "explainer",
+    "relatedPathIds": [
+      "path-citizenship-and-passport"
+    ],
+    "lastCheckedAt": "2026-07-03"
+  },
+  {
+    "id": "src-mswia-grant",
+    "title": "Apply for Polish citizenship (grant by the President)",
+    "institution": "Ministry of the Interior and Administration (MSWiA)",
+    "url": "https://www.gov.pl/web/mswia-en/apply-for-polish-citizenship",
+    "language": "en",
+    "sourceType": "explainer",
+    "relatedPathIds": [
+      "path-citizenship-and-passport"
+    ],
+    "lastCheckedAt": "2026-07-03"
+  },
+  {
+    "id": "src-obywatel-passport-en",
+    "title": "How to apply for a passport",
+    "institution": "obywatel.gov.pl",
+    "url": "https://obywatel.gov.pl/en/documents-and-data/passport-how-to-apply-for-a-passport",
+    "language": "en",
+    "sourceType": "explainer",
+    "relatedPathIds": [
+      "path-citizenship-and-passport"
+    ],
+    "lastCheckedAt": "2026-07-03"
+  },
+  {
+    "id": "src-gov-passport-adult",
+    "title": "Uzyskaj paszport – usługa dla osoby dorosłej (get a passport — adult service)",
+    "institution": "gov.pl",
+    "url": "https://www.gov.pl/web/gov/uzyskaj-paszport-usluga-dla-osoby-doroslej",
+    "language": "pl",
+    "sourceType": "explainer",
+    "relatedPathIds": [
+      "path-citizenship-and-passport"
+    ],
+    "lastCheckedAt": "2026-07-03"
   }
 ]

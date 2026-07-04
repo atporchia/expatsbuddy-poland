@@ -1,0 +1,18 @@
+{
+  "id": "term-paszport",
+  "slug": "paszport",
+  "term": "paszport",
+  "language": "pl",
+  "plainMeaning": "Паспорт (paszport) — проїзний документ, який можна видати лише тому, хто вже має громадянство Польщі. Заяву подають особисто в паспортному відділі (воєводському управлінні) в Польщі або в консульстві за кордоном; під час візиту збирають біометричні дані.",
+  "institutionIds": [
+    "inst-voivodeship",
+    "inst-govpl"
+  ],
+  "relatedPathIds": [
+    "path-citizenship-and-passport"
+  ],
+  "officialSourceIds": [
+    "src-obywatel-passport-en",
+    "src-gov-passport-adult"
+  ]
+}

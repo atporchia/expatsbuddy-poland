@@ -1,0 +1,18 @@
+{
+  "id": "term-obywatelstwo-polskie",
+  "slug": "obywatelstwo-polskie",
+  "term": "obywatelstwo polskie",
+  "language": "pl",
+  "plainMeaning": "Polish citizenship — a legal status separate from residence permits, decided under its own rules by the Ministry of the Interior and Administration or the President, not by the offices that handle temporary or permanent residence.",
+  "institutionIds": [
+    "inst-mswia",
+    "inst-voivodeship"
+  ],
+  "relatedPathIds": [
+    "path-citizenship-and-passport"
+  ],
+  "officialSourceIds": [
+    "src-mswia-recognition",
+    "src-mswia-grant"
+  ]
+}

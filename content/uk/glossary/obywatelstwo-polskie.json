@@ -1,0 +1,18 @@
+{
+  "id": "term-obywatelstwo-polskie",
+  "slug": "obywatelstwo-polskie",
+  "term": "obywatelstwo polskie",
+  "language": "pl",
+  "plainMeaning": "Громадянство Польщі — правовий статус, окремий від дозволів на проживання; його визначають за власними правилами Міністерство внутрішніх справ і адміністрації або Президент, а не установи, що займаються тимчасовим чи постійним перебуванням.",
+  "institutionIds": [
+    "inst-mswia",
+    "inst-voivodeship"
+  ],
+  "relatedPathIds": [
+    "path-citizenship-and-passport"
+  ],
+  "officialSourceIds": [
+    "src-mswia-recognition",
+    "src-mswia-grant"
+  ]
+}
