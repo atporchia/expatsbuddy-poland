@@ -85,6 +85,7 @@ for (const locale of LOCALES) {
     const where = `[${locale}] path ${p.slug}`;
     if (!p.userSituation) errors.push(`${where}: missing userSituation`);
     if (!p.summary) errors.push(`${where}: missing summary`);
+    if (!p.briefOverview) errors.push(`${where}: missing briefOverview (page render crashes without it)`);
     if (!p.body?.trim()) errors.push(`${where}: missing plain-language body`);
     if (!p.lastReviewedAt) errors.push(`${where}: missing lastReviewedAt`);
     if (!categoryIds.has(p.categoryId)) {
@@ -121,6 +122,7 @@ for (const locale of LOCALES) {
       where,
       [
         p.summary,
+        p.briefOverview,
         p.userSituation,
         p.body,
         ...p.whatThisExplains,

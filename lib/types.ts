@@ -21,6 +21,13 @@ export type Path = {
   title: string;
   userSituation: string;
   summary: string;
+  /**
+   * Short (2-3 sentence) direct answer shown above the fold on the path
+   * page, always visible. Condensed from `body`, not a topic-preview like
+   * `summary` — written to read as the answer itself, not a description of
+   * the page.
+   */
+  briefOverview: string;
   whoThisIsFor: string[];
   institutions: string[];
   commonTerms: string[];

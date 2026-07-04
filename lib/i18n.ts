@@ -53,6 +53,7 @@ const en = {
   },
   path: {
     whatThisMeans: "Overview",
+    readMore: "Read the full explanation",
     whoFor: "Who this page is for",
     institutions: "Which institution is usually involved",
     terms: "Terms you may see",
@@ -241,6 +242,7 @@ const uk: Dict = {
   },
   path: {
     whatThisMeans: "Огляд",
+    readMore: "Читати повне пояснення",
     whoFor: "Для кого ця сторінка",
     institutions: "Яка установа зазвичай залучена",
     terms: "Терміни, які можуть траплятися",

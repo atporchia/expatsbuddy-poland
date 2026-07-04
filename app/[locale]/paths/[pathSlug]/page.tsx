@@ -129,9 +129,29 @@ export default async function PathPage({
       )}
 
       <Section id="what-this-means" title={t.path.whatThisMeans}>
-        <div className="prose-explainer max-w-3xl text-slate-700">
-          <MDXRemote source={path.body} />
-        </div>
+        <p className="max-w-3xl leading-relaxed text-slate-700">
+          {path.briefOverview}
+        </p>
+        <details className="group mt-4 max-w-3xl">
+          <summary className="flex cursor-pointer list-none items-center gap-1.5 text-sm font-medium text-blue-700 hover:underline [&::-webkit-details-marker]:hidden">
+            <svg
+              viewBox="0 0 20 20"
+              fill="currentColor"
+              aria-hidden="true"
+              className="h-4 w-4 shrink-0 transition-transform duration-200 group-open:rotate-90 motion-reduce:transition-none"
+            >
+              <path
+                fillRule="evenodd"
+                d="M7.21 14.77a.75.75 0 0 1 .02-1.06L11.168 10 7.23 6.29a.75.75 0 1 1 1.04-1.08l4.5 4.25a.75.75 0 0 1 0 1.08l-4.5 4.25a.75.75 0 0 1-1.06-.02Z"
+                clipRule="evenodd"
+              />
+            </svg>
+            {t.path.readMore}
+          </summary>
+          <div className="prose-explainer mt-3 text-slate-700">
+            <MDXRemote source={path.body} />
+          </div>
+        </details>
       </Section>
 
       <Section id="who-for" title={t.path.whoFor}>
