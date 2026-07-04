@@ -14,9 +14,15 @@ export function GlossaryTooltip({
   term: string;
   locale: string;
 }) {
-  const entry = getGlossaryTerms(locale as Locale).find(
-    (t) => t.term.toLowerCase() === term.toLowerCase(),
-  );
+  const needle = term.toLowerCase();
+  const terms = getGlossaryTerms(locale as Locale);
+  // Exact match first; fall back to matching the parenthetical original
+  // (e.g. commonTerms "rozwiązanie umowy" against a glossary term field of
+  // "Розірвання договору (rozwiązanie umowy)") so bilingual display titles
+  // don't break links from path/category pages still using the bare term.
+  const entry =
+    terms.find((t) => t.term.toLowerCase() === needle) ??
+    terms.find((t) => t.term.toLowerCase().includes(`(${needle})`));
   if (!entry) {
     return <span className="text-slate-700">{term}</span>;
   }

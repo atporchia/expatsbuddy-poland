@@ -1,7 +1,7 @@
 {
   "id": "term-edm",
   "slug": "edm",
-  "term": "EDM",
+  "term": "Електронна медична документація (EDM)",
   "language": "pl",
   "plainMeaning": "Elektroniczna dokumentacja medyczna — електронна медична документація: результати аналізів, діагнози, лікарняні виписки та подібні записи, доступні через IKP.",
   "institutionIds": [
