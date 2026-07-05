@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 import { notFound } from "next/navigation";
+import { AdUnit } from "@/components/AdUnit";
 import { FeedbackWidget } from "@/components/FeedbackWidget";
 import { InstitutionList } from "@/components/InstitutionBadge";
 import { PathCard } from "@/components/PathCard";
@@ -172,6 +173,8 @@ export default async function CategoryPage({
           </Link>
         </div>
       </div>
+
+      <AdUnit locale={locale} />
 
       <FeedbackWidget pageType="category" pageSlug={category.slug} locale={locale} />
     </div>

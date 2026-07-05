@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import Link from "next/link";
 import { notFound } from "next/navigation";
 import { MDXRemote } from "next-mdx-remote/rsc";
+import { AdUnit } from "@/components/AdUnit";
 import { PageScopeBox } from "@/components/DisclaimerBox";
 import { FeedbackWidget } from "@/components/FeedbackWidget";
 import { InstitutionList } from "@/components/InstitutionBadge";
@@ -208,6 +209,8 @@ export default async function PathPage({
       )}
 
       <PageScopeBox items={path.whatThisDoesNotDo} title={t.path.cannotDo} />
+
+      <AdUnit locale={locale} />
 
       <FeedbackWidget pageType="path" pageSlug={path.slug} locale={locale} />
     </article>

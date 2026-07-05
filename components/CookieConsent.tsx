@@ -3,10 +3,9 @@
 import { useEffect, useState } from "react";
 import Script from "next/script";
 import { getDict } from "@/lib/i18n";
+import { type Consent, getStoredConsent, setStoredConsent } from "@/lib/consent";
 
-const STORAGE_KEY = "expatsbuddy-cookie-consent";
 const REOPEN_EVENT = "expatsbuddy-open-cookie-settings";
-type Consent = "accepted" | "declined";
 
 export function CookieConsent({ locale }: { locale: string }) {
   const t = getDict(locale).cookies;
@@ -17,7 +16,7 @@ export function CookieConsent({ locale }: { locale: string }) {
     // Reading localStorage must happen after mount to avoid an SSR/client
     // hydration mismatch (the server has no access to it), so this can't
     // be done via lazy useState initializers instead.
-    const stored = window.localStorage.getItem(STORAGE_KEY) as Consent | null;
+    const stored = getStoredConsent();
     // eslint-disable-next-line react-hooks/set-state-in-effect
     setConsent(stored);
     setVisible(stored !== "accepted" && stored !== "declined");
@@ -30,7 +29,7 @@ export function CookieConsent({ locale }: { locale: string }) {
   }, []);
 
   function choose(value: Consent) {
-    window.localStorage.setItem(STORAGE_KEY, value);
+    setStoredConsent(value);
     setConsent(value);
     setVisible(false);
   }

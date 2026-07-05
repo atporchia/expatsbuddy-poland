@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 import { notFound } from "next/navigation";
+import { AdUnit } from "@/components/AdUnit";
 import { FeedbackWidget } from "@/components/FeedbackWidget";
 import { InstitutionList } from "@/components/InstitutionBadge";
 import { RelatedPaths } from "@/components/RelatedPaths";
@@ -147,6 +148,8 @@ export default async function GlossaryTermPage({
           </div>
         </section>
       )}
+
+      <AdUnit locale={locale} />
 
       <FeedbackWidget pageType="glossary" pageSlug={term.slug} locale={locale} />
     </article>

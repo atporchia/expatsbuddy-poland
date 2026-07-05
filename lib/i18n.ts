@@ -164,6 +164,9 @@ const en = {
     decline: "Decline",
     settingsLink: "Cookie settings",
   },
+  ads: {
+    label: "Advertisement",
+  },
 };
 
 export type Dict = typeof en;
@@ -351,6 +354,9 @@ const uk: Dict = {
     accept: "Погодитися",
     decline: "Відмовитися",
     settingsLink: "Налаштування cookie",
+  },
+  ads: {
+    label: "Реклама",
   },
 };
 
