@@ -99,8 +99,10 @@ export function SearchBox({
         }}
         onFocus={() => setOpen(true)}
         autoComplete="off"
-        className={`w-full rounded-lg border border-slate-300 bg-white text-slate-900 placeholder:text-slate-400 focus-visible:outline-2 focus-visible:outline-blue-600 ${
-          large ? "px-4 py-3 text-base shadow-sm" : "px-3 py-1.5 text-sm"
+        className={`w-full border border-slate-300 bg-white text-slate-900 placeholder:text-slate-400 focus-visible:outline-2 focus-visible:outline-blue-600 ${
+          large
+            ? "rounded-full px-5 py-3 text-base shadow-sm"
+            : "rounded-lg px-3 py-1.5 text-sm"
         }`}
       />
       {open && query.trim().length >= 2 && (

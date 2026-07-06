@@ -40,6 +40,14 @@ const en = {
     startTileText: (n: number) =>
       `Answer ${n} quick questions — we’ll point you to the right pages.`,
     explainerPages: (n: number) => `${n} ${n === 1 ? "page" : "pages"}`,
+    howItWorks: {
+      step1Title: "Pick a category",
+      step1Desc: "Choose the area that matches your situation.",
+      step2Title: "Read the guide",
+      step2Desc: "Plain-language context, sourced from official pages.",
+      step3Title: "Check the official source",
+      step3Desc: "Every guide links to the actual gov.pl, ZUS, or MOS page.",
+    },
   },
   category: {
     helpsWith: "This category helps with",
@@ -229,6 +237,15 @@ const uk: Dict = {
             ? "сторінки"
             : "сторінок";
       return `${n} ${word}`;
+    },
+    howItWorks: {
+      step1Title: "Оберіть категорію",
+      step1Desc: "Виберіть розділ, що відповідає вашій ситуації.",
+      step2Title: "Прочитайте пояснення",
+      step2Desc: "Пояснення простою мовою з посиланнями на офіційні джерела.",
+      step3Title: "Перевірте офіційне джерело",
+      step3Desc:
+        "Кожна сторінка посилається на реальну сторінку gov.pl, ZUS чи MOS.",
     },
   },
   category: {

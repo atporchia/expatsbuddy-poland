@@ -1,39 +1,40 @@
 /**
  * One accent color per category, used as a wayfinding aid on the homepage
- * tiles (icon badge + page-count pill + hover border). Purely presentational
- * — literal Tailwind class strings so the compiler can see them statically.
+ * tiles (left rail + page-count link). Purely presentational — literal
+ * Tailwind class strings so the compiler can see them statically.
+ *
+ * `link` is deliberately a darker shade than `rail` for official-documents:
+ * the rail is a decorative bar (no contrast requirement), but the link is
+ * real text on a white card and yellow-500 text fails contrast at that size.
  */
-export const CATEGORY_ACCENT: Record<
-  string,
-  { badge: string; hoverBorder: string }
-> = {
-  "business-self-employment": {
-    badge: "bg-indigo-50 text-indigo-700",
-    hoverBorder: "hover:border-indigo-300",
-  },
-  "hospitalization-insurance": {
-    badge: "bg-emerald-50 text-emerald-700",
-    hoverBorder: "hover:border-emerald-300",
-  },
-  "official-documents": {
-    badge: "bg-violet-50 text-violet-700",
-    hoverBorder: "hover:border-violet-300",
-  },
+export const CATEGORY_ACCENT: Record<string, { rail: string; link: string }> = {
   "residence-trc": {
-    badge: "bg-blue-50 text-blue-700",
-    hoverBorder: "hover:border-blue-300",
-  },
-  "sickness-sick-leave": {
-    badge: "bg-rose-50 text-rose-700",
-    hoverBorder: "hover:border-rose-300",
+    rail: "border-l-blue-600",
+    link: "text-blue-600",
   },
   "work-job-loss": {
-    badge: "bg-amber-50 text-amber-700",
-    hoverBorder: "hover:border-amber-300",
+    rail: "border-l-emerald-600",
+    link: "text-emerald-600",
+  },
+  "sickness-sick-leave": {
+    rail: "border-l-rose-500",
+    link: "text-rose-500",
+  },
+  "hospitalization-insurance": {
+    rail: "border-l-violet-500",
+    link: "text-violet-500",
+  },
+  "official-documents": {
+    rail: "border-l-yellow-500",
+    link: "text-yellow-700",
+  },
+  "business-self-employment": {
+    rail: "border-l-cyan-600",
+    link: "text-cyan-600",
   },
 };
 
 export const DEFAULT_ACCENT = {
-  badge: "bg-slate-100 text-slate-700",
-  hoverBorder: "hover:border-slate-300",
+  rail: "border-l-slate-300",
+  link: "text-slate-600",
 };

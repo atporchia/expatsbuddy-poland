@@ -2,7 +2,6 @@ import type { Metadata } from "next";
 import Link from "next/link";
 import { CategoryCard } from "@/components/CategoryCard";
 import { SearchBox } from "@/components/SearchBox";
-import { StartIcon } from "@/components/CategoryIcon";
 import { getCategories, getPathsForCategory } from "@/lib/content";
 import { routes, LOCALES, type Locale } from "@/lib/routes";
 import { getDict } from "@/lib/i18n";
@@ -31,25 +30,9 @@ function PolishFlagHero({ locale }: { locale: string }) {
   const t = getDict(locale);
   return (
     <div className="-mx-4 -mt-8">
-      <div className="flex h-3">
-        <div className="flex-1 border-t border-slate-200 bg-white" />
-      </div>
-      <div className="flex h-3">
-        <div className="flex-1 bg-[#DC143C]" />
-      </div>
+      <div className="h-1.5 bg-[#DC143C]" />
 
-      <div className="bg-white px-4 pb-8 pt-7 text-center">
-        <div className="mb-4 flex justify-center">
-          <svg
-            viewBox="0 0 40 25"
-            className="h-6 w-10 rounded shadow-sm ring-1 ring-slate-200"
-            role="img"
-            aria-label="Flag of Poland"
-          >
-            <rect width="40" height="12.5" fill="#ffffff" />
-            <rect y="12.5" width="40" height="12.5" fill="#DC143C" />
-          </svg>
-        </div>
+      <div className="bg-white px-4 pb-8 pt-10 text-center">
         <h1 className="text-3xl font-extrabold tracking-tight text-slate-900 sm:text-4xl md:text-5xl">
           {t.home.heroTitleLine1}
           <br />
@@ -64,11 +47,36 @@ function PolishFlagHero({ locale }: { locale: string }) {
         </div>
       </div>
 
-      <div className="flex h-1.5">
-        <div className="flex-1 bg-white" />
-      </div>
-      <div className="flex h-1.5">
-        <div className="flex-1 bg-[#DC143C]" />
+      <div className="h-1.5 bg-[#DC143C]" />
+    </div>
+  );
+}
+
+function HowItWorks({ locale }: { locale: string }) {
+  const t = getDict(locale).home.howItWorks;
+  const steps = [
+    { title: t.step1Title, desc: t.step1Desc },
+    { title: t.step2Title, desc: t.step2Desc },
+    { title: t.step3Title, desc: t.step3Desc },
+  ];
+  return (
+    <div className="-mx-4 bg-slate-900 px-4 py-8">
+      <div className="mx-auto flex max-w-5xl flex-col gap-6 sm:flex-row sm:gap-8">
+        {steps.map((step, i) => (
+          <div key={step.title} className="flex flex-1 gap-3.5">
+            <span className="flex h-8 w-8 shrink-0 items-center justify-center rounded-full bg-[#DC143C] text-sm font-bold text-white">
+              {i + 1}
+            </span>
+            <span>
+              <span className="block text-[15px] font-semibold text-white">
+                {step.title}
+              </span>
+              <span className="mt-0.5 block text-sm leading-snug text-slate-400">
+                {step.desc}
+              </span>
+            </span>
+          </div>
+        ))}
       </div>
     </div>
   );
@@ -79,22 +87,13 @@ function StartCard({ locale }: { locale: string }) {
   return (
     <Link
       href={routes.start(locale)}
-      className="group mb-3 flex w-full items-center gap-4 rounded-2xl bg-gradient-to-br from-slate-800 to-slate-900 p-5 text-left text-white shadow-sm transition hover:shadow-md focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-slate-600"
+      className="mb-3 block w-full rounded-xl border-2 border-dashed border-slate-300 bg-slate-50 p-5 text-center transition hover:border-slate-400 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-blue-600"
     >
-      <span className="flex h-12 w-12 shrink-0 items-center justify-center rounded-xl bg-white/15">
-        <StartIcon className="h-6 w-6" />
+      <span className="block text-[15px] font-bold text-slate-900">
+        {t.nav.startLong}
       </span>
-      <span className="flex-1">
-        <span className="block text-lg font-bold">{t.nav.startLong}</span>
-        <span className="mt-0.5 block text-sm text-white/80">
-          {t.home.startTileText(TRIAGE_QUESTION_IDS.length)}
-        </span>
-      </span>
-      <span
-        aria-hidden="true"
-        className="text-2xl transition group-hover:translate-x-0.5"
-      >
-        →
+      <span className="mt-1 block text-sm text-slate-500">
+        {t.home.startTileText(TRIAGE_QUESTION_IDS.length)}
       </span>
     </Link>
   );
@@ -112,6 +111,7 @@ export default async function HomePage({
   return (
     <div className="space-y-8">
       <PolishFlagHero locale={locale} />
+      <HowItWorks locale={locale} />
 
       <section aria-labelledby="categories-heading">
         <h2
