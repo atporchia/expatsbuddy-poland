@@ -1,5 +1,18 @@
 [
   {
+    "id": "src-biznes-ukr-jdg-rules",
+    "title": "Jak obywatel Ukrainy może założyć firmę w Polsce (How a Ukrainian citizen can set up a business in Poland)",
+    "institution": "biznes.gov.pl",
+    "url": "https://www.biznes.gov.pl/pl/portal/001466",
+    "language": "pl",
+    "sourceType": "explainer",
+    "relatedPathIds": [
+      "path-ceidg-registration",
+      "path-jdg-basics"
+    ],
+    "lastCheckedAt": "2026-07-22"
+  },
+  {
     "id": "src-biznes-setting-up-business",
     "title": "Setting up and registering a business",
     "institution": "biznes.gov.pl",
